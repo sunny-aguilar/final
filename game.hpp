@@ -1,8 +1,8 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 4, 2019
-** Description:     The Game class
-**                  d
+** Description:     The Game class controls all of the game operations
+**                  required to control the game.
 **                  d
 **                  d
 **                  d
@@ -20,6 +20,8 @@ public:
     Game();
     ~Game();
     void start();
+    void gameOperations();
+    void exitGame();
 
 private:
     Menu menu;
