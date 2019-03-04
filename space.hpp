@@ -14,6 +14,10 @@
 
 class Space {
 private:
+    Space *up;
+    Space *right;
+    Space *down;
+    Space *left;
 
 public:
     Space();

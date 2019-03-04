@@ -14,7 +14,8 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-Space::Space() {}
+Space::Space() :
+    up{nullptr}, right{nullptr}, down{nullptr}, left{nullptr} {}
 
 /*********************************************************************
 ** Description:     virtual destructor
