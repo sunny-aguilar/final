@@ -3,7 +3,7 @@
 ** Date:            March 4, 2019
 ** Description:     This final project implements a one-player
 **                  text-based game where a player can move through
-**                  spaces
+**                  spaces to get items and accomplish goals.
 **                  s
 **                  i
 **                  s
