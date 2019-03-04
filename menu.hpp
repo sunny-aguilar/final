@@ -5,8 +5,8 @@
 **                  for the program. The menu class also holds the
 **                  user input validation function.
 *********************************************************************/
-#ifndef FINAL_MENU_HPP
-#define FINAL_MENU_HPP
+#ifndef MENU_HPP
+#define MENU_HPP
 
 #include <iostream>
 #include <string>
