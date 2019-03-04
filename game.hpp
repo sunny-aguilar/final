@@ -12,10 +12,13 @@
 #ifndef GAME_HPP
 #define GAME_HPP
 
+#include "menu.hpp"
+
 class Game {
 public:
     Game();
     ~Game();
+    void start();
 
 private:
 
