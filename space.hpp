@@ -5,4 +5,11 @@
 #ifndef SPACE_HPP
 #define SPACE_HPP
 
+class Space {
+private:
+
+public:
+
+};
+
 #endif // SPACE_HPP
