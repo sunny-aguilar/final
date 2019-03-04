@@ -1,8 +1,23 @@
-//
-// Created by Sandro Aguilar on 2019-03-04.
-//
+/*********************************************************************
+** Author:          Sandro Aguilar
+** Date:            March 4, 2019
+** Description:     The Game class
+**                  d
+**                  d
+**                  d
+**                  d
+**                  d
+**                  d
+*********************************************************************/
+#ifndef GAME_HPP
+#define GAME_HPP
 
-#ifndef FINAL_GAME_HPP
-#define FINAL_GAME_HPP
+class Game {
+public:
+    Game();
+    ~Game();
 
-#endif //FINAL_GAME_HPP
+private:
+};
+
+#endif // GAME_HPP
