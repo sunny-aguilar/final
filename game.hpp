@@ -13,6 +13,7 @@
 #define GAME_HPP
 
 #include "menu.hpp"
+#include "space.hpp"
 
 class Game {
 public:
@@ -21,6 +22,8 @@ public:
     void start();
 
 private:
+    Menu menu;
+    Space space;
 
 };
 
