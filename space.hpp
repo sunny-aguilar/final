@@ -16,6 +16,8 @@ class Space {
 private:
 
 public:
+    Space();
+    virtual ~Space();
 
 };
 
