@@ -20,6 +20,9 @@ void Menu::startScreen() {
     cout << "fired or losing your sanity. Luckily for you, one of your best\n";
     cout << "friends happens to be a co-worker that is ready to help you get\n";
     cout << "through the day.\n\n";
+    cout << "OBJECTIVE: you start with 10 sanity points and 10 performance points\n";
+    cout << "If your sanity or performance drops below 1 before the day is over\n";
+    cout << "";
 
     cout << "1. Start Game\n";
     cout << "2. Exit Game\n";
