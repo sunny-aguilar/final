@@ -20,6 +20,7 @@ public:
     Game();
     ~Game();
     void start();
+    void createBoard();
     void gameOperations();
     void exitGame();
 

@@ -19,9 +19,20 @@ private:
     Space *down;
     Space *left;
 
+    Space *BL;
+    Space *BM;
+    Space *BR;
+    Space *ML;
+    Space *MM;
+    Space *MR;
+    Space *TL;
+    Space *TM;
+    Space *TR;
+
 public:
     Space();
     virtual ~Space();
+
 
 };
 
