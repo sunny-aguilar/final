@@ -21,8 +21,10 @@ void Menu::startScreen() {
     cout << "friends happens to be a co-worker that is ready to help you get\n";
     cout << "through the day.\n\n";
     cout << "OBJECTIVE: you start with 10 sanity points and 10 performance points\n";
-    cout << "If your sanity or performance drops below 1 before the day is over\n";
-    cout << "";
+    cout << "If your sanity or performance drops below 1 before the day is over,\n";
+    cout << "the game will end.\n\n";
+    cout << "TIME RULES: The day starts at 9AM and ends at 5PM. The time is adjusted in half\n";
+    cout << "hour increments for each space visited.\n\n";
 
     cout << "1. Start Game\n";
     cout << "2. Exit Game\n";
