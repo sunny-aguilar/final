@@ -23,6 +23,8 @@ using std::endl;
 class Menu {
 public:
     void startScreen();
+    void startScreenArt();
+    void officeArt();
     void exitGame();
     int validateNumber(int min, int max);
 };

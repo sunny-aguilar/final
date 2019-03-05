@@ -11,7 +11,16 @@
 ** Description:     displays the start screen for the game
 *********************************************************************/
 void Menu::startScreen() {
-    cout << "Start Screen Banner here\n";
+    startScreenArt();
+    cout << endl;
+
+    cout << "The game were you try to survive the day to day office drudgery\n";
+    cout << "of a job full of meaningless work, an out of touch boss and weird\n";
+    cout << "co-workers. Your job is to make it through the day without getting\n";
+    cout << "fired or losing your sanity. Luckily for you, one of your best\n";
+    cout << "friends happens to be a co-worker that is ready to help you get\n";
+    cout << "through the day.\n\n";
+
     cout << "1. Start Game\n";
     cout << "2. Exit Game\n";
     cout << ">> ";
@@ -20,12 +29,24 @@ void Menu::startScreen() {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
+void Menu::officeArt() {
+    cout << "(╯°□°）╯︵ ┻━┻\n";
+    cout << "┬─┬ノ( º _ ºノ)\n";
 
+
+}
 
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-
+void Menu::startScreenArt() {
+    cout << " _________  __                ___       ___    ___  _                 \n"
+            "|  _   _  |[  |             .'   `.   .' ..] .' ..](_)                \n"
+            "|_/ | | \\_| | |--.  .---.  /  .-.  \\ _| |_  _| |_  __   .---.  .---.  \n"
+            "    | |     | .-. |/ /__\\\\ | |   | |'-| |-''-| |-'[  | / /'`\\]/ /__\\\\ \n"
+            "   _| |_    | | | || \\__., \\  `-'  /  | |    | |   | | | \\__. | \\__., \n"
+            "  |_____|  [___]|__]'.__.'  `.___.'  [___]  [___] [___]'.___.' '.__.'\n";
+}
 
 /*********************************************************************
 ** Description:     d

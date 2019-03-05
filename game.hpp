@@ -27,6 +27,7 @@ public:
 private:
     Menu menu;
     Space space;
+    double time;
 
 };
 
