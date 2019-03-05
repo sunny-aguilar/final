@@ -13,8 +13,11 @@
 *********************************************************************/
 #include "game.hpp"
 #include <iostream>
+#include <ctime>
 
 int main() {
+    auto seed = static_cast<unsigned int>(time(nullptr));
+    srand(seed);        // create random number generator
     Game game;
     game.start();
     return 0;
