@@ -47,7 +47,8 @@ void Game::gameOperations() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     this function creates the spaces and links
+**                  the pointers to each other
 *********************************************************************/
 void Game::createBoard() {
 
