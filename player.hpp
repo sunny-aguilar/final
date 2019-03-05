@@ -10,6 +10,14 @@
 #ifndef PLAYER_HPP
 #define PLAYER_HPP
 
+class Player {
+private:
+    int sanity;
+    int performance;
 
+public:
+    Player();
+    ~Player();
+};
 
 #endif // PLAYER_HPP
