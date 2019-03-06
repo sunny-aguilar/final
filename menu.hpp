@@ -8,6 +8,7 @@
 #ifndef MENU_HPP
 #define MENU_HPP
 
+#include "player.hpp"
 #include <iostream>
 #include <string>
 #include <cstring>
@@ -31,6 +32,7 @@ public:
     void officeArt();
     void myDeskArt();
     void mainMenu();
+    void hud(Player *p);
 
 
     void exitGame();

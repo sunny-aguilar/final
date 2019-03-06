@@ -54,7 +54,7 @@ void Game::gameOperations() {
     arriveToWork();
 
     // show main menu
-
+    showMainMenu();
 
 
 }
@@ -88,7 +88,8 @@ void Game::arriveToWork() {
 ** Description:     d
 *********************************************************************/
 void Game::showMainMenu() {
-
+    menu.hud(player);
+    menu.mainMenu();
 }
 
 /*********************************************************************
