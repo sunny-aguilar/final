@@ -9,6 +9,8 @@
 #define MENU_HPP
 
 #include "player.hpp"
+#include "space.hpp"
+#include "myCubicle.hpp"
 #include <iostream>
 #include <string>
 #include <cstring>
@@ -32,7 +34,7 @@ public:
     void officeArt();
     void myDeskArt();
     void mainMenu();
-    void hud(Player *p);
+    void hud(Player *p, Space *s);
 
 
     void exitGame();

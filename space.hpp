@@ -28,7 +28,7 @@ public:
     Space();
     Space(string locName);
     virtual ~Space();
-
+    string getLocationName();
 
 };
 
