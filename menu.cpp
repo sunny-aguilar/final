@@ -37,7 +37,7 @@ void Menu::startScreen() {
     cout << "the game will end.\n\n";
     cout << "TIME RULES: The day starts at 9AM and ends at 5PM. The time is adjusted in half\n";
     cout << "hour increments for each space visited.\n\n";
-    cout << "GAME NITS: throughout the game there are scattered items that will\n";
+    cout << "GAME HINTS: throughout the game there are scattered items that will\n";
     cout << "help or hinder you as you make your way through the day. Hints will\n";
     cout << "scattered about the office that will help you out.\n\n";
 
@@ -53,7 +53,7 @@ void Menu::gameIntro(int chance) {
     sunIntro();
 
     cout << "It is 7:30 AM and your alarm has just gone off. You quickly get\n";
-    cout << "up and get ready for work with time to spare.\n";
+    cout << "up and get ready for work with time to spare.\n\n";
 
     switch (chance) {
         case 1:
