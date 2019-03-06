@@ -163,10 +163,10 @@ void Menu::mainMenu() {
 ** Description:     d
 *********************************************************************/
 void Menu::hud(Player *p, Space *s, double time) {
-    cout << "[  Sanity Points: " << p->getSanityPoints() << "      |     " ;
-    cout << " Performance Points: " << p->getPerfomancePoints() <<"        ]\n";
-    cout << "[  Current Location: " << s->getLocationName() << "               ]\n";
-    cout << "[  Current Time: " << time << "                                   ]\n\n";
+    cout << "[  Sanity Points: " << p->getSanityPoints() << "                 ]\n";
+    cout << "[  Performance Points: " << p->getPerfomancePoints() <<"           ]\n";
+    cout << "[  Current Location: " << s->getLocationName() << "     ]\n";
+    cout << "[  Current Time: " << time << "                  ]\n\n";
 }
 
 /*********************************************************************
