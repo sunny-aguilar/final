@@ -160,8 +160,8 @@ void Menu::mainMenu() {
 void Menu::hud(Player *p, Space *s, double time) {
     cout << "[  Sanity Points: " << p->getSanityPoints() << "  | " ;
     cout << " Performance Points: " << p->getPerfomancePoints() <<"  ]\n";
-    cout << "[ Current Location: " << s->getLocationName() << "               ]\n";
-    cout << "[ Current Time: " << time << "               ]\n";
+    cout << "[  Current Location: " << s->getLocationName() << "               ]\n";
+    cout << "[  Current Time: " << time << "               ]\n";
 }
 
 /*********************************************************************
