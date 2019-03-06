@@ -51,7 +51,7 @@ void Game::gameOperations() {
     morningRoutine();
 
     // arrive to work
-
+    arriveToWork();
 
 
 
@@ -80,7 +80,7 @@ void Game::morningRoutine() {
 ** Description:     d
 *********************************************************************/
 void Game::arriveToWork() {
-    
+
 }
 
 /*********************************************************************
