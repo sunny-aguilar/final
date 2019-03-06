@@ -25,6 +25,7 @@ public:
     void startScreen();
     void startScreenArt();
     void gameIntro();
+    void 
     void officeArt();
     void exitGame();
     int validateNumber(int min, int max);
