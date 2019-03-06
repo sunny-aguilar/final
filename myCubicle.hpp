@@ -9,31 +9,16 @@
 **                  used to point to other spaces and allow a player
 **                  to move about.
 *********************************************************************/
-#ifndef SPACE_HPP
-#define SPACE_HPP
+#ifndef MYCUBICLE_HPP
+#define MYCUBICLE_HPP
 
-class Space {
-protected:
-    Space *up;
-    Space *right;
-    Space *down;
-    Space *left;
+#include "space.hpp"
 
-    Space *BL;
-    Space *BM;
-    Space *BR;
-    Space *ML;
-    Space *MM;
-    Space *MR;
-    Space *TL;
-    Space *TM;
-    Space *TR;
+class MyCubicle : public Space {
+private:
 
 public:
-    Space();
-    virtual ~Space();
-
 
 };
 
-#endif // SPACE_HPP
+#endif // MYCUBICLE_HPP
