@@ -81,7 +81,27 @@ void Game::gameOperations() {
 ** Description:     d
 *********************************************************************/
 void Game::morningRoutine() {
-    menu.gameIntro(generateRandom(3));
+    menu.gameIntro();
+
+    switch (generateRandom(3)) {
+        case 1:
+            menu.carArt();
+            cout << "You decide to make yourself a cup of coffee however you spill\n";
+            cout << "it all over your shirt as you get into your car ( -1 sanity points)\n\n";
+            break;
+        case 2:
+            menu.carArt();
+            cout << "Although you got up for work early with plenty of time to spare,\n";
+            cout << "unforeseen traffic conditions have made you 15 minutes late for work\n";
+            cout << "( -1 performance points, -1 sanity points)\n\n";
+            break;
+        case 3:
+            menu.carArt();
+            cout << "You get into your car and luckily make it to work on time\n\n";
+            break;
+        default:
+            cout << "Unable to determine selection!\n";
+    }
 }
 
 /*********************************************************************
