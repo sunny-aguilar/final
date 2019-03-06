@@ -76,6 +76,8 @@ void Menu::gameIntro(int chance) {
         default:
             cout << "Unable to determine selection!\n";
     }
+    cout << "\nHit [ENTER] to continue to next round\n";
+    cin.ignore();
 }
 
 /*********************************************************************

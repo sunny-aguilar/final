@@ -13,6 +13,7 @@
 #define GAME_HPP
 
 #include "menu.hpp"
+#include "player.hpp"
 #include "space.hpp"
 #include "myCubicle.hpp"
 
@@ -26,11 +27,13 @@ public:
     void morningRoutine();
     void arriveToWork();
     int generateRandom(int max);
+    void showPlayerStats();
     void exitGame();
 
 private:
     Menu menu;
     double time;
+    Player *player;
     Space *myCubicle;
     Space *BM;
     Space *BR;
