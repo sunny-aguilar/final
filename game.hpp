@@ -23,6 +23,8 @@ public:
     void start();
     void createBoard();
     void gameOperations();
+    void morningRoutine();
+    int generateRandom();
     void exitGame();
 
 private:

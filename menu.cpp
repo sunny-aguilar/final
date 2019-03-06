@@ -52,7 +52,7 @@ void Menu::startScreen() {
 void Menu::gameIntro() {
     sunIntro();
 
-    cout << "It is "
+    cout << "It is 7:30 AM and your alarm has just gone off. "
 }
 
 /*********************************************************************
