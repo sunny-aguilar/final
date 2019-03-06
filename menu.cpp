@@ -159,7 +159,7 @@ void Menu::mainMenu() {
 *********************************************************************/
 void Menu::hud(Player *p) {
     cout << "[  Sanity Points: " << p->getSanityPoints() << " | " ;
-    cout << p->getPerfomancePoints() <<"       ]\n";
+    cout << " Performance Points: " << p->getPerfomancePoints() <<"  ]\n";
     cout << "[            " << "               ]\n";
     cout << "[            " << "               ]\n";
     cout << "[            " << "               ]\n";
