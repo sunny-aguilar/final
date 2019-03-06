@@ -8,6 +8,13 @@
 #ifndef FRIENDCUBICLE_HPP
 #define FRIENDCUBICLE_HPP
 
+#include "space.hpp"
 
+class FriendCubicle : public Space {
+private:
+
+public:
+
+};
 
 #endif // FRIENDCUBICLE_HPP
