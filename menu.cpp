@@ -55,7 +55,7 @@ void Menu::gameIntro(int chance, Player *p) {
 
     cout << "It is 7:30 AM and your alarm has just gone off. You quickly get\n";
     cout << "up and get ready for work with time to spare.\n\n";
-    cout << "Sanity points " << p->getSanityPoints() << endl;
+    cout << "Sanity points " << p->getSanityPoints() << "   |   ";
     cout << "Performance points " << p->getPerfomancePoints() << endl;
     cout << "\nHit [ENTER] to continue to next round\n";
     cin.ignore();
@@ -163,10 +163,10 @@ void Menu::mainMenu() {
 ** Description:     d
 *********************************************************************/
 void Menu::hud(Player *p, Space *s, double time) {
-    cout << "[  Sanity Points: " << p->getSanityPoints() << "    |   " ;
-    cout << " Performance Points: " << p->getPerfomancePoints() <<"  ]\n";
+    cout << "[  Sanity Points: " << p->getSanityPoints() << "      |     " ;
+    cout << " Performance Points: " << p->getPerfomancePoints() <<"        ]\n";
     cout << "[  Current Location: " << s->getLocationName() << "               ]\n";
-    cout << "[  Current Time: " << time << "               ]\n\n";
+    cout << "[  Current Time: " << time << "                                   ]\n\n";
 }
 
 /*********************************************************************
