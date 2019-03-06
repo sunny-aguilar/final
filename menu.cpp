@@ -50,7 +50,7 @@ void Menu::startScreen() {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-void Menu::gameIntro(int chance, Player p) {
+void Menu::gameIntro(int chance, Player *p) {
     sunIntro();
 
     cout << "It is 7:30 AM and your alarm has just gone off. You quickly get\n";

@@ -27,7 +27,7 @@ class Menu {
 public:
     void startScreen();
     void startScreenArt();
-    void gameIntro(int chance, Player p);
+    void gameIntro(int chance, Player *p);
     void sunIntro();
     void carArt();
     void startWorkDay();
