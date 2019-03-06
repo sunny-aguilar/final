@@ -176,7 +176,7 @@ void Menu::hud(Player *p, Space *s, double time) {
 ** Description:     displays office map
 *********************************************************************/
 void Menu::displayMap() {
-    
+
 }
 
 /*********************************************************************
