@@ -18,6 +18,7 @@ private:
 public:
     Player();
     ~Player();
+    int getSanityPoints();
 };
 
 #endif // PLAYER_HPP
