@@ -18,6 +18,8 @@ class MyCubicle : public Space {
 private:
 
 public:
+    MyCubicle();
+    ~MyCubicle();
 
 };
 

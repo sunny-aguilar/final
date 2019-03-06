@@ -26,8 +26,16 @@ public:
 
 private:
     Menu menu;
-    Space space;
     double time;
+    Space *myCubicle;
+    Space *BM;
+    Space *BR;
+    Space *ML;
+    Space *MM;
+    Space *MR;
+    Space *TL;
+    Space *TM;
+    Space *TR;
 
 };
 
