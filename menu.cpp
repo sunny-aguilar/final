@@ -8,6 +8,18 @@
 #include "menu.hpp"
 
 /*********************************************************************
+** Description:     d
+*********************************************************************/
+void Menu::startScreenArt() {
+    cout << " _________  __                ___       ___    ___  _                 \n"
+            "|  _   _  |[  |             .'   `.   .' ..] .' ..](_)                \n"
+            "|_/ | | \\_| | |--.  .---.  /  .-.  \\ _| |_  _| |_  __   .---.  .---.  \n"
+            "    | |     | .-. |/ /__\\\\ | |   | |'-| |-''-| |-'[  | / /'`\\]/ /__\\\\ \n"
+            "   _| |_    | | | || \\__., \\  `-'  /  | |    | |   | | | \\__. | \\__., \n"
+            "  |_____|  [___]|__]'.__.'  `.___.'  [___]  [___] [___]'.___.' '.__.'\n";
+}
+
+/*********************************************************************
 ** Description:     displays the start screen for the game
 *********************************************************************/
 void Menu::startScreen() {
@@ -25,9 +37,9 @@ void Menu::startScreen() {
     cout << "the game will end.\n\n";
     cout << "TIME RULES: The day starts at 9AM and ends at 5PM. The time is adjusted in half\n";
     cout << "hour increments for each space visited.\n\n";
-    cout << "Game Hints: throughout the game there are scattered items that will\n";
+    cout << "GAME NITS: throughout the game there are scattered items that will\n";
     cout << "help or hinder you as you make your way through the day. Hints will\n";
-    cout << "scattered about the office that will help you out.\n";
+    cout << "scattered about the office that will help you out.\n\n";
 
     cout << "1. Start Game\n";
     cout << "2. Exit Game\n";
@@ -42,18 +54,6 @@ void Menu::officeArt() {
     cout << "┬─┬ノ( º _ ºノ)\n";
 
 
-}
-
-/*********************************************************************
-** Description:     d
-*********************************************************************/
-void Menu::startScreenArt() {
-    cout << " _________  __                ___       ___    ___  _                 \n"
-            "|  _   _  |[  |             .'   `.   .' ..] .' ..](_)                \n"
-            "|_/ | | \\_| | |--.  .---.  /  .-.  \\ _| |_  _| |_  __   .---.  .---.  \n"
-            "    | |     | .-. |/ /__\\\\ | |   | |'-| |-''-| |-'[  | / /'`\\]/ /__\\\\ \n"
-            "   _| |_    | | | || \\__., \\  `-'  /  | |    | |   | | | \\__. | \\__., \n"
-            "  |_____|  [___]|__]'.__.'  `.___.'  [___]  [___] [___]'.___.' '.__.'\n";
 }
 
 /*********************************************************************

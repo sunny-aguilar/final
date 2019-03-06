@@ -44,8 +44,11 @@ void Game::start() {
 ** Description:     d
 *********************************************************************/
 void Game::gameOperations() {
-    // create the baord
+    // create the board
     createBoard();
+
+    // game intro
+
 
 
 
@@ -59,7 +62,7 @@ void Game::createBoard() {
     myCubicle = new MyCubicle();
 
 
-    
+
 }
 
 /*********************************************************************
