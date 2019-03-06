@@ -48,7 +48,7 @@ void Game::gameOperations() {
     createBoard();
 
     // game intro
-
+    menu.gameIntro();
 
 
 
