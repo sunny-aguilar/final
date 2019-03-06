@@ -54,6 +54,8 @@ void Menu::gameIntro(int chance) {
 
     cout << "It is 7:30 AM and your alarm has just gone off. You quickly get\n";
     cout << "up and get ready for work with time to spare.\n\n";
+    cout << "\nHit [ENTER] to continue to next round\n";
+    cin.ignore();
 
     switch (chance) {
         case 1:
@@ -115,12 +117,27 @@ void Menu::officeArt() {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-
+void Menu::startWorkDay() {
+    myDeskArt();
+    cout << "You have arrived to work";
+}
 
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-
+void Menu::myDeskArt() {
+    cout << "       ____\n"
+            "      ||   |\n"
+            "      ||___|\n"
+            "      _)__<__  _     _\n"
+            "      |____|__|:|___|:|_\n"
+            "      |    |_.---._|___|\n"
+            "    _ |   o| |   | |_o_|\n"
+            "   | ||    |/|   |\\|   |\n"
+            "   |_||____|`\\___/'|___|\n"
+            "               V\n"
+            "             _/-\\_\n";
+}
 
 /*********************************************************************
 ** Description:     d

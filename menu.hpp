@@ -27,7 +27,9 @@ public:
     void gameIntro(int chance);
     void sunIntro();
     void carArt();
+    void startWorkDay();
     void officeArt();
+    void myDeskArt();
     void exitGame();
     int validateNumber(int min, int max);
 };
