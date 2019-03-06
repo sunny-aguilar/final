@@ -74,7 +74,7 @@ void Menu::gameIntro(int chance) {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     displays ascii art of a morning sun
 *********************************************************************/
 void Menu::sunIntro() {
     cout << "                        |\n"
