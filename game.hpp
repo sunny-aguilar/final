@@ -26,6 +26,9 @@ public:
     void gameOperations();
     void morningRoutine();
     void arriveToWork();
+    
+
+
     int generateRandom(int max);
     void showPlayerStats();
     void exitGame();

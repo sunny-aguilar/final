@@ -53,6 +53,7 @@ void Game::gameOperations() {
     // arrive to work
     arriveToWork();
 
+    // show main menu
 
 
 

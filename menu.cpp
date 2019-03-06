@@ -121,7 +121,7 @@ void Menu::officeArt() {
 *********************************************************************/
 void Menu::startWorkDay() {
     myDeskArt();
-    cout << "You have arrived to work";
+    cout << "You have arrived to work and are ready for the day\n";
 }
 
 /*********************************************************************
