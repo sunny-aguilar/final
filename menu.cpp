@@ -50,11 +50,36 @@ void Menu::startScreen() {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-void Menu::gameIntro() {
+void Menu::gameIntro(int chance, Player p) {
     sunIntro();
 
     cout << "It is 7:30 AM and your alarm has just gone off. You quickly get\n";
     cout << "up and get ready for work with time to spare.\n\n";
+    cout << "\nHit [ENTER] to continue to next round\n";
+    cin.ignore();
+
+    switch (chance) {
+        case 1:
+            carArt();
+            cout << "You decide to make yourself a cup of coffee however you spill\n";
+            cout << "it all over your shirt as you get into your car ( -1 sanity points)\n\n";
+            p.setSanityPoints(-1);
+            break;
+        case 2:
+            carArt();
+            cout << "Although you got up for work early with plenty of time to spare,\n";
+            cout << "unforeseen traffic conditions have made you 15 minutes late for work\n";
+            cout << "( -1 performance points, -1 sanity points)\n\n";
+            p.setPerformancePoints(-1);
+            p.setSanityPoints(-1);
+            break;
+        case 3:
+            carArt();
+            cout << "You get into your car and luckily make it to work on time\n\n";
+            break;
+        default:
+            cout << "Unable to determine selection!\n";
+    }
     cout << "\nHit [ENTER] to continue to next round\n";
     cin.ignore();
 }
@@ -139,7 +164,7 @@ void Menu::hud(Player *p, Space *s, double time) {
     cout << "[  Sanity Points: " << p->getSanityPoints() << "    |   " ;
     cout << " Performance Points: " << p->getPerfomancePoints() <<"  ]\n";
     cout << "[  Current Location: " << s->getLocationName() << "               ]\n";
-    cout << "[  Current Time: " << time << "               ]\n";
+    cout << "[  Current Time: " << time << "               ]\n\n";
 }
 
 /*********************************************************************
