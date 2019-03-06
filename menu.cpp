@@ -122,7 +122,7 @@ void Menu::officeArt() {
 *********************************************************************/
 void Menu::startWorkDay() {
     myDeskArt();
-    cout << "You have arrived to work and are ready for the day\n";
+    cout << "You have arrived to work and are ready for the day\n\n";
 }
 
 /*********************************************************************
@@ -158,7 +158,8 @@ void Menu::mainMenu() {
 ** Description:     d
 *********************************************************************/
 void Menu::hud(Player *p) {
-    cout << "[  Sanity Points: " << p.getSanityPoints() << "               ]\n";
+    cout << "[  Sanity Points: " << p->getSanityPoints() << " | " ;
+    cout << p->getPerfomancePoints() <<"       ]\n";
     cout << "[            " << "               ]\n";
     cout << "[            " << "               ]\n";
     cout << "[            " << "               ]\n";
