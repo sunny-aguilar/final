@@ -35,7 +35,7 @@ public:
     void myDeskArt();
     void mainMenu();
     void hud(Player *p, Space *s, double time);
-
+    void displayMap();
 
     void exitGame();
     int validateNumber(int min, int max);

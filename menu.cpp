@@ -159,7 +159,7 @@ void Menu::mainMenu() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     displays player stats and inventory
 *********************************************************************/
 void Menu::hud(Player *p, Space *s, double time) {
     cout << "<< heads up display >>\n";
@@ -168,14 +168,16 @@ void Menu::hud(Player *p, Space *s, double time) {
     cout << "   Performance Points: " << setw(2) << p->getPerfomancePoints() <<"        ]\n";
     cout << "[  Current Location:  " << s->getLocationName() << "   |";
     cout << "   Current Time:  " << time << "              ]\n";
-    cout << "[  Inventory: " << "  ]\n";
+    cout << "[  Inventory: " << "                                                       ]\n";
     cout << "+--------------------------------------------------------------------+\n\n";
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     displays office map
 *********************************************************************/
-
+void Menu::displayMap() {
+    
+}
 
 /*********************************************************************
 ** Description:     d
