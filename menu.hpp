@@ -24,8 +24,9 @@ class Menu {
 public:
     void startScreen();
     void startScreenArt();
-    void gameIntro();
+    void gameIntro(int chance);
     void sunIntro();
+    void carArt();
     void officeArt();
     void exitGame();
     int validateNumber(int min, int max);

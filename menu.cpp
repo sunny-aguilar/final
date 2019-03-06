@@ -49,10 +49,28 @@ void Menu::startScreen() {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-void Menu::gameIntro() {
+void Menu::gameIntro(int chance) {
     sunIntro();
 
-    cout << "It is 7:30 AM and your alarm has just gone off. "
+    cout << "It is 7:30 AM and your alarm has just gone off. You quickly get\n";
+    cout << "up and get ready for work with time to spare.\n";
+
+    switch (chance) {
+        case 1:
+            cout << "You decide to make yourself a cup of coffee however you spill\n";
+            cout << "it all over your shirt as you get into your car ( -1 sanity points)\n\n";
+            break;
+        case 2:
+            cout << "Although you got up for work early with plenty of time to spare,\n";
+            cout << "unforeseen traffic conditions have made you 15 minutes late for work\n";
+            cout << "( -1 performance points, -1 sanity points)\n\n";
+            break;
+        case 3:
+            cout << "You get into your car and luckily make it to work on time\n\n";
+            break;
+        default:
+            cout << "Unable to determine selection!\n";
+    }
 }
 
 /*********************************************************************
@@ -66,13 +84,20 @@ void Menu::sunIntro() {
             "`~~^~^~^~^~^~^~^~^~^-=======-~^~^~^~~^~^~^~^~^~^~^~`\n"
             "`~^_~^~^~-~^_~^~^_~-=========- -~^~^~^-~^~^_~^~^~^~`\n"
             "`~^~-~~^~^~-^~^_~^~~ -=====- ~^~^~-~^~_~^~^~~^~-~^~`\n"
-            "`~^~^~-~^~~^~-~^~~-~^~^~-~^~~^-~^~^~^-~^~^~^~^~~^~-`";
+            "`~^~^~-~^~~^~-~^~~-~^~^~-~^~~^-~^~^~^-~^~^~^~^~~^~-`\n\n";
 }
 
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-
+void Menu::carArt() {
+    cout << "        _______\n"
+            "       //  ||\\ \\\n"
+            " _____//___||_\\ \\___\n"
+            " )  _          _    \\\n"
+            " |_/ \\________/ \\___|\n"
+            "___\\_/________\\_/______";
+}
 
 /*********************************************************************
 ** Description:     d

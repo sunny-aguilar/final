@@ -24,7 +24,7 @@ public:
     void createBoard();
     void gameOperations();
     void morningRoutine();
-    int generateRandom();
+    int generateRandom(int max);
     void exitGame();
 
 private:

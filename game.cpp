@@ -69,7 +69,7 @@ void Game::createBoard() {
 ** Description:     d
 *********************************************************************/
 void Game::morningRoutine() {
-    menu.gameIntro();
+    menu.gameIntro(generateRandom(3));
 }
 
 /*********************************************************************
