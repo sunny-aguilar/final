@@ -30,6 +30,9 @@ public:
     void startWorkDay();
     void officeArt();
     void myDeskArt();
+    void mainMenu();
+
+
     void exitGame();
     int validateNumber(int min, int max);
 };
