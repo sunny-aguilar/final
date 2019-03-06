@@ -23,6 +23,10 @@ public:
     ~Game();
     void start();
     void createBoard();
+
+    // getters/setters
+    double getTime();
+
     void gameOperations();
     void morningRoutine();
     void arriveToWork();

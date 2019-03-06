@@ -24,6 +24,17 @@ Game::Game() : time{9.0}, player{new Player()} {}
 Game::~Game() {}
 
 /*********************************************************************
+** Description:     this function creates the spaces and links
+**                  the pointers to each other
+*********************************************************************/
+void Game::createBoard() {
+    myCubicle = new MyCubicle();
+
+
+
+}
+
+/*********************************************************************
 ** Description:     d
 *********************************************************************/
 void Game::start() {
@@ -55,17 +66,6 @@ void Game::gameOperations() {
 
     // show main menu
     showMainMenu();
-
-
-}
-
-/*********************************************************************
-** Description:     this function creates the spaces and links
-**                  the pointers to each other
-*********************************************************************/
-void Game::createBoard() {
-    myCubicle = new MyCubicle();
-
 
 
 }
