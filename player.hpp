@@ -19,6 +19,9 @@ public:
     Player();
     ~Player();
     int getSanityPoints();
+    void setSanityPoints(int points);
+    int getPerfomancePoints();
+    void setPerformancePoints(int points);
 };
 
 #endif // PLAYER_HPP
