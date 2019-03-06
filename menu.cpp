@@ -57,9 +57,6 @@ void Menu::gameIntro() {
     cout << "up and get ready for work with time to spare.\n\n";
     cout << "\nHit [ENTER] to continue to next round\n";
     cin.ignore();
-
-    cout << "\nHit [ENTER] to continue to next round\n";
-    cin.ignore();
 }
 
 /*********************************************************************
