@@ -18,6 +18,12 @@ Space::Space() :
     up{nullptr}, right{nullptr}, down{nullptr}, left{nullptr} {}
 
 /*********************************************************************
+** Description:     default constructor
+*********************************************************************/
+Space::Space(string locName) :
+    locationName{locName} {}
+
+/*********************************************************************
 ** Description:     virtual destructor
 *********************************************************************/
 Space::~Space() {}

@@ -12,9 +12,9 @@
 #include "myCubicle.hpp"
 
 /*********************************************************************
-** Description:     d
+** Description:     default constructor
 *********************************************************************/
-MyCubicle::MyCubicle() : Space() {}
+MyCubicle::MyCubicle() : Space("My Cubicle") {}
 
 /*********************************************************************
 ** Description:     d

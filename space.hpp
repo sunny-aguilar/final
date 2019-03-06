@@ -12,6 +12,9 @@
 #ifndef SPACE_HPP
 #define SPACE_HPP
 
+#include <string>
+using std::string;
+
 class Space {
 protected:
     Space *up;
@@ -19,8 +22,11 @@ protected:
     Space *down;
     Space *left;
 
+    string locationName;
+
 public:
     Space();
+    Space(string locName);
     virtual ~Space();
 
 
