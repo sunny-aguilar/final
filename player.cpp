@@ -37,14 +37,14 @@ void Player::setSanityPoints(int points) {
 ** Description:     d
 *********************************************************************/
 int Player::getPerfomancePoints() {
-    return sanity;
+    return performance;
 }
 
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
 void Player::setPerformancePoints(int points) {
-    sanity += points;
+    performance += points;
 }
 
 /*********************************************************************

@@ -55,6 +55,8 @@ void Menu::gameIntro(int chance, Player *p) {
 
     cout << "It is 7:30 AM and your alarm has just gone off. You quickly get\n";
     cout << "up and get ready for work with time to spare.\n\n";
+    cout << "Sanity points " << p->getSanityPoints() << endl;
+    cout << "Performance points " << p->getPerfomancePoints() << endl;
     cout << "\nHit [ENTER] to continue to next round\n";
     cin.ignore();
 
