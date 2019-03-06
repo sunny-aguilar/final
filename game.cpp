@@ -10,6 +10,7 @@
 **                  d
 *********************************************************************/
 #include "game.hpp"
+#include "space.hpp"
 #include "menu.hpp"
 
 /*********************************************************************
@@ -43,6 +44,10 @@ void Game::start() {
 ** Description:     d
 *********************************************************************/
 void Game::gameOperations() {
+    // create the baord
+    createBoard();
+
+
 
 }
 
@@ -51,7 +56,7 @@ void Game::gameOperations() {
 **                  the pointers to each other
 *********************************************************************/
 void Game::createBoard() {
-
+    myCubicle = new MyCubicle();
 }
 
 /*********************************************************************

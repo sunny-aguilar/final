@@ -14,6 +14,7 @@
 
 #include "menu.hpp"
 #include "space.hpp"
+#include "myCubicle.hpp"
 
 class Game {
 public:
