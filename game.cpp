@@ -54,6 +54,13 @@ void Game::start() {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
+double Game::getTime() {
+    return time;
+}
+
+/*********************************************************************
+** Description:     d
+*********************************************************************/
 void Game::gameOperations() {
     // create the board
     createBoard();
@@ -88,7 +95,7 @@ void Game::arriveToWork() {
 ** Description:     d
 *********************************************************************/
 void Game::showMainMenu() {
-    menu.hud(player);
+    menu.hud(player, myCubicle, time);
     menu.mainMenu();
 }
 

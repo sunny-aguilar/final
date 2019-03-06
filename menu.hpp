@@ -34,7 +34,7 @@ public:
     void officeArt();
     void myDeskArt();
     void mainMenu();
-    void hud(Player *p, Space *s);
+    void hud(Player *p, Space *s, double time);
 
 
     void exitGame();
