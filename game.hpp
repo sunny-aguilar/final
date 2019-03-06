@@ -26,7 +26,7 @@ public:
     void gameOperations();
     void morningRoutine();
     void arriveToWork();
-    
+    void showMainMenu();
 
 
     int generateRandom(int max);
