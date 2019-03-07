@@ -28,9 +28,11 @@ Game::~Game() {}
 **                  the pointers to each other
 *********************************************************************/
 void Game::createBoard() {
+    // create myCubicle space and link it
     myCubicle = new MyCubicle(player);
+    myCubicle->setUp(friendCubicle);
 
-    myCubicle
+
 
 }
 

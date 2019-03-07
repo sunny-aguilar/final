@@ -13,7 +13,7 @@
 #define MYCUBICLE_HPP
 
 #include "space.hpp"
-#include "player.hpp"
+//#include "player.hpp"
 
 class MyCubicle : public Space {
 private:

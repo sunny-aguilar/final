@@ -15,6 +15,8 @@ private:
 
 public:
     FriendCubicle();
+    ~FriendCubicle();
+    void setPlayer(Player *player);
 };
 
 #endif // FRIENDCUBICLE_HPP

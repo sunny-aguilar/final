@@ -16,6 +16,7 @@
 #include "player.hpp"
 #include "space.hpp"
 #include "myCubicle.hpp"
+#include "friendCubicle.hpp"
 
 class Game {
 public:
