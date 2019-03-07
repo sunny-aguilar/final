@@ -26,7 +26,7 @@ public:
     void createBoard();
 
     // getters/setters
-    string calculateTime(double time);
+    string calculateTime(int time);
 
     void gameOperations();
     void morningRoutine();
@@ -41,7 +41,7 @@ public:
 
 private:
     Menu menu;
-    double time;
+    int time;
     Player *player;
     Space *myCubicle;
     Space *friendCubicle;

@@ -16,7 +16,7 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-Game::Game() : time{9.0}, player{new Player()} {}
+Game::Game() : time{1}, player{new Player()} {}
 
 /*********************************************************************
 ** Description:     virtual destructor
@@ -60,9 +60,14 @@ void Game::start() {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-string Game::calculateTime(double time) {
-    
-    return time;
+string Game::calculateTime(int time) {
+    switch (time) {
+        case 1:
+            return "9:00 AM";
+            break;
+        default:
+            cout << "Unable to return time!\n";
+    }
 }
 
 /*********************************************************************
