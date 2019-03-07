@@ -34,6 +34,7 @@ public:
     void showMainMenu();
     void playDay();
     string playerLocation();
+    Space *getSpaceAddress();
     void availableMoves(Space *space);
     void movePlayer();
 

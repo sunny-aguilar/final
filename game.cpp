@@ -112,7 +112,7 @@ void Game::showMainMenu() {
         case 2:
             break;
         case 3:
-            availableMoves();
+            availableMoves( getSpaceAddress() );
             break;
         default:
             cout << "Unable to determine selection\n";
@@ -132,7 +132,8 @@ void Game::playDay() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     this function returns the name of the space the
+**                  space the player is currently in
 *********************************************************************/
 string Game::playerLocation() {
     if (myCubicle->getPlayer() != nullptr) {
@@ -144,6 +145,19 @@ string Game::playerLocation() {
 }
 
 /*********************************************************************
+** Description:     this function returns the pointer to the space
+**                  a player currently resides in
+*********************************************************************/
+Space *Game::getSpaceAddress() {
+    if (myCubicle->getPlayer() != nullptr) {
+        return myCubicle;
+    }
+    else if (friendCubicle->getPlayer() != nullptr) {
+        return friendCubicle;
+    }
+}
+
+/*********************************************************************
 ** Description:     this function receives a space parameter to
 **                  determine the spaces around it available to
 **                  move to. A space is considered available if it is
@@ -151,16 +165,16 @@ string Game::playerLocation() {
 *********************************************************************/
 void Game::availableMoves(Space *space) {
     if (space->getUp() != nullptr) {
-        space->getLocationName();
+        cout << space->getLocationName() << endl;
     }
     if (space->getRight() != nullptr) {
-        space->getLocationName();
+        cout << space->getLocationName() << endl;
     }
     if (space->getDown() != nullptr) {
-        space->getLocationName();
+        cout << space->getLocationName() << endl;
     }
     if (space->getLeft() != nullptr) {
-        space->getLocationName();
+        cout << space->getLocationName() << endl;
     }
 }
 
