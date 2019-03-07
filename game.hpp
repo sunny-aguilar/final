@@ -26,7 +26,7 @@ public:
     void createBoard();
 
     // getters/setters
-    string calculateTime();
+    string calculateTime(double time);
 
     void gameOperations();
     void morningRoutine();
