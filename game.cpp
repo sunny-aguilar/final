@@ -107,9 +107,9 @@ void Game::showMainMenu() {
 
 /*********************************************************************
 ** Description:     this function plays the day and allows the game
- *                  to continue until the player has lost all of their
- *                  sanity points, performance points, or it is time
- *                  to go home
+**                  to continue until the player has lost all of their
+**                  sanity points, performance points, or it is time
+**                  to go home
 *********************************************************************/
 void Game::playDay() {
 //    while () {
