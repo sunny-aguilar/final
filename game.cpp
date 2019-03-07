@@ -164,18 +164,19 @@ Space *Game::getSpaceAddress() {
 **                  adjacent to the space.
 *********************************************************************/
 void Game::availableMoves(Space *space) {
+    int count = 0;
     cout << "Available Spaces:\n";
     if (space->getUp() != nullptr) {
-        cout << space->getLocationName() << endl;
+        cout << ++count << ". " << space->getLocationName() << endl;
     }
     if (space->getRight() != nullptr) {
-        cout << space->getLocationName() << endl;
+        cout << ++count << ". " << space->getLocationName() << endl;
     }
     if (space->getDown() != nullptr) {
-        cout << space->getLocationName() << endl;
+        cout <<++count << ". " << space->getLocationName() << endl;
     }
     if (space->getLeft() != nullptr) {
-        cout << space->getLocationName() << endl;
+        cout << ++count << ". " << space->getLocationName() << endl;
     }
     cout << endl;
 }
