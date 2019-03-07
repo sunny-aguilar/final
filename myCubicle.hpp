@@ -18,7 +18,7 @@ class MyCubicle : public Space {
 private:
 
 public:
-    MyCubicle(Player *player);
+    MyCubicle(Player *&player);
     ~MyCubicle();
 
 };

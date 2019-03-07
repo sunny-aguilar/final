@@ -32,6 +32,7 @@ public:
     void morningRoutine();
     void arriveToWork();
     void showMainMenu();
+    void playDay();
 
 
     int generateRandom(int max);

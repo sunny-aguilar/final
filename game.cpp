@@ -16,7 +16,7 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-Game::Game() : time{9.0} {}
+Game::Game() : time{9.0}, player{new Player()} {}
 
 /*********************************************************************
 ** Description:     virtual destructor
@@ -29,7 +29,9 @@ Game::~Game() {}
 *********************************************************************/
 void Game::createBoard() {
     // create myCubicle space and link it
-    myCubicle = new MyCubicle( new Player() );
+    myCubicle = new MyCubicle( player );
+    // TODO - remove this cout after debugged
+    cout << "Player address " << player << endl;
     myCubicle->setUp(friendCubicle);
 
     // create friendCubicle space and link it
@@ -104,9 +106,16 @@ void Game::showMainMenu() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     this function plays the day and allows the game
+ *                  to continue until the player has lost all of their
+ *                  sanity points, performance points, or it is time
+ *                  to go home
 *********************************************************************/
-
+void Game::playDay() {
+//    while () {
+//
+//    }
+}
 
 /*********************************************************************
 ** Description:     d
