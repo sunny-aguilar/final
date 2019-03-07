@@ -130,7 +130,7 @@ int Game::generateRandom(int max) {
 *********************************************************************/
 void Game::showPlayerStats() {
     cout << "Sanity points: " << player->getSanityPoints() << endl;
-    cout << "Performance points: " << player->getPerfomancePoints() << endl;
+    cout << "Performance points: " << player->getPerformancePoints() << endl;
 }
 
 /*********************************************************************
