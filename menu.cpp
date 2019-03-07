@@ -151,6 +151,7 @@ void Menu::myDeskArt() {
 ** Description:     d
 *********************************************************************/
 void Menu::mainMenu(string loc) {
+    cout << "Choose something to do **************************\n";
     cout << "1. Show office map\n";
     cout << "2. Hang out at current location: " << loc << endl;
     cout << "3. Go to available spaces\n";

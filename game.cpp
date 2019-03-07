@@ -131,9 +131,12 @@ string Game::playerLocation() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     this function moves the player around from space
+**                  to space
 *********************************************************************/
+void Game::movePlayer() {
 
+}
 
 /*********************************************************************
 ** Description:     d
