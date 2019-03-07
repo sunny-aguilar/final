@@ -32,7 +32,9 @@ void Game::createBoard() {
     myCubicle = new MyCubicle(player);
     myCubicle->setUp(friendCubicle);
 
-
+    // create friendCubicle space and link it
+    friendCubicle = new FriendCubicle();
+    friendCubicle->setDown(myCubicle);
 
 }
 
