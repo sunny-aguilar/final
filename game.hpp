@@ -33,6 +33,7 @@ public:
     void arriveToWork();
     void showMainMenu();
     void playDay();
+    string playerLocation();
 
 
     int generateRandom(int max);

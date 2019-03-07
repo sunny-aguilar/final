@@ -102,7 +102,7 @@ void Game::arriveToWork() {
 ** Description:     d
 *********************************************************************/
 void Game::showMainMenu() {
-    menu.hud(player, myCubicle, calculateTime(time));
+    menu.hud(player, playerLocation(), calculateTime(time));
     menu.mainMenu();
 }
 
@@ -121,7 +121,14 @@ void Game::playDay() {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-
+string Game::playerLocation() {
+    if (myCubicle->getPlayer() != nullptr) {
+        return myCubicle->getLocationName();
+    }
+    else if (friendCubicle->getPlayer() != nullptr) {
+        return friendCubicle->getLocationName();
+    }
+}
 
 /*********************************************************************
 ** Description:     d
