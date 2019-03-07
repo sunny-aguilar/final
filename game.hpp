@@ -34,7 +34,7 @@ public:
     void showMainMenu();
     void playDay();
     string playerLocation();
-    void availableMoves();
+    void availableMoves(Space *space);
     void movePlayer();
 
     int generateRandom(int max);

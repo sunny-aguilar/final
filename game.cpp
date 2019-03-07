@@ -147,8 +147,8 @@ string Game::playerLocation() {
 ** Description:     this function moves the player around from space
 **                  to space
 *********************************************************************/
-void Game::availableMoves() {
-
+void Game::availableMoves(Space *space) {
+    if ()
 }
 
 /*********************************************************************
