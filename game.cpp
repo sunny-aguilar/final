@@ -30,7 +30,7 @@ Game::~Game() {}
 void Game::createBoard() {
     myCubicle = new MyCubicle(player);
 
-
+    myCubicle
 
 }
 

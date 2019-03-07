@@ -32,6 +32,16 @@ public:
     virtual ~Space();
     string getLocationName();
 
+    void setUp(Space *up);
+    void setRight(Space *right);
+    void setDown(Space *down);
+    void setLeft(Space *left);
+
+    Space *getUp();
+    Space *getRight();
+    Space *getDown();
+    Space *getLeft();
+
 };
 
 #endif // SPACE_HPP
