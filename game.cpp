@@ -61,6 +61,7 @@ void Game::start() {
 ** Description:     d
 *********************************************************************/
 string Game::calculateTime(double time) {
+    
     return time;
 }
 
