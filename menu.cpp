@@ -150,9 +150,9 @@ void Menu::myDeskArt() {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-void Menu::mainMenu() {
+void Menu::mainMenu(string loc) {
     cout << "1. Show office map\n";
-    cout << "2. Hang out at ";
+    cout << "2. Hang out at " << loc << endl;
     cout << "3. \n";
     cout << ">> ";
 }
@@ -166,7 +166,7 @@ void Menu::hud(Player *p, string loc, string time) {
     cout << "[  Sanity Points: " << setw(2) << p->getSanityPoints() << "               |";
     cout << "   Performance Points: " << setw(2) << p->getPerformancePoints() <<"        ]\n";
     cout << "[  Current Location:  " << setw(8) << loc << "   |";
-    cout << "   Current Time:  " << time << "        ] ]\n";
+    cout << "   Current Time:  " << time << "        ]\n";
     cout << "[  Inventory: " << "                                                       ]\n";
     cout << "+--------------------------------------------------------------------+\n\n";
 }

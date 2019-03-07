@@ -103,7 +103,7 @@ void Game::arriveToWork() {
 *********************************************************************/
 void Game::showMainMenu() {
     menu.hud(player, playerLocation(), calculateTime(time));
-    menu.mainMenu();
+    menu.mainMenu(playerLocation());
 }
 
 /*********************************************************************

@@ -33,7 +33,7 @@ public:
     void startWorkDay();
     void officeArt();
     void myDeskArt();
-    void mainMenu();
+    void mainMenu(string loc);
     void hud(Player *p, string loc, string time);
     void displayMap();
 
