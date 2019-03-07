@@ -177,6 +177,7 @@ void Game::availableMoves(Space *space) {
     if (space->getLeft() != nullptr) {
         cout << space->getLocationName() << endl;
     }
+    cout << endl;
 }
 
 /*********************************************************************
