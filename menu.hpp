@@ -36,6 +36,7 @@ public:
     void mainMenu(string loc);
     void hud(Player *p, string loc, string time);
     void displayMap();
+    void displayAvailableSpaces();
 
     void exitGame();
     int validateNumber(int min, int max);

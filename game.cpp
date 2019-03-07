@@ -104,6 +104,19 @@ void Game::arriveToWork() {
 void Game::showMainMenu() {
     menu.hud(player, playerLocation(), calculateTime(time));
     menu.mainMenu(playerLocation());
+
+    switch(menu.validateNumber(3)) {
+        case 1:
+            menu.displayMap();
+            break;
+        case 2:
+            break;
+        case 3:
+            availableMoves();
+            break;
+        default:
+            cout << "Unable to determine selection\n";
+    }
 }
 
 /*********************************************************************
@@ -128,6 +141,14 @@ string Game::playerLocation() {
     else if (friendCubicle->getPlayer() != nullptr) {
         return friendCubicle->getLocationName();
     }
+}
+
+/*********************************************************************
+** Description:     this function moves the player around from space
+**                  to space
+*********************************************************************/
+void Game::availableMoves() {
+
 }
 
 /*********************************************************************
