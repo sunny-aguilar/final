@@ -105,7 +105,7 @@ void Game::showMainMenu() {
     menu.hud(player, playerLocation(), calculateTime(time));
     menu.mainMenu(playerLocation());
 
-    switch(menu.validateNumber(3)) {
+    switch(menu.validateNumber(1,3)) {
         case 1:
             menu.displayMap();
             break;
