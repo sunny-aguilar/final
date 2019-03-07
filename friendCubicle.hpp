@@ -14,7 +14,7 @@ class FriendCubicle : public Space {
 private:
 
 public:
-
+    FriendCubicle();
 };
 
 #endif // FRIENDCUBICLE_HPP

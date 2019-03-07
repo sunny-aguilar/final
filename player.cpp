@@ -36,7 +36,7 @@ void Player::setSanityPoints(int points) {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-int Player::getPerfomancePoints() {
+int Player::getPerformancePoints() {
     return performance;
 }
 

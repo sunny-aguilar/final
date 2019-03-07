@@ -20,7 +20,7 @@ public:
     ~Player();
     int getSanityPoints();
     void setSanityPoints(int points);
-    int getPerfomancePoints();
+    int getPerformancePoints();
     void setPerformancePoints(int points);
 };
 

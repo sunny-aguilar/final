@@ -17,7 +17,7 @@
 MyCubicle::MyCubicle() : Space("My Cubicle") {}
 
 /*********************************************************************
-** Description:     d
+** Description:     destructor
 *********************************************************************/
 MyCubicle::~MyCubicle() {}
 
