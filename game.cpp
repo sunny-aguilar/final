@@ -78,7 +78,10 @@ void Game::gameOperations() {
     arriveToWork();
 
     // show main menu
-    showMainMenu();
+
+    while (player->getSanityPoints() > 0 && player->getPerformancePoints()) {
+        showMainMenu();
+    }
 
 
 }
