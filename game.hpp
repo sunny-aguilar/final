@@ -42,6 +42,7 @@ private:
     double time;
     Player *player;
     Space *myCubicle;
+    Space *friendCubicle;
     Space *BM;
     Space *BR;
     Space *ML;

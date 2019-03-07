@@ -28,7 +28,7 @@ Game::~Game() {}
 **                  the pointers to each other
 *********************************************************************/
 void Game::createBoard() {
-    myCubicle = new MyCubicle();
+    myCubicle = new MyCubicle(player);
 
 
 
