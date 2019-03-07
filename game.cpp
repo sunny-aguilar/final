@@ -29,7 +29,7 @@ Game::~Game() {}
 *********************************************************************/
 void Game::createBoard() {
     // create myCubicle space and link it
-    myCubicle = new MyCubicle(player);
+    myCubicle = new MyCubicle( new Player() );
     myCubicle->setUp(friendCubicle);
 
     // create friendCubicle space and link it

@@ -32,15 +32,19 @@ public:
     virtual ~Space();
     string getLocationName();
 
+    // space pointer setters
     void setUp(Space *up);
     void setRight(Space *right);
     void setDown(Space *down);
     void setLeft(Space *left);
-
+    // space pointer getters
     Space *getUp();
     Space *getRight();
     Space *getDown();
     Space *getLeft();
+
+    Player *getPlayer();
+    void getPlayer(Player *player);
 
 };
 

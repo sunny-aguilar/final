@@ -29,10 +29,7 @@ Space::Space(string locName, Player *player) :
     up{nullptr},
     right{nullptr},
     down{nullptr},
-    left{nullptr}
-{
-
-}
+    left{nullptr} {}
 
 /*********************************************************************
 ** Description:     virtual destructor
@@ -100,6 +97,20 @@ Space *Space::getDown() {
 *********************************************************************/
 Space *Space::getLeft() {
     return left;
+}
+
+/*********************************************************************
+** Description:     returns the player pointer
+*********************************************************************/
+Player *Space::getPlayer() {
+    return player;
+}
+
+/*********************************************************************
+** Description:     sets the player pointer
+*********************************************************************/
+void Space::getPlayer(Player *player) {
+    this->player = player;
 }
 
 /*********************************************************************
