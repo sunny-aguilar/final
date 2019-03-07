@@ -148,7 +148,18 @@ string Game::playerLocation() {
 **                  to space
 *********************************************************************/
 void Game::availableMoves(Space *space) {
-    if ()
+    if (space->getUp() != nullptr) {
+        space->getLocationName();
+    }
+    if (space->getRight() != nullptr) {
+        space->getLocationName();
+    }
+    if (space->getDown() != nullptr) {
+        space->getLocationName();
+    }
+    if (space->getLeft() != nullptr) {
+        space->getLocationName();
+    }
 }
 
 /*********************************************************************
