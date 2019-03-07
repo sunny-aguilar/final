@@ -12,6 +12,7 @@
 #ifndef SPACE_HPP
 #define SPACE_HPP
 
+#include "player.hpp"
 #include <string>
 using std::string;
 
@@ -23,6 +24,7 @@ protected:
     Space *left;
 
     string locationName;
+    Player *player;
 
 public:
     Space();
