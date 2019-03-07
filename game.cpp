@@ -144,8 +144,10 @@ string Game::playerLocation() {
 }
 
 /*********************************************************************
-** Description:     this function moves the player around from space
-**                  to space
+** Description:     this function receives a space parameter to
+**                  determine the spaces around it available to
+**                  move to. A space is considered available if it is
+**                  adjacent to the space.
 *********************************************************************/
 void Game::availableMoves(Space *space) {
     if (space->getUp() != nullptr) {
