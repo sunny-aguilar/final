@@ -62,9 +62,23 @@ void Game::start() {
 *********************************************************************/
 string Game::calculateTime(int time) {
     switch (time) {
-        case 1:
-            return "9:00 AM";
-            break;
+        case 1: return "9:00 AM";
+        case 2: return "9:30 AM";
+        case 3: return "10:00 AM";
+        case 4: return "10:30 AM";
+        case 5: return "11:00 AM";
+        case 6: return "11:30 AM";
+        case 7: return "12:00 PM";
+        case 8: return "12:30 PM";
+        case 9: return "1:00 PM";
+        case 10: return "1:30 PM";
+        case 11: return "2:00 PM";
+        case 12: return "2:30 PM";
+        case 13: return "3:00 PM";
+        case 14: return "3:30 PM";
+        case 15: return "4:00 PM";
+        case 16: return "4:30 PM";
+        case 17: return "5:00 PM";
         default:
             cout << "Unable to return time!\n";
     }
