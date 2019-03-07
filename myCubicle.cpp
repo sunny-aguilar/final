@@ -14,7 +14,7 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-MyCubicle::MyCubicle() : Space("My Cubicle") {}
+MyCubicle::MyCubicle(Player *player) : Space("My Cubicle", player) {}
 
 /*********************************************************************
 ** Description:     destructor

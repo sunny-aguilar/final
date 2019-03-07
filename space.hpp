@@ -28,7 +28,7 @@ protected:
 
 public:
     Space();
-    Space(string locName);
+    Space(string locName, Player *player);
     virtual ~Space();
     string getLocationName();
 

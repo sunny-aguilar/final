@@ -15,13 +15,24 @@
 ** Description:     default constructor
 *********************************************************************/
 Space::Space() :
-    up{nullptr}, right{nullptr}, down{nullptr}, left{nullptr} {}
+    up{nullptr},
+    right{nullptr},
+    down{nullptr},
+    left{nullptr} {}
 
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-Space::Space(string locName) :
-    locationName{locName} {}
+Space::Space(string locName, Player *player) :
+    locationName{locName},
+    player{player},
+    up{nullptr},
+    right{nullptr},
+    down{nullptr},
+    left{nullptr}
+{
+
+}
 
 /*********************************************************************
 ** Description:     virtual destructor

@@ -13,12 +13,13 @@
 #define MYCUBICLE_HPP
 
 #include "space.hpp"
+#include "player.hpp"
 
 class MyCubicle : public Space {
 private:
 
 public:
-    MyCubicle();
+    MyCubicle(Player *player);
     ~MyCubicle();
 
 };
