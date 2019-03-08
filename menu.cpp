@@ -190,9 +190,9 @@ void Menu::displayMap(Space *space) {
         }
     }
     // if player is at his friend's cubicle, display that
-    if (space->getLocationName() == "My Cubicle") {
+    if (space->getLocationName() == "Friend's Cubicle") {
         if (space->getPlayer() != nullptr) {
-            bl = space->getLocationName() + " [*]";
+            tl = space->getLocationName() + " [*]";
         }
     }
 
