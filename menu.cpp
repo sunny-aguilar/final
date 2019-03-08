@@ -176,7 +176,7 @@ void Menu::hud(Player *p, string loc, string time) {
 ** Description:     displays office map
 *********************************************************************/
 void Menu::displayMap(Space *space) {
-    string bl = "Your Cubicle";
+    string bl = "My Cubicle";
     string bm = "Water Cooler";
     string br = "Break Room";
     string tl = "Friend's Cubicle";
@@ -200,10 +200,12 @@ void Menu::displayMap(Space *space) {
             "                                   |_|\n";
     cout << left;
     cout << "+----------------------------------------------------------------------+\n";
-    cout << "[ " << setw(16) << tl << "     | " << setw(16) << tm << "      | " << setw(16) << tr << "      ]\n";
+    cout << "[ " << setw(16) << tl << "     | ";
+    cout << setw(16) << tm << "      | ";
+    cout << setw(16) << tr << "      ]\n";
     cout << "+----------------------------------------------------------------------+\n";
     cout << "+----------------------------------------------------------------------+\n";
-    cout << "[ "<< bl << "         | " << bm << "          | " << br << "           ]\n";
+    cout << "[ "<< bl << "         | " << bm << "          | " << br << "            ]\n";
     cout << "+----------------------------------------------------------------------+\n";
     cout << "\nHit [ENTER] to continue to next round\n";
     cin.ignore();
