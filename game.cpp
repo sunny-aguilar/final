@@ -194,7 +194,18 @@ void Game::availableMoves(Space *space) {
 **                  to space
 *********************************************************************/
 void Game::movePlayer(int selection) {
-
+    switch (selection) {
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        default:
+            cout << "Unable to determine location to move player\n";
+    }
 }
 
 /*********************************************************************
