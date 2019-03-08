@@ -169,7 +169,7 @@ Space *Game::getSpaceAddress() {
 *********************************************************************/
 void Game::availableMoves(Space *space) {
     int count = 0;
-    cout << "\nAvailable Spaces:\n";
+    cout << "\nAvailable Locations To Move To:\n";
     if (space->getUp() != nullptr) {
         cout << ++count << ". " << space->getUp()->getLocationName() << endl;
     }
