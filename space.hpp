@@ -47,6 +47,7 @@ public:
     Space *getDown();
     Space *getLeft();
 
+    Player setPlayer(Player *&player);
     Player *getPlayer();
     void getPlayer(Player *player);
 

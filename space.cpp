@@ -114,6 +114,13 @@ Space *Space::getLeft() {
 /*********************************************************************
 ** Description:     returns the player pointer
 *********************************************************************/
+Player Space::setPlayer(Player *&player) {
+    this->player = player;
+}
+
+/*********************************************************************
+** Description:     returns the player pointer
+*********************************************************************/
 Player *Space::getPlayer() {
     return player;
 }

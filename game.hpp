@@ -40,7 +40,7 @@ public:
     Space *getSpaceAddress();
     void availableMoves(Space *space);
     void selectSpaceToMovePlayer();
-    void movePlayer(Space *&space);
+    void movePlayer(Space *space);
 
     // utilities
     int generateRandom(int max);

@@ -231,10 +231,16 @@ void Game::selectSpaceToMovePlayer() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     this function receives the space a space
+ *                  parameter for which the player will move to
 *********************************************************************/
-void Game::movePlayer(Space *&space) {
-
+void Game::movePlayer(Space *space) {
+    if (space->getPlayer() == nullptr) {
+        space->setPlayer( );
+    }
+    else {
+        cout << "Space is already occupied!\n";
+    }
 }
 
 /*********************************************************************
