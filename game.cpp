@@ -183,6 +183,8 @@ void Game::availableMoves(Space *space) {
         cout << ++count << ". " << space->getLeft()->getLocationName() << endl;
     }
     cout << ++count << ". Back to main menu\n";
+    cout << ">> ";
+    int selection = menu.validateNumber(1, count);
     cout << endl;
 }
 

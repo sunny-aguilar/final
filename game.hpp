@@ -18,6 +18,8 @@
 #include "myCubicle.hpp"
 #include "friendCubicle.hpp"
 
+enum Location{MYCUBICLE, FRIENDCUBICLE, BOSS, COOLER, BREAKROOM, MEETINROOM};
+
 class Game {
 public:
     Game();
@@ -45,6 +47,7 @@ public:
 
 private:
     Menu menu;
+    Location location;
     int time;
     Player *player;
     Space *myCubicle;
