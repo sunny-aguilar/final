@@ -34,6 +34,7 @@ void Game::createBoard() {
     // TODO - remove this cout after debugged
     cout << "Player address " << player << endl;
     cout << "Friend Cubicle address " << friendCubicle << endl;
+    cout << "Friend player address " << friendCubicle->getPlayer() << endl << endl;
 
     // link spaces to each other
     myCubicle->setUp(friendCubicle);

@@ -13,8 +13,11 @@
 #define SPACE_HPP
 
 #include "player.hpp"
+#include <iostream>
 #include <string>
 using std::string;
+using std::cout;
+using std::endl;
 
 enum Location{MYCUBICLE, FRIENDCUBICLE, BOSSROOM, COOLER, BREAKROOM, MEETINGROOM};
 

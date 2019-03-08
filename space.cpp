@@ -21,7 +21,7 @@ Space::Space() :
     left{nullptr} {}
 
 /*********************************************************************
-** Description:     1-arg constructor
+** Description:     2-arg constructor
 *********************************************************************/
 Space::Space(string locName, Location loc) :
     location{loc},
@@ -29,7 +29,11 @@ Space::Space(string locName, Location loc) :
     up{nullptr},
     right{nullptr},
     down{nullptr},
-    left{nullptr} {}
+    left{nullptr},
+    player{nullptr}
+    {
+        cout << "2-arg Space class contructor triggered\n";
+    }
 
 /*********************************************************************
 ** Description:     2-arg constructor
