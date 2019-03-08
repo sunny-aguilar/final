@@ -208,7 +208,7 @@ void Menu::displayMap(Space *space) {
     cout << setw(16) << bm << "      | ";
     cout << setw(16) << br << "      ]\n";
     cout << "+----------------------------------------------------------------------+\n";
-    cout << "\nHit [ENTER] to continue to next round\n";
+    cout << "\nHit [ENTER] to continue\n";
     cin.ignore();
     cout << "\n\n\n\n";
 }
