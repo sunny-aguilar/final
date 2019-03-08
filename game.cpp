@@ -206,22 +206,24 @@ void Game::selectSpaceToMovePlayer() {
 
     switch (selection) {
         case 0:
-            movePlayer();
+            // move player to my cubicle
+            movePlayer(myCubicle);
             break;
         case 1:
-            movePlayer();
+            // move player to friend's cubicle
+            movePlayer(friendCubicle);
             break;
         case 2:
-            movePlayer();
+            //movePlayer();
             break;
         case 3:
-            movePlayer();
+            //movePlayer();
             break;
         case 4:
-            movePlayer();
+            //movePlayer();
             break;
         case 5:
-            movePlayer();
+            //movePlayer();
             break;
         default:
             cout << "Unable to determine location to move player\n";
@@ -231,7 +233,7 @@ void Game::selectSpaceToMovePlayer() {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-void Game::movePlayer() {
+void Game::movePlayer(Space *&space) {
 
 }
 

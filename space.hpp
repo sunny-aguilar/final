@@ -16,7 +16,7 @@
 #include <string>
 using std::string;
 
-enum Location{MYCUBICLE, FRIENDCUBICLE, BOSS, COOLER, BREAKROOM, MEETINGROOM};
+enum Location{MYCUBICLE, FRIENDCUBICLE, BOSSROOM, COOLER, BREAKROOM, MEETINGROOM};
 
 class Space {
 protected:
