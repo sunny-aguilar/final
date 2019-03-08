@@ -201,11 +201,13 @@ void Game::availableMoves(Space *space) {
 void Game::movePlayer() {
     int selection = menu.validateNumber(1, movesAvailable);
 
-    for (int index = 0; index < places.size(); index++) {
-        cout << places.at(index) << " ";
-    }
+    cout << "Size: " << places.size() << endl;
+    cout << places.front() << endl;
 
     switch (selection) {
+        case 0:
+
+            break;
         case 1:
 
             break;
