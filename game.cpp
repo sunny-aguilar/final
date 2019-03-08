@@ -36,6 +36,8 @@ void Game::createBoard() {
 
     // create friendCubicle space and link it
     friendCubicle = new FriendCubicle();
+    // TODO - remove this cout
+    cout << "Friend Cubicle address " << friendCubicle << endl;
     friendCubicle->setDown(myCubicle);
 
 }
@@ -168,7 +170,8 @@ void Game::availableMoves(Space *space) {
     cout << "\nAvailable Spaces:\n";
     if (space->getUp() != nullptr) {
         cout << "Reached getUp\n";
-        cout << ++count << ". " << space->getUp()->getLocationName() << endl;
+        cout << ++count << ". " << space->getUp() << endl;
+        //cout << ++count << ". " << space->getUp()->getLocationName() << endl;
     }
     if (space->getRight() != nullptr) {
         cout << "Reached getRight\n";
