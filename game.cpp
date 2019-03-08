@@ -236,13 +236,15 @@ void Game::selectSpaceToMovePlayer() {
 *********************************************************************/
 void Game::movePlayer(Space *space) {
     cout << "Player address: " << space->getPlayer() << endl;
-    if (space->getPlayer() == nullptr) {
-        Player *tempPlayer = space->getPlayer();
+//    if (space->getPlayer() == nullptr) {
+        Player *tempPlayer = getSpaceAddress()->getPlayer();
         space->setPlayer( tempPlayer );
-    }
-    else {
-        cout << "Space is already occupied!\n";
-    }
+//    }
+//    else {
+//        cout << "Space is already occupied!\n";
+//    }
+
+cout << "Address of player in friend's cubicle " << tempPlayer << endl << endl;
 }
 
 /*********************************************************************
