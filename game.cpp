@@ -117,7 +117,7 @@ void Game::showMainMenu() {
             break;
         case 3:
             availableMoves( getSpaceAddress() );
-            movePlayer();
+            selectSpaceToMovePlayer();
             break;
         default:
             cout << "Unable to determine selection\n";
@@ -198,7 +198,7 @@ void Game::availableMoves(Space *space) {
 ** Description:     this function moves the player around from space
 **                  to space
 *********************************************************************/
-void Game::movePlayer() {
+void Game::selectSpaceToMovePlayer() {
     int selection = menu.validateNumber(1, movesAvailable);
 
     cout << "Size: " << places.size() << endl;
@@ -206,23 +206,33 @@ void Game::movePlayer() {
 
     switch (selection) {
         case 0:
-
+            movePlayer();
             break;
         case 1:
-
+            movePlayer();
             break;
         case 2:
-
+            movePlayer();
             break;
         case 3:
-
+            movePlayer();
             break;
         case 4:
-
+            movePlayer();
+            break;
+        case 5:
+            movePlayer();
             break;
         default:
             cout << "Unable to determine location to move player\n";
     }
+}
+
+/*********************************************************************
+** Description:     d
+*********************************************************************/
+void Game::movePlayer() {
+
 }
 
 /*********************************************************************
