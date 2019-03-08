@@ -152,7 +152,10 @@ string Game::playerLocation() {
 
 /*********************************************************************
 ** Description:     this function returns the pointer to the space
-**                  a player currently resides in
+**                  a player currently resides in. The function
+**                  automatically detects where in the board a player
+**                  is by seeing if the player pointer in the space
+**                  class is not null
 *********************************************************************/
 Space *Game::getSpaceAddress() {
     if (myCubicle->getPlayer() != nullptr) {
@@ -232,23 +235,28 @@ void Game::selectSpaceToMovePlayer() {
 }
 
 /*********************************************************************
-** Description:     this function receives the space a space
- *                  parameter for which the player will move to
+** Description:     this function receives a space parameter for which
+**                  for which the player will move to
 *********************************************************************/
 void Game::movePlayer(Space *space) {
+    // TODO - delete this cout
     cout << "Player address: " << space->getPlayer() << endl;
-//    if (space->getPlayer() == nullptr) {
+
+    if (space->getPlayer() == nullptr) {
         Player *tempPlayer = getSpaceAddress()->getPlayer();
         space->setPlayer( tempPlayer );
 
         Player *nullPlayer = nullptr;
         getSpaceAddress()->setPlayer(nullPlayer);
-//    }
-//    else {
-//        cout << "Space is already occupied!\n";
-//    }
 
-cout << "Address of player in friend's cubicle " << tempPlayer << endl << endl;
+        // TODO - delete this cout
+        cout << "Address of player in friend's cubicle " << tempPlayer << endl << endl;
+    }
+    else {
+        cout << "Space is already occupied!\n";
+    }
+
+
 }
 
 /*********************************************************************
