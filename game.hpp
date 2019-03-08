@@ -38,7 +38,7 @@ public:
     string playerLocation();
     Space *getSpaceAddress();
     void availableMoves(Space *space);
-    void movePlayer(int selection);
+    void movePlayer();
 
     int generateRandom(int max);
     void showPlayerStats();
@@ -48,6 +48,7 @@ public:
 private:
     Menu menu;
     int time;
+    int movesAvailable;
     Player *player;
     Space *myCubicle;
     Space *friendCubicle;

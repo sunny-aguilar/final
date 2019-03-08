@@ -16,7 +16,7 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-Game::Game() : time{1}, player{new Player()} {}
+Game::Game() : time{1}, movesAvailable{0}, player{new Player()} {}
 
 /*********************************************************************
 ** Description:     virtual destructor
@@ -117,6 +117,7 @@ void Game::showMainMenu() {
             break;
         case 3:
             availableMoves( getSpaceAddress() );
+            movePlayer();
             break;
         default:
             cout << "Unable to determine selection\n";
@@ -184,8 +185,8 @@ void Game::availableMoves(Space *space) {
     }
     cout << ++count << ". Back to main menu\n";
     cout << ">> ";
-    int selection = menu.validateNumber(1, count);
-    movePlayer(selection);
+    movesAvailable = count;
+
     cout << endl;
 }
 
@@ -193,7 +194,8 @@ void Game::availableMoves(Space *space) {
 ** Description:     this function moves the player around from space
 **                  to space
 *********************************************************************/
-void Game::movePlayer(int selection) {
+void Game::movePlayer() {
+    int selection = menu.validateNumber(1, movesAvailable);
     switch (selection - 1) {
         case 1:
 
