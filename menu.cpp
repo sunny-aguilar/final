@@ -185,7 +185,7 @@ void Menu::displayMap(Space *space) {
 
     if (space->getLocationName() == "Your Cubicle") {
         if (space->getPlayer() != nullptr) {
-            
+            bl = space->getLocationName() + "[*]";
         }
     }
 
@@ -199,10 +199,10 @@ void Menu::displayMap(Space *space) {
             " \\___/|_| |_| |_\\__\\___|_|  |_\\__,_| .__/\n"
             "                                   |_|\n";
     cout << "+----------------------------------------------------------------------+\n";
-    cout << "[ "<< tl << "      | " << tm << "         | " << tr << "         ]\n";
+    cout << "[ " << setw(16) << tl << "     | " << setw(16) << tm << "      | " << setw(16) << tr << "      ]\n";
     cout << "+----------------------------------------------------------------------+\n";
     cout << "+----------------------------------------------------------------------+\n";
-    cout << "[ Your Cubicle          | Water Cooler          | Break Room           ]\n";
+    cout << "[ "<< bl << "         | " << bm << "          | " << br << "           ]\n";
     cout << "+----------------------------------------------------------------------+\n";
     cout << "\nHit [ENTER] to continue to next round\n";
     cin.ignore();

@@ -107,7 +107,7 @@ void Game::showMainMenu() {
 
     switch(menu.validateNumber(1,3)) {
         case 1:
-            menu.displayMap();
+            menu.displayMap(myCubicle);
             break;
         case 2:
             break;
