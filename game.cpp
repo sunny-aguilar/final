@@ -112,7 +112,7 @@ void Game::showMainMenu() {
 
     switch(menu.validateNumber(1,3)) {
         case 1:
-            menu.displayMap(myCubicle); // TODO - myCubicle should be any space
+            menu.displayMap(getSpaceAddress()); // TODO - myCubicle should be any space
             break;
         case 2:
             break;
