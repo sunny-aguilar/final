@@ -28,17 +28,19 @@ Game::~Game() {}
 **                  the pointers to each other
 *********************************************************************/
 void Game::createBoard() {
-    // create myCubicle space and link it
+    // create spaces
     myCubicle = new MyCubicle( player );
+    friendCubicle = new FriendCubicle();
     // TODO - remove this cout after debugged
     cout << "Player address " << player << endl;
-    myCubicle->setUp(friendCubicle);
-
-    // create friendCubicle space and link it
-    friendCubicle = new FriendCubicle();
-    // TODO - remove this cout
     cout << "Friend Cubicle address " << friendCubicle << endl;
+
+    // link spaces to each other
+    myCubicle->setUp(friendCubicle);
     friendCubicle->setDown(myCubicle);
+
+
+
 
 }
 
