@@ -243,11 +243,11 @@ void Game::movePlayer(Space *space) {
     cout << "Player address: " << space->getPlayer() << endl;
 
     if (space->getPlayer() == nullptr) {
-        Player *tempPlayer = getSpaceAddress()->getPlayer();
-        space->setPlayer( tempPlayer );
+        Player *tempPlayer = getSpaceAddress()->getPlayer();    // get current player object
+        space->setPlayer( tempPlayer );                         // set player object to new space
 
         Player *nullPlayer = nullptr;
-        getSpaceAddress()->setPlayer(nullPlayer);
+        getSpaceAddress()->setPlayer(nullPlayer);               // set player object in prior space to null
 
         // TODO - delete this cout
         cout << "Address of player in friend's cubicle " << tempPlayer << endl << endl;
