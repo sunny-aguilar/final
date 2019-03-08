@@ -38,7 +38,7 @@ public:
     string playerLocation();
     Space *getSpaceAddress();
     void availableMoves(Space *space);
-    void movePlayer();
+    void movePlayer(int selection);
 
     int generateRandom(int max);
     void showPlayerStats();

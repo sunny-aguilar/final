@@ -185,6 +185,7 @@ void Game::availableMoves(Space *space) {
     cout << ++count << ". Back to main menu\n";
     cout << ">> ";
     int selection = menu.validateNumber(1, count);
+    movePlayer(selection);
     cout << endl;
 }
 
@@ -192,7 +193,7 @@ void Game::availableMoves(Space *space) {
 ** Description:     this function moves the player around from space
 **                  to space
 *********************************************************************/
-void Game::movePlayer() {
+void Game::movePlayer(int selection) {
 
 }
 
