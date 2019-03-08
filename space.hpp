@@ -50,6 +50,8 @@ public:
     Player *getPlayer();
     void getPlayer(Player *player);
 
+    Location getLocation();
+
 };
 
 #endif // SPACE_HPP
