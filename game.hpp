@@ -40,7 +40,7 @@ public:
 
     int generateRandom(int max);
     void showPlayerStats();
-    void showBoard();
+
     void exitGame();
 
 private:
