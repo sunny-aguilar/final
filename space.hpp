@@ -16,6 +16,8 @@
 #include <string>
 using std::string;
 
+enum Location{MYCUBICLE, FRIENDCUBICLE, BOSS, COOLER, BREAKROOM, MEETINGROOM};
+
 class Space {
 protected:
     Space *up;
@@ -23,13 +25,14 @@ protected:
     Space *down;
     Space *left;
 
+    Location location;
     string locationName;
     Player *player;
 
 public:
     Space();
-    Space(string locName);
-    Space(string locName, Player *player);
+    Space(string locName, Location loc);
+    Space(string locName, Location loc, Player *player);
     virtual ~Space();
     string getLocationName();
 

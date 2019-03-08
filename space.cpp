@@ -23,8 +23,9 @@ Space::Space() :
 /*********************************************************************
 ** Description:     1-arg constructor
 *********************************************************************/
-Space::Space(string locName) :
+Space::Space(string locName, Location loc) :
     locationName{locName},
+    location{loc},
     up{nullptr},
     right{nullptr},
     down{nullptr},
