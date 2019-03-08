@@ -167,16 +167,16 @@ void Game::availableMoves(Space *space) {
     int count = 0;
     cout << "\nAvailable Spaces:\n";
     if (space->getUp() != nullptr) {
-        cout << ++count << ". " << space->getLocationName() << endl;
+        cout << ++count << ". " << space->getUp()->getLocationName() << endl;
     }
     if (space->getRight() != nullptr) {
-        cout << ++count << ". " << space->getLocationName() << endl;
+        cout << ++count << ". " << space->getUp()->getLocationName() << endl;
     }
     if (space->getDown() != nullptr) {
-        cout <<++count << ". " << space->getLocationName() << endl;
+        cout <<++count << ". " << space->getUp()->getLocationName() << endl;
     }
     if (space->getLeft() != nullptr) {
-        cout << ++count << ". " << space->getLocationName() << endl;
+        cout << ++count << ". " << space->getUp()->getLocationName() << endl;
     }
     cout << ++count << ". Back to main menu\n";
     cout << endl;
