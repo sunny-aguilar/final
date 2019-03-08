@@ -17,7 +17,8 @@
 #include "space.hpp"
 #include "myCubicle.hpp"
 #include "friendCubicle.hpp"
-
+#include <vector>
+using std::vector;
 
 
 class Game {
@@ -49,6 +50,7 @@ private:
     Menu menu;
     int time;
     int movesAvailable;
+    vector <Location> places;
     Player *player;
     Space *myCubicle;
     Space *friendCubicle;

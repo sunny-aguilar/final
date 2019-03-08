@@ -196,7 +196,7 @@ void Game::availableMoves(Space *space) {
 *********************************************************************/
 void Game::movePlayer() {
     int selection = menu.validateNumber(1, movesAvailable);
-    switch (selection - 1) {
+    switch (selection) {
         case 1:
 
             break;
