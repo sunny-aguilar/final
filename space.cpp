@@ -21,7 +21,17 @@ Space::Space() :
     left{nullptr} {}
 
 /*********************************************************************
-** Description:     default constructor
+** Description:     1-arg constructor
+*********************************************************************/
+Space::Space(string locName) :
+    locationName{locName},
+    up{nullptr},
+    right{nullptr},
+    down{nullptr},
+    left{nullptr} {}
+
+/*********************************************************************
+** Description:     2-arg constructor
 *********************************************************************/
 Space::Space(string locName, Player *player) :
     locationName{locName},
