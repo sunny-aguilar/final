@@ -32,7 +32,7 @@ Space::Space(string locName, Location loc) :
     left{nullptr},
     player{nullptr}
     {
-        cout << "2-arg Space class contructor triggered\n";
+        cout << "2-arg Space class constructor triggered\n";
     }
 
 /*********************************************************************
