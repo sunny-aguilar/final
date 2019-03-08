@@ -236,7 +236,8 @@ void Game::selectSpaceToMovePlayer() {
 *********************************************************************/
 void Game::movePlayer(Space *space) {
     if (space->getPlayer() == nullptr) {
-        space->setPlayer( );
+        Player *tempPlayer = space->getPlayer();
+        space->setPlayer( tempPlayer );
     }
     else {
         cout << "Space is already occupied!\n";
