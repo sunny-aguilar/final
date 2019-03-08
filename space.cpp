@@ -24,8 +24,8 @@ Space::Space() :
 ** Description:     1-arg constructor
 *********************************************************************/
 Space::Space(string locName, Location loc) :
-    locationName{locName},
     location{loc},
+    locationName{locName},
     up{nullptr},
     right{nullptr},
     down{nullptr},
@@ -34,7 +34,8 @@ Space::Space(string locName, Location loc) :
 /*********************************************************************
 ** Description:     2-arg constructor
 *********************************************************************/
-Space::Space(string locName, Player *player) :
+Space::Space(string locName, Location loc, Player *player) :
+    location{loc},
     locationName{locName},
     player{player},
     up{nullptr},
