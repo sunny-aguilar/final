@@ -185,7 +185,7 @@ void Menu::displayMap(Space *space) {
 
     if (space->getLocationName() == "My Cubicle") {
         if (space->getPlayer() != nullptr) {
-            bl = space->getLocationName() + "[*]";
+            bl = space->getLocationName() + " [*]";
         }
     }
 
