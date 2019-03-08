@@ -82,7 +82,7 @@ void Game::gameOperations() {
     // show main menu
 
     while (player->getSanityPoints() > 0 && player->getPerformancePoints()) {
-        showMainMenu();
+        showMainMenu(); // TODO - need to change this so that it displays location of any player
     }
 
 
@@ -111,7 +111,7 @@ void Game::showMainMenu() {
 
     switch(menu.validateNumber(1,3)) {
         case 1:
-            menu.displayMap(myCubicle);
+            menu.displayMap(myCubicle); // TODO - myCubicle should be any space
             break;
         case 2:
             break;
@@ -194,14 +194,18 @@ void Game::availableMoves(Space *space) {
 **                  to space
 *********************************************************************/
 void Game::movePlayer(int selection) {
-    switch (selection) {
+    switch (selection - 1) {
         case 1:
+
             break;
         case 2:
+
             break;
         case 3:
+
             break;
         case 4:
+
             break;
         default:
             cout << "Unable to determine location to move player\n";

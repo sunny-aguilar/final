@@ -183,12 +183,18 @@ void Menu::displayMap(Space *space) {
     string tm = "Boss's Office";
     string tr = "Meeting Room";
 
+    // if player is in his cubicle, display that
     if (space->getLocationName() == "My Cubicle") {
         if (space->getPlayer() != nullptr) {
             bl = space->getLocationName() + " [*]";
         }
     }
-
+    // if player is at his friend's cubicle, display that
+    if (space->getLocationName() == "My Cubicle") {
+        if (space->getPlayer() != nullptr) {
+            bl = space->getLocationName() + " [*]";
+        }
+    }
 
 
 
