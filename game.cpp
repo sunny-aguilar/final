@@ -235,6 +235,7 @@ void Game::selectSpaceToMovePlayer() {
  *                  parameter for which the player will move to
 *********************************************************************/
 void Game::movePlayer(Space *space) {
+    cout << "Player address: " << space->getPlayer() << endl;
     if (space->getPlayer() == nullptr) {
         Player *tempPlayer = space->getPlayer();
         space->setPlayer( tempPlayer );
