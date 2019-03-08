@@ -209,24 +209,24 @@ void Game::selectSpaceToMovePlayer() {
     cout << places.front() << endl;
 
     switch (selection) {
-        case 0:
+        case MYCUBICLE:
             // move player to my cubicle
             movePlayer(myCubicle);
             break;
-        case 1:
+        case FRIENDCUBICLE:
             // move player to friend's cubicle
             movePlayer(friendCubicle);
             break;
-        case 2:
+        case BOSSROOM:
             //movePlayer();
             break;
-        case 3:
+        case COOLER:
             //movePlayer();
             break;
-        case 4:
+        case BREAKROOM:
             //movePlayer();
             break;
-        case 5:
+        case MEETINGROOM:
             //movePlayer();
             break;
         default:
