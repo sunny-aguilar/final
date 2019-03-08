@@ -202,7 +202,7 @@ void Game::movePlayer() {
     int selection = menu.validateNumber(1, movesAvailable);
 
     for (int index = 0; index < places.size(); index++) {
-        places.at(index);
+        cout << places.at(index) << " ";
     }
 
     switch (selection) {
