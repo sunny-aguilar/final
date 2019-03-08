@@ -183,7 +183,7 @@ void Menu::displayMap(Space *space) {
     string tm = "Boss's Office";
     string tr = "Meeting Room";
 
-    if (space->getLocationName() == "Your Cubicle") {
+    if (space->getLocationName() == "My Cubicle") {
         if (space->getPlayer() != nullptr) {
             bl = space->getLocationName() + "[*]";
         }
