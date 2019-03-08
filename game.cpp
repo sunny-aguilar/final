@@ -178,7 +178,7 @@ void Game::availableMoves(Space *space) {
     if (space->getLeft() != nullptr) {
         cout << ++count << ". " << space->getLocationName() << endl;
     }
-    cout << ++count << ". back to main menu\n";
+    cout << ++count << ". Back to main menu\n";
     cout << endl;
 }
 
