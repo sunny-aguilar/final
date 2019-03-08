@@ -170,13 +170,13 @@ void Game::availableMoves(Space *space) {
         cout << ++count << ". " << space->getUp()->getLocationName() << endl;
     }
     if (space->getRight() != nullptr) {
-        cout << ++count << ". " << space->getUp()->getLocationName() << endl;
+        cout << ++count << ". " << space->getRight()->getLocationName() << endl;
     }
     if (space->getDown() != nullptr) {
-        cout <<++count << ". " << space->getUp()->getLocationName() << endl;
+        cout <<++count << ". " << space->getDown()->getLocationName() << endl;
     }
     if (space->getLeft() != nullptr) {
-        cout << ++count << ". " << space->getUp()->getLocationName() << endl;
+        cout << ++count << ". " << space->getLeft()->getLocationName() << endl;
     }
     cout << ++count << ". Back to main menu\n";
     cout << endl;
