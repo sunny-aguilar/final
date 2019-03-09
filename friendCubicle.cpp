@@ -20,7 +20,12 @@ FriendCubicle::~FriendCubicle() {}
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-void FriendCubicle::spaceInteractions() {}
+void FriendCubicle::spaceInteractions() {
+    if (player) {
+        cout << "player is currently in Friend's Cubicle\n";
+    }
+    cout << "1. Put cell phone in your pocket\n";
+}
 
 /*********************************************************************
 ** Description:     d
