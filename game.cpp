@@ -355,6 +355,10 @@ int Game::generateRandom(int max) {
 **                  different space, time passes by half an hour.
 *********************************************************************/
 string Game::calculateTime(int time) {
+    if (time > 17) {
+        return "OVERTIME";
+    }
+
     switch (time) {
         case 1: return "9:00 AM";
         case 2: return "9:30 AM";
