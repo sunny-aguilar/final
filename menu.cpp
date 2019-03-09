@@ -163,8 +163,8 @@ void Menu::mainMenu(string loc) {
 *********************************************************************/
 void Menu::hud(Player *p, string loc, string time) {
     cout << left;
-    cout << "<< heads up display >>\n";
-    cout << "+-------------------------------------------------------------------------+\n";
+    //cout << "<< heads up display >>\n";
+    cout << "+-<<Heads Up Display>>----------------------------------------------------+\n";
     cout << "[  Sanity Points: " << setw(2) << p->getSanityPoints() << "                     |";
     cout << "   Performance Points: " << setw(2) << p->getPerformancePoints() <<"       ]\n";
     cout << "[  Current Location:  " << setw(16) << loc << "   |";

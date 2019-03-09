@@ -363,12 +363,14 @@ void Game::movePlayer(Space *space) {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     this functions calls the virtual function in the
+**                  space class that allows a player to interact with
+**                  different rooms. Activities that a player can
+**                  carry out depend on the room they are in.
 *********************************************************************/
 void Game::roomActivities() {
     menu.displayRoomActivities(playerLocation());
     getSpaceAddress()->spaceInteractions();
-    int selection = menu.validateNumber(1,3);
 }
 
 /*********************************************************************

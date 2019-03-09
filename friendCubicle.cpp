@@ -21,10 +21,9 @@ FriendCubicle::~FriendCubicle() {}
 ** Description:     d
 *********************************************************************/
 void FriendCubicle::spaceInteractions() {
-    if (player) {
-        cout << "player is currently in Friend's Cubicle\n";
-    }
     cout << "1. Have a pep talk with your friend\n";
+    cout << "2. Have your friend help you with a project\n";
+    cout << ">> ";
 }
 
 /*********************************************************************

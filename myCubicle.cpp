@@ -25,10 +25,9 @@ MyCubicle::~MyCubicle() {}
 ** Description:     d
 *********************************************************************/
 void MyCubicle::spaceInteractions() {
-    if (player) {
-        cout << "player is currently in My Cubicle\n";
-    }
     cout << "1. Put cell phone in your pocket\n";
+    cout << "2. Take a 15 minute siesta\n";
+    cout << ">> ";
 }
 
 /*********************************************************************
