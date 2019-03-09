@@ -175,8 +175,9 @@ string Game::playerLocation() {
     else if (meetingRoom->getPlayer() != nullptr) {
         return meetingRoom->getLocationName();
     }
-    // TODO - add remaining spaces HERE
-
+    else if (breakRoom->getPlayer() != nullptr) {
+        return breakRoom->getLocationName();
+    }
 }
 
 /*********************************************************************
@@ -202,8 +203,9 @@ Space *Game::getSpaceAddress() {
     else if (meetingRoom->getPlayer() != nullptr) {
         return meetingRoom;
     }
-    // TODO - add remaining spaces HERE
-
+    else if (breakRoom->getPlayer() != nullptr) {
+        return breakRoom;
+    }
 }
 
 /*********************************************************************
@@ -274,7 +276,8 @@ void Game::selectSpaceToMovePlayer() {
             movePlayer(waterCooler);
             break;
         case BREAKROOM:
-            //movePlayer();
+            cout << "Move to break room\n";
+            movePlayer(breakRoom);
             break;
         case MEETINGROOM:
             cout << "Move to meeting room\n";

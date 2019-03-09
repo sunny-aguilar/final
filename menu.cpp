@@ -214,7 +214,12 @@ void Menu::displayMap(Space *space) {
             tr = space->getLocationName() + "[*]";
         }
     }
-    // TODO - set remaining spaces
+    // if player is by the break room, display that
+    if (space->getLocationName() == "Break Room") {
+        if (space->getPlayer() != nullptr) {
+            tr = space->getLocationName() + "[*]";
+        }
+    }
 
 
 
