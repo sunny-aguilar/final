@@ -6,3 +6,17 @@
 **                  room in the office.
 *********************************************************************/
 #include "meetingRoom.hpp"
+
+/*********************************************************************
+** Description:     default constructor
+*********************************************************************/
+MeetingRoom::MeetingRoom() : Space("Water Cooler", COOLER)
+{
+    // TODO - delete
+    cout << "MeetingRoom default constructor triggered\n";
+}
+
+/*********************************************************************
+** Description:     destructor
+*********************************************************************/
+MeetingRoom::~MeetingRoom() {}

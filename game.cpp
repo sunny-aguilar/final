@@ -33,6 +33,7 @@ void Game::createBoard() {
     friendCubicle = new FriendCubicle();
     bossRoom = new BossRoom();
     waterCooler = new WaterCooloer();
+    meetingRoom = new MeetingRoom();
     // TODO - remove this cout after debugged
     cout << "myCubicle address " << myCubicle << endl;
     cout << "Player address " << player << endl;
@@ -47,10 +48,11 @@ void Game::createBoard() {
     friendCubicle->setDown(myCubicle);  // link friendCubicle
     friendCubicle->setRight(bossRoom);
     bossRoom->setLeft(friendCubicle);   // link bossRoom
+    bossRoom->setRight(meetingRoom);
     bossRoom->setDown(waterCooler);
     waterCooler->setLeft(myCubicle);    // link waterCooler
     waterCooler->setUp(bossRoom);
-
+    meetingRoom->setLeft(bossRoom);     // link meetingRoom
 
 
 
@@ -165,6 +167,9 @@ string Game::playerLocation() {
     else if (waterCooler->getPlayer() != nullptr) {
         return waterCooler->getLocationName();
     }
+    else if (meetingRoom->getPlayer() != nullptr) {
+        return meetingRoom->getLocationName();
+    }
     // TODO - add remaining spaces HERE
 
 }
@@ -188,6 +193,9 @@ Space *Game::getSpaceAddress() {
     }
     else if (waterCooler->getPlayer() != nullptr) {
         return waterCooler;
+    }
+    else if (meetingRoom->getPlayer() != nullptr) {
+        return meetingRoom;
     }
     // TODO - add remaining spaces HERE
 

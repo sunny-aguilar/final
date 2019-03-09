@@ -61,7 +61,7 @@ private:
     Space *friendCubicle;
     Space *bossRoom;
     Space *waterCooler;
-    Space *ML;
+    Space *meetingRoom;
     Space *MM;
     Space *MR;
     Space *TL;
