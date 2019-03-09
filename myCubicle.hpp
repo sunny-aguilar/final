@@ -1,7 +1,7 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 4, 2019
-** Description:     MyCubicle class is derived from the space clasa
+** Description:     MyCubicle class is derived from the space class
 **                  and it represents the space that is the players
 **                  own work area.
 **                  derived from. Space class contains virtual

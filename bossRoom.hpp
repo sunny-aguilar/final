@@ -1,21 +1,20 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 4, 2019
-** Description:     FriendCubicle class is derived from the space class
+** Description:     BossRoom class is derived from the space class
 **                  and it represents the space that is the player's
-**                  friend at work.
+**                  boss office at work.
 *********************************************************************/
-#ifndef FRIENDCUBICLE_HPP
-#define FRIENDCUBICLE_HPP
+#ifndef BOSSROOM_HPP
+#define BOSSROOM_HPP
 
 #include "space.hpp"
 
-class FriendCubicle : public Space {
+class BossRoom : public Space {
 private:
-
 public:
-    FriendCubicle();
-    ~FriendCubicle();
+    BossRoom();
+    ~BossRoom();
 };
 
-#endif // FRIENDCUBICLE_HPP
+#endif // BOSSROOM_HPP
