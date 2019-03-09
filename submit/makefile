@@ -77,7 +77,7 @@ waterCooler.o: waterCooler.hpp
 
 # Clean-up operations
 clean:
-	rm Fight *.o
+	rm Final *.o
 
 debug:
 	valgrind -v --leak-check=full --show-leak-kinds=all --track-origins=yes ./Final

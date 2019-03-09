@@ -45,6 +45,7 @@ public:
     void availableMoves(Space *space);
     void selectSpaceToMovePlayer();
     void movePlayer(Space *space);
+    void endDay();
 
     // utilities
     int generateRandom(int max);

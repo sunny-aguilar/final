@@ -135,6 +135,9 @@ void Game::gameOperations() {
         showMainMenu(); // TODO - need to change this so that it displays location of any player
     }
 
+    // end of day results
+    endDay();
+
 }
 
 /*********************************************************************
@@ -328,6 +331,13 @@ void Game::movePlayer(Space *space) {
 
     // increase time for each step taken
     time++;
+}
+
+/*********************************************************************
+** Description:     d
+*********************************************************************/
+void Game::endDay() {
+
 }
 
 /*********************************************************************
