@@ -182,9 +182,25 @@ void Game::showMainMenu() {
 **                  to go home
 *********************************************************************/
 void Game::playDay() {
-    while (player->getSanityPoints() > 0 && player->getPerformancePoints() && calculateTime(time) != "5:00 PM") {
-        showMainMenu(); // TODO - need to change this so that it displays location of any player
+    while (loopControl()) {
+        showMainMenu();
     }
+}
+
+/*********************************************************************
+** Description:     this function returns true or false and is used
+**                  to control the steps in the game and whether the
+**                  game ends once a condition is met.
+**                  Conditions that stop the day:
+**                      - player gets fired
+**                      - player loses sanity
+**                      - player quits job
+**                      - 5:00 PM end of day, player wins
+*********************************************************************/
+bool Game::loopControl() {
+    return ( player->getSanityPoints() > 0 &&
+             player->getPerformancePoints() &&
+             calculateTime(time) != "5:00 PM" );
 }
 
 /*********************************************************************

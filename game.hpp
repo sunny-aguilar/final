@@ -40,6 +40,7 @@ public:
     void arriveToWork();
     void showMainMenu();
     void playDay();
+    bool loopControl();
     string playerLocation();
     Space *getSpaceAddress();
     void availableMoves(Space *space);
