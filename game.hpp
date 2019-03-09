@@ -17,6 +17,7 @@
 #include "space.hpp"
 #include "myCubicle.hpp"
 #include "friendCubicle.hpp"
+#include "bossRoom.hpp"
 #include <vector>
 using std::vector;
 
@@ -56,7 +57,7 @@ private:
     Player *player;
     Space *myCubicle;
     Space *friendCubicle;
-    Space *BM;
+    Space *bossRoom;
     Space *BR;
     Space *ML;
     Space *MM;

@@ -31,15 +31,20 @@ void Game::createBoard() {
     // create spaces
     myCubicle = new MyCubicle( player );
     friendCubicle = new FriendCubicle();
+    bossRoom = new BossRoom();
     // TODO - remove this cout after debugged
     cout << "myCubicle address " << myCubicle << endl;
     cout << "Player address " << player << endl;
     cout << "Friend Cubicle address " << friendCubicle << endl;
-    cout << "Friend player address " << friendCubicle->getPlayer() << endl << endl;
+    cout << "Friend player address " << friendCubicle->getPlayer() << endl;
+    cout << "bossRoom address " << bossRoom << endl;
+    cout << "bossRoom player address " << bossRoom->getPlayer() << endl << endl;
 
     // link spaces to each other
     myCubicle->setUp(friendCubicle);
     friendCubicle->setDown(myCubicle);
+    friendCubicle->setRight(bossRoom);
+    bossRoom->setLeft(friendCubicle);
 
 
 
@@ -228,7 +233,8 @@ void Game::selectSpaceToMovePlayer() {
             movePlayer(friendCubicle);
             break;
         case BOSSROOM:
-            //movePlayer();
+            cout << "Move to boss's office\n";
+            movePlayer(bossRoom);
             break;
         case COOLER:
             //movePlayer();
