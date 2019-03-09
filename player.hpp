@@ -10,10 +10,15 @@
 #ifndef PLAYER_HPP
 #define PLAYER_HPP
 
+#include "inventoryItem.hpp"
+#include <vector>
+using std::vector;
+
 class Player {
 private:
     int sanity;
     int performance;
+
 
 public:
     Player();
