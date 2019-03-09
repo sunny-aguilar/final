@@ -18,6 +18,7 @@
 #include "myCubicle.hpp"
 #include "friendCubicle.hpp"
 #include "bossRoom.hpp"
+#include "waterCooler.hpp"
 #include <vector>
 using std::vector;
 
@@ -58,7 +59,7 @@ private:
     Space *myCubicle;
     Space *friendCubicle;
     Space *bossRoom;
-    Space *BR;
+    Space *waterCooler;
     Space *ML;
     Space *MM;
     Space *MR;

@@ -202,6 +202,13 @@ void Menu::displayMap(Space *space) {
             tm = space->getLocationName() + " [*]";
         }
     }
+    // if player is by the water cooler, display that
+    if (space->getLocationName() == "Water Cooler") {
+        if (space->getPlayer() != nullptr) {
+            bm = space->getLocationName() + "[*]";
+        }
+    }
+    // TODO - set remaining spaces
 
 
 
