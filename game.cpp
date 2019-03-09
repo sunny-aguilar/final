@@ -158,7 +158,7 @@ string Game::playerLocation() {
         return bossRoom->getLocationName();
     }
     // TODO - add remaining spaces HERE
-    
+
 }
 
 /*********************************************************************
