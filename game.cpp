@@ -260,7 +260,7 @@ void Game::movePlayer(Space *space) {
     cout << "Name of transferor space using getSpaceAddress(): " << getSpaceAddress()->getLocationName() << endl << endl;
 
     if (space->getPlayer() == nullptr) {
-        //Space *tempPlayer1 = getSpaceAddress();
+        Space *tempPlayer1 = getSpaceAddress();
         Player *tempPlayer = getSpaceAddress()->getPlayer();    // get current player object
         space->setPlayer( tempPlayer );                         // set player object to new space
         cout << "Player object address: " << tempPlayer << endl;
@@ -269,9 +269,7 @@ void Game::movePlayer(Space *space) {
         Player *nullPlayer = nullptr;
         //tempPlayer1->setPlayer(nullPlayer);
         cout << "getSpaceAddress() address->getLocationName() " << getSpaceAddress()->getLocationName()<< endl;
-        cout << "getSpaceAddress() address->getPlayer() " << getSpaceAddress()->getPlayer() << endl;
-        getSpaceAddress()->setPlayer(nullPlayer);               // set player object in prior space to null
-        cout << "getSpaceAddress() address->getPlayer() " << getSpaceAddress()->getPlayer() << endl;
+        tempPlayer1->setPlayer(nullPlayer);               // set player object in prior space to null
         cout << "getSpaceAddress() address->getLocationName() " << getSpaceAddress()->getLocationName() << endl;
 
 //        myCubicle->player = nullptr;
