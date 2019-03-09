@@ -192,26 +192,26 @@ void Game::playDay() {
 **                  to control the steps in the game and whether the
 **                  game ends once a condition is met.
 **                  Conditions that stop the day:
-**                      - player gets fired
 **                      - player loses sanity
+**                      - player gets fired
 **                      - player quits job
 **                      - 5:00 PM end of day, player wins
 *********************************************************************/
 bool Game::loopControl() {
-    bool shiftOver = false;
     bool insane = false;
     bool fired = false;
+    bool shiftOver = false;
 
-    if (calculateTime(time) == "5:00 PM") {
-        shiftOver = true;
-    }
+    // quit game if any of these conditions become true
     if (player->getSanityPoints() < 1) {
         insane = true;
     }
     if (player->getPerformancePoints() < 1) {
         fired = true;
     }
-
+    if (calculateTime(time) == "5:00 PM") {
+        shiftOver = true;
+    }
 
     return ( !insane > 0 &&
              !fired &&
