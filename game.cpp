@@ -244,7 +244,7 @@ void Game::selectSpaceToMovePlayer() {
 void Game::movePlayer(Space *space) {
     // TODO - delete this cout
     cout << "New Space Player address b4 initialization: " << space->getPlayer() << endl;
-    cout << "Location name: " << getSpaceAddress()->getLocationName() << endl;
+    cout << "Location name: " << space->getLocationName() << endl;
     cout << "myCubicle address: " << myCubicle << endl;
     cout << "myCubicle address getSpaceAddress(): " << getSpaceAddress() << endl;
     cout << "myCubicle address of player " << myCubicle->getPlayer() << endl << endl;
