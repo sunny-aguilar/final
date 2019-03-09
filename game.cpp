@@ -367,6 +367,7 @@ void Game::movePlayer(Space *space) {
 *********************************************************************/
 void Game::roomActivities() {
     menu.displayRoomActivities(playerLocation());
+
 }
 
 /*********************************************************************
