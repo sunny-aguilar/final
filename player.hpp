@@ -18,7 +18,7 @@ class Player {
 private:
     int sanity;
     int performance;
-
+    //vector<>
 
 public:
     Player();

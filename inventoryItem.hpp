@@ -7,6 +7,12 @@
 #ifndef INVENTORYITEM_HPP
 #define INVENTORYITEM_HPP
 
+class InventoryItem {
+private:
 
+public:
+    InventoryItem();
+    ~InventoryItem();
+};
 
 #endif INVENTORYITEM_HPP
