@@ -16,7 +16,7 @@
 
 class MyCubicle : public Space {
 private:
-
+    int napsTaken;
 public:
     MyCubicle(Player *&player);
     ~MyCubicle();

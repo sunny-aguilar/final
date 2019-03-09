@@ -14,7 +14,9 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-MyCubicle::MyCubicle(Player *&player) : Space("My Cubicle", MYCUBICLE, player) {}
+MyCubicle::MyCubicle(Player *&player) :
+    napsTaken{0},
+    Space("My Cubicle", MYCUBICLE, player) {}
 
 /*********************************************************************
 ** Description:     destructor
@@ -46,6 +48,7 @@ void MyCubicle::spaceInteractions() {
 ** Description:     adds cell phone to inventory
 *********************************************************************/
 void MyCubicle::takeCell() {
+    // place cell in inventory
 
 }
 
@@ -53,5 +56,16 @@ void MyCubicle::takeCell() {
 ** Description:     allows a player to recover sanity points
 *********************************************************************/
 void MyCubicle::takeNap() {
+    int napsMax = 1;
 
+    if (napsTaken >= napsMax) {
+        cout << ">> Sorry, your demanding schedule does not allow you\n";
+        cout << "to sneak in any more naps ( 0 _ 0 )\n\n";
+        return;
+    }
+
+    cout << ">> You take a quick nap at your desk and luckily your boss did\n";
+    cout << "not notice. Sanity points have increased by +1\n\n";
+    player->setSanityPoints(1);
+    napsTaken++;
 }

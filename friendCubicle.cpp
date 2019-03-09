@@ -10,7 +10,10 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-FriendCubicle::FriendCubicle() : Space("Friend's Cubicle", FRIENDCUBICLE) {}
+FriendCubicle::FriendCubicle() :
+    pepTalks{0},
+    projectHelps{0},
+    Space("Friend's Cubicle", FRIENDCUBICLE) {}
 
 /*********************************************************************
 ** Description:     destructor
