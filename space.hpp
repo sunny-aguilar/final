@@ -15,7 +15,13 @@
 #include "player.hpp"
 #include <iostream>
 #include <string>
+#include <cstring>
+#include <sstream>
+#include <iomanip>
 using std::string;
+using std::setw;
+using std::left;
+using std::cin;
 using std::cout;
 using std::endl;
 
@@ -58,6 +64,10 @@ public:
 
     // virtual function(s)
     virtual void spaceInteractions() = 0;
+
+    // utilities
+    int generateRandom(int max);
+    int validateNumber(int min, int max);
 
     //friend class Game;
 };

@@ -17,6 +17,8 @@ public:
     FriendCubicle();
     ~FriendCubicle();
     void spaceInteractions() override;
+    void pepTalk();
+    void projectHelp();
 };
 
 #endif // FRIENDCUBICLE_HPP

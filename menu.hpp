@@ -38,6 +38,7 @@ public:
     void displayMap(Space *space);
     void displayAvailableSpaces();
     void displayRoomActivities(string loc);
+
     void endOfDay();
     void exitGame();
     int validateNumber(int min, int max);

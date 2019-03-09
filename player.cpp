@@ -27,9 +27,11 @@ int Player::getSanityPoints() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     setter that sets the player's sanity points. A
+**                  player's sanity points cannot exceed 10.
 *********************************************************************/
 void Player::setSanityPoints(int points) {
+    if (sanity + points > 10) { return; }
     sanity += points;
 }
 
@@ -41,9 +43,11 @@ int Player::getPerformancePoints() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     setter that sets the player's performance points.
+**                  A player's performance points cannot exeed 10.
 *********************************************************************/
 void Player::setPerformancePoints(int points) {
+    if (performance + points > 10) { return; }
     performance += points;
 }
 
