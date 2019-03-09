@@ -35,15 +35,6 @@ void Game::createBoard() {
     waterCooler = new WaterCooloer();
     meetingRoom = new MeetingRoom();
     breakRoom = new BreakRoom();
-    // TODO - remove this cout after debugged
-    cout << "myCubicle address " << myCubicle << endl;
-    cout << "Player address " << player << endl;
-    cout << "Friend Cubicle address " << friendCubicle << endl;
-    cout << "Friend player address " << friendCubicle->getPlayer() << endl;
-    cout << "bossRoom address " << bossRoom << endl;
-    cout << "bossRoom player address " << bossRoom->getPlayer() << endl << endl;
-    cout << "meetingRoom address " << meetingRoom << endl;
-    cout << "meetingRoom player address " << meetingRoom->getPlayer() << endl << endl;
 
     // link spaces to each other
     myCubicle->setUp(friendCubicle);    // link myCubicle
@@ -60,8 +51,6 @@ void Game::createBoard() {
     meetingRoom->setDown(breakRoom);
     breakRoom->setLeft(waterCooler);    // link breakRoom
     breakRoom->setUp(meetingRoom);
-
-
 }
 
 /*********************************************************************
@@ -100,7 +89,6 @@ void Game::gameOperations() {
     arriveToWork();
 
     // show main menu
-
     while (player->getSanityPoints() > 0 && player->getPerformancePoints()) {
         showMainMenu(); // TODO - need to change this so that it displays location of any player
     }
@@ -220,22 +208,18 @@ void Game::availableMoves(Space *space) {
     cout << "\nAvailable Locations To Move To:\n";
     if (space->getUp() != nullptr) {
         cout << ++count << ". " << space->getUp()->getLocationName() << endl;
-        cout << "1 pushed back in vector getup(): " << space->getUp()->getLocation() << endl;
         places.push_back( space->getUp()->getLocation() );
     }
     if (space->getRight() != nullptr) {
         cout << ++count << ". " << space->getRight()->getLocationName() << endl;
-        cout << "2 pushed back in vector getRight(): " << space->getRight()->getLocation() << endl;
         places.push_back( space->getRight()->getLocation() );
     }
     if (space->getDown() != nullptr) {
         cout <<++count << ". " << space->getDown()->getLocationName() << endl;
-        cout << "3 pushed back in vector getDown(): " << space->getDown()->getLocation() << endl;
         places.push_back( space->getDown()->getLocation() );
     }
     if (space->getLeft() != nullptr) {
         cout << ++count << ". " << space->getLeft()->getLocationName() << endl;
-        cout << "4 pushed back in vector getLeft(): " << space->getLeft()->getLocation() << endl;
         places.push_back( space->getLeft()->getLocation() );
     }
     cout << ++count << ". Back to main menu\n";
@@ -251,37 +235,27 @@ void Game::availableMoves(Space *space) {
 *********************************************************************/
 void Game::selectSpaceToMovePlayer() {
     int selection = menu.validateNumber(0, movesAvailable);
-    cout << "selection: " << selection << endl;
     int location = places.at(selection - 1);
-    cout << "Location selected: " << location << endl;
-    cout << "Size: " << places.size() << endl;
-    cout << "Vector @ 0: " << places.front() << endl;
-    cout << "Vector @ 0: " << places[0] << endl;
 
     switch (location) {
         case MYCUBICLE:
             // move player to my cubicle
-            cout << "Move to my cubicle\n";
             movePlayer(myCubicle);
             break;
         case FRIENDCUBICLE:
             // move player to friend's cubicle
-            cout << "Move to friend's cubicle\n";
             movePlayer(friendCubicle);
             break;
         case BOSSROOM:
-            cout << "Move to boss's office\n";
             movePlayer(bossRoom);
             break;
         case COOLER:
             movePlayer(waterCooler);
             break;
         case BREAKROOM:
-            cout << "Move to break room\n";
             movePlayer(breakRoom);
             break;
         case MEETINGROOM:
-            cout << "Move to meeting room\n";
             movePlayer(meetingRoom);
             break;
         default:
@@ -311,35 +285,8 @@ void Game::movePlayer(Space *space) {
         cout << "Space is already occupied!\n";
     }
 
-
-    // TODO - increase time by half hour
+    // increase time for each step taken
     time++;
-//    switch () {
-//        case MYCUBICLE:
-//            // move player to my cubicle
-//
-//            break;
-//        case FRIENDCUBICLE:
-//            // move player to friend's cubicle
-//
-//            break;
-//        case BOSSROOM:
-//            //movePlayer();
-//            break;
-//        case COOLER:
-//            //movePlayer();
-//            break;
-//        case BREAKROOM:
-//            //movePlayer();
-//            break;
-//        case MEETINGROOM:
-//            //movePlayer();
-//            break;
-//        default:
-//            cout << "Unable to determine location to move player\n";
-//    }
-
-
 }
 
 /*********************************************************************
