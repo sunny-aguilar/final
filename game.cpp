@@ -34,6 +34,7 @@ void Game::createBoard() {
     bossRoom = new BossRoom();
     waterCooler = new WaterCooloer();
     meetingRoom = new MeetingRoom();
+    breakRoom = new BreakRoom();
     // TODO - remove this cout after debugged
     cout << "myCubicle address " << myCubicle << endl;
     cout << "Player address " << player << endl;
@@ -55,7 +56,9 @@ void Game::createBoard() {
     waterCooler->setLeft(myCubicle);    // link waterCooler
     waterCooler->setUp(bossRoom);
     meetingRoom->setLeft(bossRoom);     // link meetingRoom
-
+    meetingRoom->setDown(breakRoom);
+    breakRoom->setLeft(waterCooler);    // link breakRoom
+    breakRoom->setUp(meetingRoom);
 
 
 }

@@ -20,6 +20,7 @@
 #include "bossRoom.hpp"
 #include "waterCooler.hpp"
 #include "meetingRoom.hpp"
+#include "breakRoom.hpp"
 #include <vector>
 using std::vector;
 
@@ -56,17 +57,13 @@ private:
     int time;
     int movesAvailable;
     vector <Location> places;
-    Player *player;
-    Space *myCubicle;
-    Space *friendCubicle;
-    Space *bossRoom;
-    Space *waterCooler;
-    Space *meetingRoom;
-    Space *MM;
-    Space *MR;
-    Space *TL;
-    Space *TM;
-    Space *TR;
+    Player *player;             // player object
+    Space *myCubicle;           // space 1
+    Space *friendCubicle;       // space 2
+    Space *bossRoom;            // space 3
+    Space *waterCooler;         // space 4
+    Space *meetingRoom;         // space 5
+    Space *breakRoom;           // space 5
 
 };
 
