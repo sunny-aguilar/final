@@ -10,11 +10,7 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-BreakRoom::BreakRoom() : Space("Break Room", BREAKROOM)
-{
-    // TODO - delete
-    cout << "BreakRoom default constructor triggered\n";
-}
+BreakRoom::BreakRoom() : Space("Break Room", BREAKROOM) {}
 
 /*********************************************************************
 ** Description:     destructor

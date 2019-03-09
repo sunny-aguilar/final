@@ -10,11 +10,7 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-WaterCooloer::WaterCooloer() : Space("Water Cooler", COOLER)
-{
-    // TODO - delete
-    cout << "WaterCooler default constructor triggered\n";
-}
+WaterCooloer::WaterCooloer() : Space("Water Cooler", COOLER) {}
 
 /*********************************************************************
 ** Description:     destructor

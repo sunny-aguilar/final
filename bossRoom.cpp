@@ -10,11 +10,7 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-BossRoom::BossRoom() : Space("Boss's Office", BOSSROOM)
-{
-    // TODO - delete cout
-    cout << "BossRoom default constructor triggered\n";
-}
+BossRoom::BossRoom() : Space("Boss's Office", BOSSROOM) {}
 
 /*********************************************************************
 ** Description:     destructor

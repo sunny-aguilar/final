@@ -299,15 +299,9 @@ int Game::generateRandom(int max) {
 }
 
 /*********************************************************************
-** Description:     d
-*********************************************************************/
-void Game::showPlayerStats() {
-    cout << "Sanity points: " << player->getSanityPoints() << endl;
-    cout << "Performance points: " << player->getPerformancePoints() << endl;
-}
-
-/*********************************************************************
-** Description:     d
+** Description:     this function takes an int parameter to calculate
+**                  the time elapsed. Each step a player makes into a
+**                  different space, time passes by half an hour.
 *********************************************************************/
 string Game::calculateTime(int time) {
     switch (time) {
@@ -344,7 +338,8 @@ string Game::calculateTime(int time) {
 
 
 /*********************************************************************
-** Description:     d
+** Description:     this function displays exit message upon exiting
+**                  program
 *********************************************************************/
 void Game::exitGame() {
     menu.exitGame();

@@ -10,11 +10,7 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-FriendCubicle::FriendCubicle() : Space("Friend's Cubicle", FRIENDCUBICLE)
-{
-    // TODO - delete
-    cout << "FriendCubicle default constructor triggered\n";
-}
+FriendCubicle::FriendCubicle() : Space("Friend's Cubicle", FRIENDCUBICLE) {}
 
 /*********************************************************************
 ** Description:     destructor

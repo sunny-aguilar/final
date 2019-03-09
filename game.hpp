@@ -48,7 +48,6 @@ public:
 
     // utilities
     int generateRandom(int max);
-    void showPlayerStats();
 
     void exitGame();
 
