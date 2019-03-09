@@ -154,6 +154,9 @@ string Game::playerLocation() {
     else if (friendCubicle->getPlayer() != nullptr) {
         return friendCubicle->getLocationName();
     }
+    else if (bossRoom->getPlayer() != nullptr) {
+        return bossRoom->getLocationName();
+    }
 }
 
 /*********************************************************************
