@@ -38,12 +38,14 @@ public:
     Space(string locName, Location loc, Player *player);
     virtual ~Space();
     string getLocationName();
+    Location getLocation();
 
     // space pointer setters
     void setUp(Space *up);
     void setRight(Space *right);
     void setDown(Space *down);
     void setLeft(Space *left);
+
     // space pointer getters
     Space *getUp();
     Space *getRight();
@@ -54,7 +56,8 @@ public:
     void setPlayer(Player *&player);
     Player *getPlayer();
 
-    Location getLocation();
+    // virtual function(s)
+    virtual void spaceInteractions() = 0;
 
     //friend class Game;
 };
