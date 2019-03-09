@@ -157,6 +157,8 @@ string Game::playerLocation() {
     else if (bossRoom->getPlayer() != nullptr) {
         return bossRoom->getLocationName();
     }
+    // TODO - add remaining spaces HERE
+    
 }
 
 /*********************************************************************
@@ -173,6 +175,11 @@ Space *Game::getSpaceAddress() {
     else if (friendCubicle->getPlayer() != nullptr) {
         return friendCubicle;
     }
+    else if (bossRoom->getPlayer() != nullptr) {
+        return bossRoom;
+    }
+    // TODO - add remaining spaces HERE
+
 }
 
 /*********************************************************************
