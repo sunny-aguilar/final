@@ -217,7 +217,7 @@ void Menu::displayMap(Space *space) {
     // if player is by the break room, display that
     if (space->getLocationName() == "Break Room") {
         if (space->getPlayer() != nullptr) {
-            tr = space->getLocationName() + "[*]";
+            br = space->getLocationName() + "[*]";
         }
     }
 
