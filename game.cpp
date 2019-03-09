@@ -206,10 +206,12 @@ void Game::availableMoves(Space *space) {
 void Game::selectSpaceToMovePlayer() {
     int selection = menu.validateNumber(0, movesAvailable);
 
-    cout << "Size: " << places.size() << endl;
-    cout << places.front() << endl;
+    int location = places.at(selection - 1);
 
-    switch (selection) {
+//    cout << "Size: " << places.size() << endl;
+//    cout << places.front() << endl;
+
+    switch (location) {
         case MYCUBICLE:
             // move player to my cubicle
             cout << "Move to my cubicle\n";
@@ -244,16 +246,18 @@ void Game::selectSpaceToMovePlayer() {
 void Game::movePlayer(Space *space) {
     // TODO - delete this cout
     cout << "New Space Player address b4 initialization: " << space->getPlayer() << endl;
-    cout << "Location name: " << space->getLocationName() << endl;
-    cout << "myCubicle address: " << myCubicle << endl;
-    cout << "myCubicle address getSpaceAddress(): " << getSpaceAddress() << endl;
-    cout << "myCubicle address of player " << myCubicle->getPlayer() << endl << endl;
+    cout << "New Space Location name: " << space->getLocationName() << endl;
+    cout << "New space address: " << space << endl << endl;
+    cout << "Address of transferor space using getSpaceAddress(): " << getSpaceAddress() << endl;
+    cout << "Name of transferor space using getSpaceAddress(): " << getSpaceAddress()->getLocationName() << endl << endl;
 
     if (space->getPlayer() == nullptr) {
+        //Space *tempPlayer1 = getSpaceAddress();
         Player *tempPlayer = getSpaceAddress()->getPlayer();    // get current player object
         space->setPlayer( tempPlayer );                         // set player object to new space
 
         Player *nullPlayer = nullptr;
+        //tempPlayer1->setPlayer(nullPlayer);
         getSpaceAddress()->setPlayer(nullPlayer);               // set player object in prior space to null
 //        myCubicle->player = nullptr;
         cout << "myCubicle->player address: " << myCubicle->player << endl;
