@@ -208,6 +208,12 @@ void Menu::displayMap(Space *space) {
             bm = space->getLocationName() + "[*]";
         }
     }
+    // if player is by the meeting room, display that
+    if (space->getLocationName() == "Meeting Room") {
+        if (space->getPlayer() != nullptr) {
+            tr = space->getLocationName() + "[*]";
+        }
+    }
     // TODO - set remaining spaces
 
 

@@ -272,7 +272,7 @@ void Game::selectSpaceToMovePlayer() {
             //movePlayer();
             break;
         case MEETINGROOM:
-            //movePlayer();
+            movePlayer(meetingRoom);
             break;
         default:
             cout << "Unable to determine location to move player\n";
