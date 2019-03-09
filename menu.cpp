@@ -196,6 +196,12 @@ void Menu::displayMap(Space *space) {
             tl = space->getLocationName() + " [*]";
         }
     }
+    // if player is at his boss's office, display that
+    if (space->getLocationName() == "Boss's Office") {
+        if (space->getPlayer() != nullptr) {
+            tm = space->getLocationName() + " [*]";
+        }
+    }
 
 
 
