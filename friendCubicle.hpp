@@ -12,7 +12,8 @@
 
 class FriendCubicle : public Space {
 private:
-
+    int pepTalks = 0;
+    int projectHelps = 0;
 public:
     FriendCubicle();
     ~FriendCubicle();

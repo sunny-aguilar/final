@@ -42,9 +42,16 @@ void FriendCubicle::spaceInteractions() {
 ** Description:     d
 *********************************************************************/
 void FriendCubicle::pepTalk() {
+    int pepTalkMax = 1;
+
+    if (pepTalks >= pepTalkMax) {
+        cout << "Sorry, your friend has already helped you all that he can\n";
+        cout << "for today (┛ò__ó)┛\n";
+    }
     cout << "You had a great pep talk with you friend. Your sanity\n";
-    cout << "points have increased by +1\n";
+    cout << "points have increased by +1\n\n";
     player->setSanityPoints(1);
+    pepTalks++;
 }
 
 /*********************************************************************
@@ -52,7 +59,7 @@ void FriendCubicle::pepTalk() {
 *********************************************************************/
 void FriendCubicle::projectHelp() {
     cout << "Your friend graciously helped you with your project. Your\n";
-    cout << "performance points have increased by +1\n";
+    cout << "performance points have increased by +1\n\n";
     player->setPerformancePoints(1);
 }
 

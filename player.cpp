@@ -44,7 +44,7 @@ int Player::getPerformancePoints() {
 
 /*********************************************************************
 ** Description:     setter that sets the player's performance points.
-**                  A player's performance points cannot exeed 10.
+**                  A player's performance points cannot exceed 10.
 *********************************************************************/
 void Player::setPerformancePoints(int points) {
     if (performance + points > 10) { return; }
