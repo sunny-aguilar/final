@@ -85,28 +85,28 @@ void Space::setLeft(Space *left) {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     returns the pointer of the space going up
 *********************************************************************/
 Space *Space::getUp() {
     return up;
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     returns the pointer of the space on the right
 *********************************************************************/
 Space *Space::getRight() {
     return right;
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     returns the pointer of the space going down
 *********************************************************************/
 Space *Space::getDown() {
     return down;
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     returns the pointer of the space on the left
 *********************************************************************/
 Space *Space::getLeft() {
     return left;
