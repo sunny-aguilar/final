@@ -252,35 +252,15 @@ void Game::selectSpaceToMovePlayer() {
 **                  for which the player will move to
 *********************************************************************/
 void Game::movePlayer(Space *space) {
-    // TODO - delete this cout
-    cout << "New Space Player address b4 initialization: " << space->getPlayer() << endl;
-    cout << "New Space Location name: " << space->getLocationName() << endl;
-    cout << "New space address: " << space << endl << endl;
-    cout << "Address of transferor space using getSpaceAddress(): " << getSpaceAddress() << endl;
-    cout << "Name of transferor space using getSpaceAddress(): " << getSpaceAddress()->getLocationName() << endl << endl;
-
     if (space->getPlayer() == nullptr) {
-        Space *tempPlayer1 = getSpaceAddress();
+        // transfer player object to new space
+        Space *tempPlayer1 = getSpaceAddress();                 // get current space
         Player *tempPlayer = getSpaceAddress()->getPlayer();    // get current player object
         space->setPlayer( tempPlayer );                         // set player object to new space
-        cout << "Player object address: " << tempPlayer << endl;
-        cout << "Space player address " << space->getPlayer() << endl;
 
+        // set player object in prior space to null
         Player *nullPlayer = nullptr;
-        //tempPlayer1->setPlayer(nullPlayer);
-        cout << "getSpaceAddress() address->getLocationName() " << getSpaceAddress()->getLocationName()<< endl;
-        tempPlayer1->setPlayer(nullPlayer);               // set player object in prior space to null
-        cout << "getSpaceAddress() address->getLocationName() " << getSpaceAddress()->getLocationName() << endl;
-
-//        myCubicle->player = nullptr;
-        cout << "friendCubicle->player address: " << friendCubicle->player << endl;
-        cout << "friendCubicle->getPlayer() address: " << friendCubicle->getPlayer() << endl << endl;
-
-        // TODO - delete this cout
-        cout << "New space info:\n";
-        cout << "Space address " << space->getPlayer() << endl;
-        cout << "Space Location name: " << space->getLocationName() << endl;
-        cout << "Space address of player: " << tempPlayer << endl << endl;
+        tempPlayer1->setPlayer(nullPlayer);
     }
     else {
         cout << "Space is already occupied!\n";
