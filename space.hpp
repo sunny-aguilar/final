@@ -50,13 +50,13 @@ public:
     Space *getDown();
     Space *getLeft();
 
+    // player setter/getter
     void setPlayer(Player *&player);
     Player *getPlayer();
-    void getPlayer(Player *player);
 
     Location getLocation();
 
-    friend class Game;
+    //friend class Game;
 };
 
 #endif // SPACE_HPP
