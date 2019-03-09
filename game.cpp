@@ -274,7 +274,7 @@ void Game::movePlayer(Space *space) {
 
 
     // TODO - increase time by half hour
-
+    time++;
 //    switch () {
 //        case MYCUBICLE:
 //            // move player to my cubicle

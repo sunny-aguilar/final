@@ -168,7 +168,7 @@ void Menu::hud(Player *p, string loc, string time) {
     cout << "[  Sanity Points: " << setw(2) << p->getSanityPoints() << "                     |";
     cout << "   Performance Points: " << setw(2) << p->getPerformancePoints() <<"       ]\n";
     cout << "[  Current Location:  " << setw(16) << loc << "   |";
-    cout << "   Current Time:  " << time << "       ]\n";
+    cout << "   Current Time:  " << setw(8) << time << "      ]\n";
     cout << "[  Inventory: " << "                                                            ]\n";
     cout << "+-------------------------------------------------------------------------+\n\n";
 }
