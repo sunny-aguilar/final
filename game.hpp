@@ -46,6 +46,7 @@ public:
     void availableMoves(Space *space);
     void selectSpaceToMovePlayer();
     void movePlayer(Space *space);
+    void roomActivities();
     void endDay();
 
     // utilities

@@ -255,6 +255,13 @@ void Menu::displayAvailableSpaces() {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
+void Menu::displayRoomActivities(string loc) {
+    cout << "Available Activities @ " << loc << endl;
+}
+
+/*********************************************************************
+** Description:     d
+*********************************************************************/
 void Menu::endOfDay() {
     cout << "Day has ended\n\n";
 }

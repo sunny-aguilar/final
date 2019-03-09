@@ -130,8 +130,7 @@ void Game::gameOperations() {
     // arrive to work
     arriveToWork();
 
-    // show main menu
-
+    // start day steps
     playDay();
 
     // end of day results
@@ -173,10 +172,10 @@ void Game::showMainMenu() {
 
     switch(menu.validateNumber(1,3)) {
         case 1:
-            menu.displayMap(getSpaceAddress()); // TODO - myCubicle should be any space
+            menu.displayMap(getSpaceAddress());
             break;
         case 2:
-
+            roomActivities();
             break;
         case 3:
             availableMoves( getSpaceAddress() );
@@ -361,6 +360,13 @@ void Game::movePlayer(Space *space) {
 
     // increase time for each step taken
     time++;
+}
+
+/*********************************************************************
+** Description:     d
+*********************************************************************/
+void Game::roomActivities() {
+    menu.displayRoomActivities(playerLocation());
 }
 
 /*********************************************************************
