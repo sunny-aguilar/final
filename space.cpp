@@ -50,35 +50,35 @@ Space::Space(string locName, Location loc, Player *player) :
 Space::~Space() {}
 
 /*********************************************************************
-** Description:     d
+** Description:     returns a string showing the space name
 *********************************************************************/
 string Space::getLocationName() {
     return locationName;
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     sets the space pointer going up
 *********************************************************************/
 void Space::setUp(Space *up) {
     this->up = up;
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     sets the space pointer going right
 *********************************************************************/
 void Space::setRight(Space *right) {
     this->right = right;
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     sets the space pointer down
 *********************************************************************/
 void Space::setDown(Space *down) {
     this->down = down;
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     sets the space pointer on the left
 *********************************************************************/
 void Space::setLeft(Space *left) {
     this->left = left;
