@@ -19,6 +19,7 @@
 #include "friendCubicle.hpp"
 #include "bossRoom.hpp"
 #include "waterCooler.hpp"
+#include "meetingRoom.hpp"
 #include <vector>
 using std::vector;
 
