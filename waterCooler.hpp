@@ -16,6 +16,7 @@ private:
 public:
     WaterCooloer();
     ~WaterCooloer();
+    void spaceInteractions() override;
 };
 
 #endif // WATERCOOLER_HPP

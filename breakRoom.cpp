@@ -16,3 +16,8 @@ BreakRoom::BreakRoom() : Space("Break Room", BREAKROOM) {}
 ** Description:     destructor
 *********************************************************************/
 BreakRoom::~BreakRoom() {}
+
+/*********************************************************************
+** Description:     d
+*********************************************************************/
+void BreakRoom::spaceInteractions() {}

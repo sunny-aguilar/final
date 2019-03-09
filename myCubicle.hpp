@@ -20,7 +20,7 @@ private:
 public:
     MyCubicle(Player *&player);
     ~MyCubicle();
-
+    void spaceInteractions() override;
 };
 
 #endif // MYCUBICLE_HPP

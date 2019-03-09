@@ -16,3 +16,8 @@ MeetingRoom::MeetingRoom() : Space("Meeting Room", MEETINGROOM) {}
 ** Description:     destructor
 *********************************************************************/
 MeetingRoom::~MeetingRoom() {}
+
+/*********************************************************************
+** Description:     d
+*********************************************************************/
+void MeetingRoom::spaceInteractions() {}

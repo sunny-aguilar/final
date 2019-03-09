@@ -15,6 +15,7 @@ private:
 public:
     BreakRoom();
     ~BreakRoom();
+    void spaceInteractions() override;
 };
 
 #endif // BREAKROOM_HPP

@@ -15,6 +15,7 @@ private:
 public:
     MeetingRoom();
     ~MeetingRoom();
+    void spaceInteractions() override;
 };
 
 #endif // MEETINGROOM_HPP

@@ -15,6 +15,7 @@ private:
 public:
     BossRoom();
     ~BossRoom();
+    void spaceInteractions() override;
 };
 
 #endif // BOSSROOM_HPP

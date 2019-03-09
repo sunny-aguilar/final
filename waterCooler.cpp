@@ -16,3 +16,8 @@ WaterCooloer::WaterCooloer() : Space("Water Cooler", COOLER) {}
 ** Description:     destructor
 *********************************************************************/
 WaterCooloer::~WaterCooloer() {}
+
+/*********************************************************************
+** Description:     d
+*********************************************************************/
+void WaterCooloer::spaceInteractions() {}
