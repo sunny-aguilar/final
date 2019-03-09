@@ -27,6 +27,7 @@ public:
     void setSanityPoints(int points);
     int getPerformancePoints();
     void setPerformancePoints(int points);
+    void setInventory();
 };
 
 #endif // PLAYER_HPP

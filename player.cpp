@@ -52,9 +52,11 @@ void Player::setPerformancePoints(int points) {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     setter that adds inventory to player's pockets
 *********************************************************************/
+void Player::setInventory() {
 
+}
 
 /*********************************************************************
 ** Description:     d

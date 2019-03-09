@@ -49,7 +49,8 @@ void MyCubicle::spaceInteractions() {
 *********************************************************************/
 void MyCubicle::takeCell() {
     // place cell in inventory
-
+    player
+    cout << "You have placed the cell phone in your pocket\n";
 }
 
 /*********************************************************************
