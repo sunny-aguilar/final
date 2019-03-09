@@ -131,9 +131,8 @@ void Game::gameOperations() {
     arriveToWork();
 
     // show main menu
-    while (player->getSanityPoints() > 0 && player->getPerformancePoints() && calculateTime(time) != "5:00 PM") {
-        showMainMenu(); // TODO - need to change this so that it displays location of any player
-    }
+
+    playDay();
 
     // end of day results
     endDay();
@@ -183,9 +182,9 @@ void Game::showMainMenu() {
 **                  to go home
 *********************************************************************/
 void Game::playDay() {
-//    while () {
-//
-//    }
+    while (player->getSanityPoints() > 0 && player->getPerformancePoints() && calculateTime(time) != "5:00 PM") {
+        showMainMenu(); // TODO - need to change this so that it displays location of any player
+    }
 }
 
 /*********************************************************************
