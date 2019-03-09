@@ -213,8 +213,8 @@ bool Game::loopControl() {
     }
 
 
-    return ( player->getSanityPoints() > 0 &&
-             player->getPerformancePoints() &&
+    return ( !insane > 0 &&
+             !fired &&
              !shiftOver );
 }
 
