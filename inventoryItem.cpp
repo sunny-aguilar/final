@@ -9,11 +9,19 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-InventoryItem::InventoryItem() {}
+InventoryItem::InventoryItem(string name, Inventory itemType) :
+    name{name}, itemType{itemType} {}
 
 /*********************************************************************
 ** Description:     destructor
 *********************************************************************/
 InventoryItem::~InventoryItem() {}
+
+/*********************************************************************
+** Description:     returns the enum item type
+*********************************************************************/
+Inventory InventoryItem::getItemType() {
+    return itemType;
+}
 
 

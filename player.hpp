@@ -18,7 +18,7 @@ class Player {
 private:
     int sanity;
     int performance;
-    //vector<>
+    vector<InventoryItem> inventory;
 
 public:
     Player();

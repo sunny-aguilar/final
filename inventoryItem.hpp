@@ -7,12 +7,19 @@
 #ifndef INVENTORYITEM_HPP
 #define INVENTORYITEM_HPP
 
+#include <string>
+using std::string;
+
+enum Inventory{CELLPHONE, DOUGHNUTS, STAPLER};
+
 class InventoryItem {
 private:
-
+    string name;
+    Inventory itemType;
 public:
-    InventoryItem();
+    InventoryItem(string name, Inventory itemType);
     ~InventoryItem();
+    Inventory getItemType();
 };
 
 #endif INVENTORYITEM_HPP
