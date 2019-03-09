@@ -367,11 +367,12 @@ void Game::movePlayer(Space *space) {
 *********************************************************************/
 void Game::roomActivities() {
     menu.displayRoomActivities(playerLocation());
-
+    getSpaceAddress()->spaceInteractions();
+    int selection = menu.validateNumber(1,3);
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     display end of day message
 *********************************************************************/
 void Game::endDay() {
     menu.endOfDay();

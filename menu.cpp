@@ -258,10 +258,8 @@ void Menu::displayAvailableSpaces() {
 void Menu::displayRoomActivities(string loc) {
     cout << left;
     cout << "+----------------------------------------------------------------------+\n";
-    cout << "[ Available Activities @ " << setw(16) << loc << "                               ]\n";
+    cout << "[ Available Activities @ " << setw(16) << loc << "                              ]\n";
     cout << "+----------------------------------------------------------------------+\n";
-    cout << "1. Show office map\n";
-    cout << ">> ";
 }
 
 /*********************************************************************
