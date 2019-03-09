@@ -198,9 +198,24 @@ void Game::playDay() {
 **                      - 5:00 PM end of day, player wins
 *********************************************************************/
 bool Game::loopControl() {
+    bool shiftOver = false;
+    bool insane = false;
+    bool fired = false;
+
+    if (calculateTime(time) == "5:00 PM") {
+        shiftOver = true;
+    }
+    if (player->getSanityPoints() < 1) {
+        insane = true;
+    }
+    if (player->getPerformancePoints() < 1) {
+        fired = true;
+    }
+
+
     return ( player->getSanityPoints() > 0 &&
              player->getPerformancePoints() &&
-             calculateTime(time) != "5:00 PM" );
+             !shiftOver );
 }
 
 /*********************************************************************
