@@ -41,6 +41,8 @@ void Game::createBoard() {
     cout << "Friend player address " << friendCubicle->getPlayer() << endl;
     cout << "bossRoom address " << bossRoom << endl;
     cout << "bossRoom player address " << bossRoom->getPlayer() << endl << endl;
+    cout << "meetingRoom address " << meetingRoom << endl;
+    cout << "meetingRoom player address " << meetingRoom->getPlayer() << endl << endl;
 
     // link spaces to each other
     myCubicle->setUp(friendCubicle);    // link myCubicle
@@ -212,22 +214,22 @@ void Game::availableMoves(Space *space) {
     cout << "\nAvailable Locations To Move To:\n";
     if (space->getUp() != nullptr) {
         cout << ++count << ". " << space->getUp()->getLocationName() << endl;
-        cout << "pushed back in vector getup(): " << space->getUp()->getLocation() << endl;
+        cout << "1 pushed back in vector getup(): " << space->getUp()->getLocation() << endl;
         places.push_back( space->getUp()->getLocation() );
     }
     if (space->getRight() != nullptr) {
         cout << ++count << ". " << space->getRight()->getLocationName() << endl;
-        cout << "pushed back in vector getRight(): " << space->getRight()->getLocation() << endl;
+        cout << "2 pushed back in vector getRight(): " << space->getRight()->getLocation() << endl;
         places.push_back( space->getRight()->getLocation() );
     }
     if (space->getDown() != nullptr) {
         cout <<++count << ". " << space->getDown()->getLocationName() << endl;
-        cout << "pushed back in vector getDown(): " << space->getDown()->getLocation() << endl;
+        cout << "3 pushed back in vector getDown(): " << space->getDown()->getLocation() << endl;
         places.push_back( space->getDown()->getLocation() );
     }
     if (space->getLeft() != nullptr) {
         cout << ++count << ". " << space->getLeft()->getLocationName() << endl;
-        cout << "pushed back in vector getLeft(): " << space->getLeft()->getLocation() << endl;
+        cout << "4 pushed back in vector getLeft(): " << space->getLeft()->getLocation() << endl;
         places.push_back( space->getLeft()->getLocation() );
     }
     cout << ++count << ". Back to main menu\n";
@@ -272,6 +274,7 @@ void Game::selectSpaceToMovePlayer() {
             //movePlayer();
             break;
         case MEETINGROOM:
+            cout << "Move to meeting room\n";
             movePlayer(meetingRoom);
             break;
         default:

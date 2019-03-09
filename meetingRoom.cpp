@@ -10,7 +10,7 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-MeetingRoom::MeetingRoom() : Space("Water Cooler", COOLER)
+MeetingRoom::MeetingRoom() : Space("Meeting Room", MEETINGROOM)
 {
     // TODO - delete
     cout << "MeetingRoom default constructor triggered\n";
