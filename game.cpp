@@ -55,6 +55,7 @@ void Game::createBoard() {
     bossRoom->setDown(waterCooler);
     waterCooler->setLeft(myCubicle);    // link waterCooler
     waterCooler->setUp(bossRoom);
+    waterCooler->setRight(breakRoom);
     meetingRoom->setLeft(bossRoom);     // link meetingRoom
     meetingRoom->setDown(breakRoom);
     breakRoom->setLeft(waterCooler);    // link breakRoom
