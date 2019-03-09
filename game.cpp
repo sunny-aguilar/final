@@ -21,7 +21,49 @@ Game::Game() : time{1}, movesAvailable{0}, player{new Player()} {}
 /*********************************************************************
 ** Description:     virtual destructor
 *********************************************************************/
-Game::~Game() {}
+Game::~Game() {
+    if (myCubicle != nullptr) {
+        if (myCubicle->getPlayer() != nullptr) {
+            delete myCubicle->getPlayer();
+        }
+    }
+    delete myCubicle;
+
+    if (friendCubicle != nullptr) {
+        if (friendCubicle->getPlayer() != nullptr) {
+            delete friendCubicle->getPlayer();
+        }
+    }
+    delete friendCubicle;
+
+    if (bossRoom != nullptr) {
+        if (bossRoom->getPlayer() != nullptr) {
+            delete bossRoom->getPlayer();
+        }
+    }
+    delete bossRoom;
+
+    if (waterCooler != nullptr) {
+        if (waterCooler->getPlayer() != nullptr) {
+            delete waterCooler->getPlayer();
+        }
+    }
+    delete waterCooler;
+
+    if (meetingRoom != nullptr) {
+        if (meetingRoom->getPlayer() != nullptr) {
+            delete meetingRoom->getPlayer();
+        }
+    }
+    delete meetingRoom;
+
+    if (breakRoom != nullptr) {
+        if (breakRoom->getPlayer() != nullptr) {
+            delete breakRoom->getPlayer();
+        }
+    }
+    delete breakRoom;
+}
 
 /*********************************************************************
 ** Description:     this function creates the spaces and links
