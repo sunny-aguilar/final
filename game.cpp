@@ -136,7 +136,6 @@ void Game::gameOperations() {
 
     // end of day results
     endDay();
-
 }
 
 /*********************************************************************
@@ -147,10 +146,22 @@ void Game::morningRoutine() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:
 *********************************************************************/
 void Game::arriveToWork() {
     menu.startWorkDay();
+}
+
+/*********************************************************************
+** Description:     this function plays the day and allows the game
+**                  to continue until the player has lost all of their
+**                  sanity points, performance points, or it is time
+**                  to go home
+*********************************************************************/
+void Game::playDay() {
+    while (loopControl()) {
+        showMainMenu();
+    }
 }
 
 /*********************************************************************
@@ -165,6 +176,7 @@ void Game::showMainMenu() {
             menu.displayMap(getSpaceAddress()); // TODO - myCubicle should be any space
             break;
         case 2:
+
             break;
         case 3:
             availableMoves( getSpaceAddress() );
@@ -172,18 +184,6 @@ void Game::showMainMenu() {
             break;
         default:
             cout << "Unable to determine selection\n";
-    }
-}
-
-/*********************************************************************
-** Description:     this function plays the day and allows the game
-**                  to continue until the player has lost all of their
-**                  sanity points, performance points, or it is time
-**                  to go home
-*********************************************************************/
-void Game::playDay() {
-    while (loopControl()) {
-        showMainMenu();
     }
 }
 

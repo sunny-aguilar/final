@@ -24,7 +24,11 @@ MyCubicle::~MyCubicle() {}
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-void MyCubicle::spaceInteractions() {}
+void MyCubicle::spaceInteractions() {
+    if (player) {
+        cout << "player is currently in myCubicle space\n";
+    }
+}
 
 /*********************************************************************
 ** Description:     d
