@@ -6,3 +6,18 @@
 **                  boss office at work.
 *********************************************************************/
 #include "bossRoom.hpp"
+
+/*********************************************************************
+** Description:     default constructor
+*********************************************************************/
+BossRoom::BossRoom() : Space("Boss's Office", BOSSROOM)
+{
+    // TODO - delete cout
+    cout << "BossRoom default constructor triggered\n";
+}
+
+/*********************************************************************
+** Description:     destructor
+*********************************************************************/
+BossRoom::~BossRoom() {}
+

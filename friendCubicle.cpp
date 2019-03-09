@@ -13,7 +13,7 @@
 FriendCubicle::FriendCubicle() : Space("Friend's Cubicle", FRIENDCUBICLE)
 {
     // TODO - delete
-    cout << "default constructor triggered\n";
+    cout << "FriendCubicle default constructor triggered\n";
 }
 
 /*********************************************************************
