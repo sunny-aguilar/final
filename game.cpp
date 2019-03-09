@@ -178,18 +178,22 @@ void Game::availableMoves(Space *space) {
     cout << "\nAvailable Locations To Move To:\n";
     if (space->getUp() != nullptr) {
         cout << ++count << ". " << space->getUp()->getLocationName() << endl;
+        cout << "pushed back in vector getup(): " << space->getUp()->getLocation() << endl;
         places.push_back( space->getUp()->getLocation() );
     }
     if (space->getRight() != nullptr) {
         cout << ++count << ". " << space->getRight()->getLocationName() << endl;
+        cout << "pushed back in vector getRight(): " << space->getRight()->getLocation() << endl;
         places.push_back( space->getRight()->getLocation() );
     }
     if (space->getDown() != nullptr) {
         cout <<++count << ". " << space->getDown()->getLocationName() << endl;
+        cout << "pushed back in vector getDown(): " << space->getDown()->getLocation() << endl;
         places.push_back( space->getDown()->getLocation() );
     }
     if (space->getLeft() != nullptr) {
         cout << ++count << ". " << space->getLeft()->getLocationName() << endl;
+        cout << "pushed back in vector getLeft(): " << space->getLeft()->getLocation() << endl;
         places.push_back( space->getLeft()->getLocation() );
     }
     cout << ++count << ". Back to main menu\n";
@@ -209,7 +213,8 @@ void Game::selectSpaceToMovePlayer() {
     int location = places.at(selection - 1);
     cout << "Location selected: " << location << endl;
     cout << "Size: " << places.size() << endl;
-    cout << "Vector @ 0: " <<places.front() << endl;
+    cout << "Vector @ 0: " << places.front() << endl;
+    cout << "Vector @ 0: " << places[0] << endl;
 
     switch (location) {
         case MYCUBICLE:
@@ -237,6 +242,9 @@ void Game::selectSpaceToMovePlayer() {
         default:
             cout << "Unable to determine location to move player\n";
     }
+
+    // clear vector holding available move locations
+    places.clear();
 }
 
 /*********************************************************************
