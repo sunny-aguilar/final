@@ -54,8 +54,8 @@ void Player::setPerformancePoints(int points) {
 /*********************************************************************
 ** Description:     setter that adds inventory to player's pockets
 *********************************************************************/
-void Player::setInventory() {
-
+void Player::setInventory(string name, int type) {
+    inventory.push_back(  );
 }
 
 /*********************************************************************
