@@ -205,11 +205,11 @@ void Game::availableMoves(Space *space) {
 *********************************************************************/
 void Game::selectSpaceToMovePlayer() {
     int selection = menu.validateNumber(0, movesAvailable);
-
+    cout << "selection: " << selection << endl;
     int location = places.at(selection - 1);
-
-//    cout << "Size: " << places.size() << endl;
-//    cout << places.front() << endl;
+    cout << "Location selected: " << location << endl;
+    cout << "Size: " << places.size() << endl;
+    cout << "Vector @ 0: " <<places.front() << endl;
 
     switch (location) {
         case MYCUBICLE:
@@ -261,7 +261,7 @@ void Game::movePlayer(Space *space) {
         getSpaceAddress()->setPlayer(nullPlayer);               // set player object in prior space to null
 //        myCubicle->player = nullptr;
         cout << "myCubicle->player address: " << myCubicle->player << endl;
-        cout << "myCubicle->player address: " << myCubicle->getPlayer() << endl << endl;
+        cout << "myCubicle->getPlayer() address: " << myCubicle->getPlayer() << endl << endl;
 
         // TODO - delete this cout
         cout << "New space info:\n";
