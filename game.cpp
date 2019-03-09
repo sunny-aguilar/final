@@ -32,6 +32,7 @@ void Game::createBoard() {
     myCubicle = new MyCubicle( player );
     friendCubicle = new FriendCubicle();
     // TODO - remove this cout after debugged
+    cout << "myCubicle address " << myCubicle << endl;
     cout << "Player address " << player << endl;
     cout << "Friend Cubicle address " << friendCubicle << endl;
     cout << "Friend player address " << friendCubicle->getPlayer() << endl << endl;
@@ -203,7 +204,7 @@ void Game::availableMoves(Space *space) {
 **                  to space
 *********************************************************************/
 void Game::selectSpaceToMovePlayer() {
-    int selection = menu.validateNumber(1, movesAvailable);
+    int selection = menu.validateNumber(0, movesAvailable);
 
     cout << "Size: " << places.size() << endl;
     cout << places.front() << endl;
@@ -211,10 +212,12 @@ void Game::selectSpaceToMovePlayer() {
     switch (selection) {
         case MYCUBICLE:
             // move player to my cubicle
+            cout << "Move to my cubicle\n";
             movePlayer(myCubicle);
             break;
         case FRIENDCUBICLE:
             // move player to friend's cubicle
+            cout << "Move to friend's cubicle\n";
             movePlayer(friendCubicle);
             break;
         case BOSSROOM:
@@ -240,7 +243,11 @@ void Game::selectSpaceToMovePlayer() {
 *********************************************************************/
 void Game::movePlayer(Space *space) {
     // TODO - delete this cout
-    cout << "Player address: " << space->getPlayer() << endl;
+    cout << "New Space Player address b4 initialization: " << space->getPlayer() << endl;
+    cout << "Location name: " << getSpaceAddress()->getLocationName() << endl;
+    cout << "myCubicle address: " << myCubicle << endl;
+    cout << "myCubicle address getSpaceAddress(): " << getSpaceAddress() << endl;
+    cout << "myCubicle address of player " << myCubicle->getPlayer() << endl << endl;
 
     if (space->getPlayer() == nullptr) {
         Player *tempPlayer = getSpaceAddress()->getPlayer();    // get current player object
@@ -248,13 +255,47 @@ void Game::movePlayer(Space *space) {
 
         Player *nullPlayer = nullptr;
         getSpaceAddress()->setPlayer(nullPlayer);               // set player object in prior space to null
+//        myCubicle->player = nullptr;
+        cout << "myCubicle->player address: " << myCubicle->player << endl;
+        cout << "myCubicle->player address: " << myCubicle->getPlayer() << endl << endl;
 
         // TODO - delete this cout
-        cout << "Address of player in friend's cubicle " << tempPlayer << endl << endl;
+        cout << "New space info:\n";
+        cout << "Space address " << space->getPlayer() << endl;
+        cout << "Space Location name: " << space->getLocationName() << endl;
+        cout << "Space address of player: " << tempPlayer << endl << endl;
     }
     else {
         cout << "Space is already occupied!\n";
     }
+
+
+    // TODO - increase time by half hour
+
+//    switch () {
+//        case MYCUBICLE:
+//            // move player to my cubicle
+//
+//            break;
+//        case FRIENDCUBICLE:
+//            // move player to friend's cubicle
+//
+//            break;
+//        case BOSSROOM:
+//            //movePlayer();
+//            break;
+//        case COOLER:
+//            //movePlayer();
+//            break;
+//        case BREAKROOM:
+//            //movePlayer();
+//            break;
+//        case MEETINGROOM:
+//            //movePlayer();
+//            break;
+//        default:
+//            cout << "Unable to determine location to move player\n";
+//    }
 
 
 }

@@ -56,6 +56,7 @@ public:
 
     Location getLocation();
 
+    friend class Game;
 };
 
 #endif // SPACE_HPP
