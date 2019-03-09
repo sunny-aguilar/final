@@ -127,7 +127,7 @@ Player *Space::getPlayer() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     returns the enum location of the player
 *********************************************************************/
 Location Space::getLocation() {
     return location;
