@@ -24,7 +24,7 @@ void FriendCubicle::spaceInteractions() {
     if (player) {
         cout << "player is currently in Friend's Cubicle\n";
     }
-    cout << "1. Put cell phone in your pocket\n";
+    cout << "1. Have a pep talk with your friend\n";
 }
 
 /*********************************************************************
