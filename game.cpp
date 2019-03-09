@@ -43,6 +43,7 @@ void Game::createBoard() {
 
     // link spaces to each other
     myCubicle->setUp(friendCubicle);    // link myCubicle
+    myCubicle->setRight(waterCooler);
     friendCubicle->setDown(myCubicle);  // link friendCubicle
     friendCubicle->setRight(bossRoom);
     bossRoom->setLeft(friendCubicle);   // link bossRoom
