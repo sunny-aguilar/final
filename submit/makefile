@@ -80,7 +80,7 @@ clean:
 	rm Fight *.o
 
 debug:
-	valgrind -v --leak-check=full --show-leak-kinds=all --track-origins=yes ./Fight
+	valgrind -v --leak-check=full --show-leak-kinds=all --track-origins=yes ./Final
 
 zip:
 	zip -D Final_Aguilar_Sandro.zip $(CPPs) $(HPPs) $(TXTS) makefile *.txt *.pdf
