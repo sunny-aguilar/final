@@ -263,13 +263,20 @@ void Game::movePlayer(Space *space) {
         //Space *tempPlayer1 = getSpaceAddress();
         Player *tempPlayer = getSpaceAddress()->getPlayer();    // get current player object
         space->setPlayer( tempPlayer );                         // set player object to new space
+        cout << "Player object address: " << tempPlayer << endl;
+        cout << "Space player address " << space->getPlayer() << endl;
 
         Player *nullPlayer = nullptr;
         //tempPlayer1->setPlayer(nullPlayer);
+        cout << "getSpaceAddress() address->getLocationName() " << getSpaceAddress()->getLocationName()<< endl;
+        cout << "getSpaceAddress() address->getPlayer() " << getSpaceAddress()->getPlayer() << endl;
         getSpaceAddress()->setPlayer(nullPlayer);               // set player object in prior space to null
+        cout << "getSpaceAddress() address->getPlayer() " << getSpaceAddress()->getPlayer() << endl;
+        cout << "getSpaceAddress() address->getLocationName() " << getSpaceAddress()->getLocationName() << endl;
+
 //        myCubicle->player = nullptr;
-        cout << "myCubicle->player address: " << myCubicle->player << endl;
-        cout << "myCubicle->getPlayer() address: " << myCubicle->getPlayer() << endl << endl;
+        cout << "friendCubicle->player address: " << friendCubicle->player << endl;
+        cout << "friendCubicle->getPlayer() address: " << friendCubicle->getPlayer() << endl << endl;
 
         // TODO - delete this cout
         cout << "New space info:\n";
