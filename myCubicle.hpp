@@ -21,6 +21,8 @@ public:
     MyCubicle(Player *&player);
     ~MyCubicle();
     void spaceInteractions() override;
+    void takeCell();
+    void takeNap();
 };
 
 #endif // MYCUBICLE_HPP

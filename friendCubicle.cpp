@@ -18,7 +18,8 @@ FriendCubicle::FriendCubicle() : Space("Friend's Cubicle", FRIENDCUBICLE) {}
 FriendCubicle::~FriendCubicle() {}
 
 /*********************************************************************
-** Description:     d
+** Description:     allows a player to recover sanity points but only
+**                  once
 *********************************************************************/
 void FriendCubicle::spaceInteractions() {
     cout << "1. Have a pep talk with your friend\n";
@@ -39,16 +40,19 @@ void FriendCubicle::spaceInteractions() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     allows a player to recover performance points but
+**                  only once
 *********************************************************************/
 void FriendCubicle::pepTalk() {
     int pepTalkMax = 1;
 
     if (pepTalks >= pepTalkMax) {
-        cout << "Sorry, your friend has already helped you all that he can\n";
-        cout << "for today (┛ò__ó)┛\n";
+        cout << ">> Sorry, your friend has already helped you all that he can\n";
+        cout << "for today ( 0 _ 0 )\n\n";
+        return;
     }
-    cout << "You had a great pep talk with you friend. Your sanity\n";
+
+    cout << ">> You had a great pep talk with you friend. Your sanity\n";
     cout << "points have increased by +1\n\n";
     player->setSanityPoints(1);
     pepTalks++;
