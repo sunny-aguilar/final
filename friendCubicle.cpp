@@ -67,9 +67,18 @@ void FriendCubicle::pepTalk() {
 **                  help you once each day.
 *********************************************************************/
 void FriendCubicle::projectHelp() {
+    int projectHelpMax = 1;
+
+    if (projectHelps >= projectHelpMax) {
+        cout << ">> Sorry, your friend has already helped you all that he can\n";
+        cout << "for today ( 0 _ 0 )\n\n";
+        return;
+    }
+
     cout << "Your friend graciously helped you with your project. Your\n";
     cout << "performance points have increased by +1\n\n";
     player->setPerformancePoints(1);
+    projectHelps++;
 }
 
 /*********************************************************************

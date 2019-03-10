@@ -74,7 +74,7 @@ void Game::createBoard() {
     myCubicle = new MyCubicle( player );
     friendCubicle = new FriendCubicle();
     bossRoom = new BossRoom();
-    waterCooler = new WaterCooloer();
+    waterCooler = new WaterCooler();
     meetingRoom = new MeetingRoom();
     breakRoom = new BreakRoom();
 

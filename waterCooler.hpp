@@ -10,13 +10,15 @@
 
 #include "space.hpp"
 
-class WaterCooloer : public Space {
+class WaterCooler : public Space {
 private:
 
 public:
-    WaterCooloer();
-    ~WaterCooloer();
+    WaterCooler();
+    ~WaterCooler();
     void spaceInteractions() override;
+    void officeChat();
+    void moreChat();
 };
 
 #endif // WATERCOOLER_HPP
