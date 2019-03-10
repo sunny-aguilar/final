@@ -22,8 +22,8 @@ MeetingRoom::~MeetingRoom() {}
 **                  player will have with the space
 *********************************************************************/
 void MeetingRoom::spaceInteractions() {
-    cout << "1. Pick up some doughnuts\n";
-    cout << "2. Eat your leftovers from yesterday\n";
+    cout << "1. Attend your group meeting\n";
+    cout << "2. Add something here\n";
     cout << ">> ";
     int selection = validateNumber(1,2);
 
@@ -43,7 +43,21 @@ void MeetingRoom::spaceInteractions() {
 ** Description:     d
 *********************************************************************/
 void MeetingRoom::bringDoghnuts() {
+    vector<string> vect = player->getInventory();
 
+    for (int index = 0; index < vect.size(); index++) {
+        if (vect.at(index) == "Doughnut") {
+            cout << ">> Your group meetings are generally long and could have been\n";
+            cout << "   stated in an email.\n";
+            cout << "   Luckily, you have doughnuts and saved the day\n";
+            cout << ">> Gain 1 performance point +1\n\n";
+            return;
+        }
+        else {
+            cout << "Sorry, you do not have Doughnuts in your inventory\n\n";
+            return;
+        }
+    }
 }
 
 /*********************************************************************
