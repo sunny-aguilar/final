@@ -66,9 +66,8 @@ void WaterCooler::officeChat() {
 **                  sanity points.
 *********************************************************************/
 void WaterCooler::moreChat() {
-    cout << ">> You continue to chat with co-workers however your boss\n";
-    cout << "   has been keeping track of time and writes you up for\n";
-    cout << "   exceeding your break time!\n";
+    cout << ">> You continue to chat with co-workers however your boss has been\n";
+    cout << "   keeping track of time and writes you up for exceeding your break time!\n";
     cout << "   You have lost 3 performance points\n";
     cout << "   You have lost 3 sanity points\n";
     cout << "   ( ; _ ; )\n\n";
