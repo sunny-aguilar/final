@@ -9,6 +9,11 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
+InventoryItem::InventoryItem() {}
+
+/*********************************************************************
+** Description:     2-arg constructor
+*********************************************************************/
 InventoryItem::InventoryItem(string name, Inventory itemType) :
     name{name}, itemType{itemType} {}
 

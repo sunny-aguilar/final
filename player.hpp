@@ -18,7 +18,7 @@ class Player {
 private:
     int sanity;
     int performance;
-    vector<InventoryItem> inventory;
+    vector<InventoryItem *> item;
 
 public:
     Player();
@@ -27,7 +27,7 @@ public:
     void setSanityPoints(int points);
     int getPerformancePoints();
     void setPerformancePoints(int points);
-    void setInventory(string name, int type);
+    void setInventory(string name, Inventory type);
 };
 
 #endif // PLAYER_HPP

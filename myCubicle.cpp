@@ -49,7 +49,7 @@ void MyCubicle::spaceInteractions() {
 *********************************************************************/
 void MyCubicle::takeCell() {
     // place cell in inventory
-    player->setInventory("Cell Phone", 0);
+    player->setInventory("Cell Phone", CELLPHONE);
     cout << "You have placed the cell phone in your pocket\n";
 }
 

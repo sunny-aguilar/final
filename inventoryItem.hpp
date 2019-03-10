@@ -17,6 +17,7 @@ private:
     string name;
     Inventory itemType;
 public:
+    InventoryItem();
     InventoryItem(string name, Inventory itemType);
     ~InventoryItem();
     Inventory getItemType();
