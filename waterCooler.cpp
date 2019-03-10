@@ -18,6 +18,9 @@ WaterCooloer::WaterCooloer() : Space("Water Cooler", COOLER) {}
 WaterCooloer::~WaterCooloer() {}
 
 /*********************************************************************
-** Description:     d
+** Description:     this functions determine which interactions a
+**                  player will have with the space
 *********************************************************************/
-void WaterCooloer::spaceInteractions() {}
+void WaterCooloer::spaceInteractions() {
+
+}
