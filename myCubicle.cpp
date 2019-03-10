@@ -53,7 +53,7 @@ void MyCubicle::takeCell() {
 
     for (int index = 0; index < vect.size(); index++) {
         if (vect.at(index) == "Cell Phone") {
-            cout << "Player already has that item in their inventory!\n\n";
+            cout << "Player already has the Cell Phone in their inventory!\n\n";
             return;
         }
     }

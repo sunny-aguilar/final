@@ -47,7 +47,7 @@ void BreakRoom::getDoghnuts() {
 
     for (int index = 0; index < vect.size(); index++) {
         if (vect.at(index) == "Doughnut") {
-            cout << "Player already has that item in their inventory!\n\n";
+            cout << "Player already has Doughnuts in their inventory!\n\n";
             return;
         }
     }

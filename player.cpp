@@ -61,14 +61,6 @@ void Player::setInventory(string name) {
         return;
     }
 
-    // check if player already has that item in their inventory
-//    for (int index = 0; index < item.size(); index++) {
-//        if (item[index] == "Cell Phone") {
-//            cout << "You already have the cell phone in your pocket\n\n";
-//            return;
-//        }
-//    }
-
     // add item to player's inventory
     item.push_back(name);
     cout << "You have placed the "<< name <<" in your pocket\n";
@@ -79,7 +71,13 @@ void Player::setInventory(string name) {
 *********************************************************************/
 void Player::displayInventory() {
     for (int index = 0; index < item.size(); index++) {
-        cout << item.at(index) + " ";
+        if (index == 2) {
+            cout << item.at(index) + " ";
+        }
+        else {
+            cout << item.at(index) + ", ";
+        }
+
     }
 }
 
