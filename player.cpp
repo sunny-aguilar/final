@@ -67,7 +67,7 @@ void Player::setInventory(string name) {
 }
 
 /*********************************************************************
-** Description:     this funtion displays a player's inventory
+** Description:     this function displays a player's inventory
 *********************************************************************/
 void Player::displayInventory() {
     for (int index = 0; index < item.size(); index++) {
@@ -77,7 +77,6 @@ void Player::displayInventory() {
         else {
             cout << item.at(index) + ", ";
         }
-
     }
 }
 

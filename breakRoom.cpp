@@ -56,7 +56,8 @@ void BreakRoom::getDoghnuts() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     this function makes a player eat their prior day
+**                  leftovers for lunch
 *********************************************************************/
 void BreakRoom::eatLeftovers() {
 
