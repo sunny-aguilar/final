@@ -49,6 +49,15 @@ void MyCubicle::spaceInteractions() {
 ** Description:     adds cell phone to inventory
 *********************************************************************/
 void MyCubicle::takeCell() {
+    vector<string> vect = player->getInventory();
+
+    for (int index = 0; index < vect.size(); index++) {
+        if (vect.at(index) == "Cell Phone") {
+            cout << "Player already has that item in their inventory!\n\n";
+            return;
+        }
+    }
+
     player->setInventory("Cell Phone");
 }
 

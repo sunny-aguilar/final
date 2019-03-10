@@ -75,24 +75,20 @@ void Player::setInventory(string name) {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     this funtion displays a player's inventory
 *********************************************************************/
-void Player::getInventory() {
-    int index = -1;
-//    while (!item.empty()) {
-//        index++;
-//        return item.at(index) + " ";
-//    }
-
-    for (index = 0; index < item.size(); index++) {
+void Player::displayInventory() {
+    for (int index = 0; index < item.size(); index++) {
         cout << item.at(index) + " ";
     }
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     getter that returns a vector
 *********************************************************************/
-
+vector<string> Player::getInventory() {
+    return item;
+}
 
 /*********************************************************************
 ** Description:     d
