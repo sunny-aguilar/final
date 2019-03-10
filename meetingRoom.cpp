@@ -47,9 +47,12 @@ void MeetingRoom::bringDoghnuts() {
 
     for (int index = 0; index < vect.size(); index++) {
         if (vect.at(index) == "Doughnut") {
+            // remove doughnuts from inventory
+            vect.at(index) = "";
+            // display message
             cout << ">> Your group meetings are generally long and could have been\n";
-            cout << "   stated in an email.\n";
-            cout << "   Luckily, you have doughnuts and saved the day\n";
+            cout << "   stated in an email. Luckily, you have doughnuts and saved the\n";
+            cout << "   day\n";
             cout << ">> Gain 1 performance point +1\n\n";
             return;
         }
