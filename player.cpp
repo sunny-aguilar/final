@@ -57,14 +57,16 @@ void Player::setPerformancePoints(int points) {
 void Player::setInventory(string name) {
     if (item.size() >= 3) {
         cout << "You can only carry 3 items at a time\n\n";
-        return ;
+        return;
     }
 
     for (int index = 0; index < item.size(); index++) {
         if (item[index] == "Cell Phone") {
             cout << "You already have the cell phone in your pocket\n\n";
+            return;
         }
     }
+
     item.push_back(name);
 }
 
