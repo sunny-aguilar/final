@@ -55,11 +55,13 @@ void Player::setPerformancePoints(int points) {
 **                  The player's inventory cannot exceed 3 items.
 *********************************************************************/
 void Player::setInventory(string name) {
+    // check if player is already carrying the max items allowed
     if (item.size() >= 3) {
         cout << "You can only carry 3 items at a time\n\n";
         return;
     }
 
+    // check if player already has that item in their inventory
     for (int index = 0; index < item.size(); index++) {
         if (item[index] == "Cell Phone") {
             cout << "You already have the cell phone in your pocket\n\n";
