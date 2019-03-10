@@ -55,7 +55,6 @@ void MeetingRoom::bringDoghnuts() {
         }
         else {
             cout << "Sorry, you do not have Doughnuts in your inventory\n\n";
-            return;
         }
     }
 }
