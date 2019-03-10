@@ -57,8 +57,13 @@ void BreakRoom::getDoghnuts() {
 
 /*********************************************************************
 ** Description:     this function makes a player eat their prior day
-**                  leftovers for lunch
+**                  leftovers for lunch however it is spoiled and
+ *                  causes a player to lose sanity points.
 *********************************************************************/
 void BreakRoom::eatLeftovers() {
-
+    cout << ">> You've gotten hungry and decided to eat your leftover pizza from\n";
+    cout << "   yesterday. Unfortunately, left the pizza out overnight and now you\n";
+    cout << "   have the runs. Your co-workers do not appreciate how you left the restroom\n";
+    cout << "   You have lost 2 sanity points\n\n";
+    player->setSanityPoints(-2);
 }
