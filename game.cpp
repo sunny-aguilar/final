@@ -381,7 +381,8 @@ void Game::endDay() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     takes an integer that it will use to generate a
+**                  random number from 1 to max
 *********************************************************************/
 int Game::generateRandom(int max) {
     int randomNum = 0;
