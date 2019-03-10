@@ -51,7 +51,8 @@ void Player::setPerformancePoints(int points) {
 }
 
 /*********************************************************************
-** Description:     setter that adds inventory to player's pockets
+** Description:     setter that adds inventory to player's pockets.
+**                  The player's inventory cannot exceed 3 items.
 *********************************************************************/
 void Player::setInventory(string name) {
     for (int index = 0; index < item.size(); index++) {
