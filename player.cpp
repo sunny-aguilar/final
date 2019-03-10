@@ -90,6 +90,7 @@ vector<string> Player::getInventory() {
 /*********************************************************************
 ** Description:     deletes an item in the player's inventory
 *********************************************************************/
-void Player::deleteInventoryItem(int index) {
-    item.erase(index);
+void Player::deleteInventoryItem(int index, string eraseItem) {
+    //item.erase(index);
+    item.at(index) = eraseItem;
 }
