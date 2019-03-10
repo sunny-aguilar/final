@@ -33,7 +33,7 @@ Space::Space(string locName, Location loc) :
     player{nullptr} {}
 
 /*********************************************************************
-** Description:     2-arg constructor
+** Description:     3-arg constructor
 *********************************************************************/
 Space::Space(string locName, Location loc, Player *player) :
     location{loc},
@@ -139,7 +139,8 @@ Location Space::getLocation() {
 
 
 /*********************************************************************
-** Description:     d
+** Description:     takes an integer that it will use to generate a
+**                  random number from 1 to max
 *********************************************************************/
 int Space::generateRandom(int max) {
     int randomNum = 0;
