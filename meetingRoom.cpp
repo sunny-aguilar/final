@@ -52,8 +52,9 @@ void MeetingRoom::bringDoghnuts() {
             // display message
             cout << ">> Your group meetings are generally long and could have been\n";
             cout << "   stated in an email. Luckily, you have doughnuts and saved the\n";
-            cout << "   day\n";
-            cout << ">> Gain 1 performance point +1\n\n";
+            cout << "   day!\n";
+            cout << ">> Gain 1 sanity point +1\n\n";
+            player->setSanityPoints(1);
             return;
         }
         else {
