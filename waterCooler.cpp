@@ -10,7 +10,7 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-WaterCooler::WaterCooler() : Space("Water Cooler", COOLER) {}
+WaterCooler::WaterCooler() : chats{0}, Space("Water Cooler", COOLER) {}
 
 /*********************************************************************
 ** Description:     destructor
@@ -44,13 +44,34 @@ void WaterCooler::spaceInteractions() {
 **                  points
 *********************************************************************/
 void WaterCooler::officeChat() {
+    int maxChats = 2;
 
+    if (chats >= maxChats) {
+        cout << ">> Sorry, you only have two breaks available each day\n\n";
+        cout << "   ( ; _ ; )\n\n";
+        return;
+    }
+
+    cout << ">> You have caught up on the latest office rumors and are disgusted\n";
+    cout << "   yet seemingly satisfied\n";
+    cout << "   You have gained 1 sanity point\n\n";
+    player->setSanityPoints(1);
+    chats++;
 }
 
 /*********************************************************************
 ** Description:     this function allows you to keep chatting with
-**                  other co-workers about sports, etc.
+**                  other co-workers about sports, etc. however too
+**                  much chatting will affect your performance and
+**                  sanity points.
 *********************************************************************/
 void WaterCooler::moreChat() {
-
+    cout << ">> You continue to chat with co-workers however your boss\n";
+    cout << "   has been keeping track of time and writes you up for\n";
+    cout << "   exceeding your break time!\n";
+    cout << "   You have lost 3 performance points\n";
+    cout << "   You have lost 3 sanity points\n";
+    cout << "  ヽ(。_°)ノ\n\n";
+    player->setPerformancePoints(-3);
+    player->setSanityPoints(-3);
 }

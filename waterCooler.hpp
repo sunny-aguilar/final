@@ -12,7 +12,7 @@
 
 class WaterCooler : public Space {
 private:
-
+    int chats;
 public:
     WaterCooler();
     ~WaterCooler();

@@ -51,12 +51,12 @@ void FriendCubicle::pepTalk() {
 
     if (pepTalks >= pepTalkMax) {
         cout << ">> Sorry, your friend has already helped you all that he can\n";
-        cout << "for today ( 0 _ 0 )\n\n";
+        cout << "   for today ( 0 _ 0 )\n\n";
         return;
     }
 
     cout << ">> You had a great pep talk with you friend. Your sanity\n";
-    cout << "points have increased by +1\n\n";
+    cout << "   points have increased by +1\n\n";
     player->setSanityPoints(1);
     pepTalks++;
 }
@@ -71,7 +71,7 @@ void FriendCubicle::projectHelp() {
 
     if (projectHelps >= projectHelpMax) {
         cout << ">> Sorry, your friend has already helped you all that he can\n";
-        cout << "for today ( 0 _ 0 )\n\n";
+        cout << "   for today ( 0 _ 0 )\n\n";
         return;
     }
 
