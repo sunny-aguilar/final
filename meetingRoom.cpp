@@ -48,7 +48,13 @@ void MeetingRoom::bringDoghnuts() {
     for (int index = 0; index < vect.size(); index++) {
         if (vect.at(index) == "Doughnut") {
             // remove doughnuts from inventory
-            player->getInventory().at(index) = "";
+            //player->getInventory().at(index) = "";
+            vect.at(index) == "";
+            player->getInventory() = vect;
+
+            for (int index = 0; index < vect.size(); index++) {
+                cout << "Inventory: " << vect.at(index) << " ";
+            }
 
             // display message
             cout << ">> Your group meetings are generally long and could have been\n";
