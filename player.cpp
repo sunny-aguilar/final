@@ -67,7 +67,9 @@ void Player::setInventory(string name) {
         }
     }
 
+    // add item to player's inventory
     item.push_back(name);
+    cout << "You have placed the cell phone in your pocket\n";
 }
 
 /*********************************************************************
