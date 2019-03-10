@@ -62,7 +62,9 @@ void FriendCubicle::pepTalk() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     this function displays that your friend has helped
+**                  you with a project at work. Your friend can only
+**                  help you once each day.
 *********************************************************************/
 void FriendCubicle::projectHelp() {
     cout << "Your friend graciously helped you with your project. Your\n";
