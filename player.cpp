@@ -77,7 +77,13 @@ void Player::setInventory(string name) {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-
+string Player::getInventory() {
+    int index = 0;
+    while (!item.empty()) {
+        cout << item.at(index) << " ";
+        index++;
+    }
+}
 
 /*********************************************************************
 ** Description:     d

@@ -30,6 +30,7 @@ public:
     int getPerformancePoints();
     void setPerformancePoints(int points);
     void setInventory(string item);
+    string getInventory();
 };
 
 #endif // PLAYER_HPP
