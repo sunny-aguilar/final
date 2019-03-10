@@ -20,4 +20,44 @@ BreakRoom::~BreakRoom() {}
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-void BreakRoom::spaceInteractions() {}
+void BreakRoom::spaceInteractions() {
+    cout << "1. Pick up some doughnuts\n";
+    cout << "2. Eat your leftovers from yesterday\n";
+    cout << ">> ";
+    int selection = validateNumber(1,2);
+
+    switch (selection) {
+        case 1:
+            getDoghnuts();
+            break;
+        case 2:
+            eatLeftovers();
+            break;
+        default:
+            cout << "Unable to determine selection!\n";
+    }
+}
+
+/*********************************************************************
+** Description:     allows a player to pick up a doughnut and add it
+**                  to their inventory for later use
+*********************************************************************/
+void BreakRoom::getDoghnuts() {
+    vector<string> vect = player->getInventory();
+
+    for (int index = 0; index < vect.size(); index++) {
+        if (vect.at(index) == "Doughnut") {
+            cout << "Player already has that item in their inventory!\n\n";
+            return;
+        }
+    }
+
+    player->setInventory("Doughnut");
+}
+
+/*********************************************************************
+** Description:     d
+*********************************************************************/
+void BreakRoom::eatLeftovers() {
+
+}

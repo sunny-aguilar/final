@@ -16,6 +16,8 @@ public:
     BreakRoom();
     ~BreakRoom();
     void spaceInteractions() override;
+    void getDoghnuts();
+    void eatLeftovers();
 };
 
 #endif // BREAKROOM_HPP
