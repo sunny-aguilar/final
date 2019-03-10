@@ -32,6 +32,7 @@ public:
     void setInventory(string item);
     void displayInventory();
     vector<string> getInventory();
+    void deleteInventoryItem(int index);
 };
 
 #endif // PLAYER_HPP

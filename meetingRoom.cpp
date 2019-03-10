@@ -50,10 +50,14 @@ void MeetingRoom::bringDoghnuts() {
             // remove doughnuts from inventory
             //player->getInventory().at(index) = "";
             vect.at(index) = "";
-            player->getInventory() = vect;
+            player->deleteInventoryItem(index);
 
             for (int index = 0; index < vect.size(); index++) {
-                cout << "Inventory: " << vect.at(index) << " ";
+                cout << "Inventory in vect: " << vect.at(index) << " ";
+            }
+            cout << endl;
+            for (int index = 0; index < player->getInventory().size(); index++) {
+                cout << "Inventory in vect: " << player->getInventory().at(index) << " ";
             }
             cout << endl;
 
