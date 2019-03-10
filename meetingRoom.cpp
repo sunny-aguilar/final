@@ -71,27 +71,31 @@ void MeetingRoom::bringDoghnuts() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     if a player is carrying their cell phone in their
+**                  inventory, then the player can pass time at the
+**                  meeting. Otherwise the player will have a long
+**                  unproductive meeting and be penalized by losing
+**                  sanity and performance points.
 *********************************************************************/
 void MeetingRoom::useCellPhone() {
     vector<string> vect = player->getInventory();
 
     for (int index = 0; index < vect.size(); index++) {
-        if (vect.at(index) == "Doughnut") {
+        if (vect.at(index) == "Cell Phone") {
             vect.at(index) = "";
             player->deleteInventoryItem(index, "");
             cout << endl;
 
             // display message
-            cout << ">> Good thing you had doughnuts with you otherwise these long\n";
-            cout << "   and unproductive meeting would have been a nightmare!\n";
+            cout << ">> Good thing you brought your cell phone with you because\n";
+            cout << "   now you can pass time checking out the latest Instagram posts.\n";
             cout << ">> Gain 1 sanity point +1\n\n";
             player->setSanityPoints(1);
             return;
         }
     }
-    cout << ">> Unfortunately you came to the meeting empty handed and now you\n";
-    cout << "   have to endure a long and unproductive meeting.\n";
+    cout << ">> Unfortunately you came to the meeting and forgot your cellphone at your desk\n";
+    cout << "   and now you have to endure a long and unproductive meeting.\n";
     cout << ">> Lose -3 sanity points\n";
     cout << ">> Lose -2 productivity points\n\n";
     player->setSanityPoints(-3);
