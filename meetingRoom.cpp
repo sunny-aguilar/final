@@ -47,30 +47,24 @@ void MeetingRoom::bringDoghnuts() {
 
     for (int index = 0; index < vect.size(); index++) {
         if (vect.at(index) == "Doughnut") {
-            // remove doughnuts from inventory
-            //player->getInventory().at(index) = "";
             vect.at(index) = "";
             player->deleteInventoryItem(index, "");
-
-            for (int index = 0; index < vect.size(); index++) {
-                cout << "Inventory in vect: " << vect.at(index) << " ";
-            }
-            cout << endl;
-            for (int index = 0; index < player->getInventory().size(); index++) {
-                cout << "Inventory in vect: " << player->getInventory().at(index) << " ";
-            }
             cout << endl;
 
             // display message
-            cout << ">> Your group meetings are generally long and could have been\n";
-            cout << "   stated in an email. Luckily, you have doughnuts and saved the\n";
-            cout << "   day!\n";
+            cout << ">> Good thing you had doughnuts with you otherwise these long\n";
+            cout << "   and unproductive meeting would have been a nightmare!\n";
             cout << ">> Gain 1 sanity point +1\n\n";
             player->setSanityPoints(1);
             return;
         }
         else {
-            cout << "Sorry, you do not have Doughnuts in your inventory\n\n";
+            cout << ">> Unfortunately you came to the meeting empty handed and now you\n";
+            cout << "   have to endure a long and unproductive meeting.\n";
+            cout << ">> Lose -3 sanity points\n";
+            cout << ">> Lose -2 productivity points\n\n";
+            player->setSanityPoints(-3);
+            player->setPerformancePoints(-2);
         }
     }
 }

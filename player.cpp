@@ -71,12 +71,7 @@ void Player::setInventory(string name) {
 *********************************************************************/
 void Player::displayInventory() {
     for (int index = 0; index < item.size(); index++) {
-        if (index == 2) {
-            cout << item.at(index) + " ";
-        }
-        else {
-            cout << item.at(index) + ", ";
-        }
+        cout << item.at(index) + " ";
     }
 }
 
