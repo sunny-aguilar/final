@@ -16,6 +16,8 @@ public:
     MeetingRoom();
     ~MeetingRoom();
     void spaceInteractions() override;
+    void bringDoghnuts();
+    void useCellPhone();
 };
 
 #endif // MEETINGROOM_HPP

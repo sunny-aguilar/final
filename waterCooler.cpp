@@ -54,7 +54,7 @@ void WaterCooler::officeChat() {
 
     cout << ">> You have caught up on the latest office rumors and are disgusted\n";
     cout << "   yet seemingly satisfied\n";
-    cout << "   You have gained 1 sanity point\n\n";
+    cout << ">> You have gained 1 sanity point\n\n";
     player->setSanityPoints(1);
     chats++;
 }
@@ -68,8 +68,8 @@ void WaterCooler::officeChat() {
 void WaterCooler::moreChat() {
     cout << ">> You continue to chat with co-workers however your boss has been\n";
     cout << "   keeping track of time and writes you up for exceeding your break time!\n";
-    cout << "   You have lost 3 performance points\n";
-    cout << "   You have lost 3 sanity points\n";
+    cout << ">> You have lost 3 performance points\n";
+    cout << ">> You have lost 3 sanity points\n";
     cout << "   ( ; _ ; )\n\n";
     player->setPerformancePoints(-3);
     player->setSanityPoints(-3);

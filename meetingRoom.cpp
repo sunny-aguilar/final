@@ -22,5 +22,33 @@ MeetingRoom::~MeetingRoom() {}
 **                  player will have with the space
 *********************************************************************/
 void MeetingRoom::spaceInteractions() {
+    cout << "1. Pick up some doughnuts\n";
+    cout << "2. Eat your leftovers from yesterday\n";
+    cout << ">> ";
+    int selection = validateNumber(1,2);
+
+    switch (selection) {
+        case 1:
+            bringDoghnuts();
+            break;
+        case 2:
+            useCellPhone();
+            break;
+        default:
+            cout << "Unable to determine selection!\n";
+    }
+}
+
+/*********************************************************************
+** Description:     d
+*********************************************************************/
+void MeetingRoom::bringDoghnuts() {
+
+}
+
+/*********************************************************************
+** Description:     d
+*********************************************************************/
+void MeetingRoom::useCellPhone() {
 
 }

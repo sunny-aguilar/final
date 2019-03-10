@@ -75,8 +75,8 @@ void FriendCubicle::projectHelp() {
         return;
     }
 
-    cout << "Your friend graciously helped you with your project. Your\n";
-    cout << "performance points have increased by +1\n\n";
+    cout << ">> Your friend graciously helped you with your project. Your\n";
+    cout << "   performance points have increased by +1\n\n";
     player->setPerformancePoints(1);
     projectHelps++;
 }
