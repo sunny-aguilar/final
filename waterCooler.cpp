@@ -47,7 +47,7 @@ void WaterCooler::officeChat() {
     int maxChats = 2;
 
     if (chats >= maxChats) {
-        cout << ">> Sorry, you only have two breaks available each day\n\n";
+        cout << ">> Sorry, you only have two breaks available each day\n";
         cout << "   ( ; _ ; )\n\n";
         return;
     }
@@ -71,7 +71,7 @@ void WaterCooler::moreChat() {
     cout << "   exceeding your break time!\n";
     cout << "   You have lost 3 performance points\n";
     cout << "   You have lost 3 sanity points\n";
-    cout << "  ヽ(。_°)ノ\n\n";
+    cout << "   ( ; _ ; )\n\n";
     player->setPerformancePoints(-3);
     player->setSanityPoints(-3);
 }
