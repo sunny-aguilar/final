@@ -5,7 +5,6 @@
 **                  user. A player object is used to hold certain
 **                  game stats. The player object also holds an
 **                  inventory object which contains inventory items.
-**                  d
 *********************************************************************/
 #include "player.hpp"
 
@@ -15,12 +14,12 @@
 Player::Player() : sanity{10}, performance{10} {}
 
 /*********************************************************************
-** Description:     d
+** Description:     destructor
 *********************************************************************/
 Player::~Player() {}
 
 /*********************************************************************
-** Description:     d
+** Description:     getter that returns player sanity points
 *********************************************************************/
 int Player::getSanityPoints() {
     return sanity;
@@ -36,7 +35,7 @@ void Player::setSanityPoints(int points) {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     getter that returns player performance points
 *********************************************************************/
 int Player::getPerformancePoints() {
     return performance;
@@ -54,9 +53,13 @@ void Player::setPerformancePoints(int points) {
 /*********************************************************************
 ** Description:     setter that adds inventory to player's pockets
 *********************************************************************/
-void Player::setInventory(string name, Inventory type) {
-    InventoryItem *newItem = new InventoryItem(name, type);
-    item.push_back(newItem);
+void Player::setInventory(string name) {
+    for (int index = 0; index < item.size(); index++) {
+        if (item[index] == "Cell Phone") {
+            cout << "You already have the cell phone in your pocket\n\n";
+        }
+    }
+    item.push_back(name);
 }
 
 /*********************************************************************

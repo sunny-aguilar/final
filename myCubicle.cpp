@@ -48,8 +48,7 @@ void MyCubicle::spaceInteractions() {
 ** Description:     adds cell phone to inventory
 *********************************************************************/
 void MyCubicle::takeCell() {
-    // place cell in inventory
-    player->setInventory("Cell Phone", CELLPHONE);
+    player->setInventory("Cell Phone");
     cout << "You have placed the cell phone in your pocket\n";
 }
 
