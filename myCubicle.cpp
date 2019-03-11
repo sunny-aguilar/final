@@ -81,6 +81,8 @@ void MyCubicle::takeNap() {
     if (napsTaken >= napsMax) {
         cout << ">> Sorry, your demanding schedule does not allow you\n";
         cout << "   to sneak in any more naps ( 0 _ 0 )\n\n";
+        cout << ">> Lose 2 sanity point\n\n";
+        player->setSanityPoints(-2);
         return;
     }
 
