@@ -40,7 +40,11 @@ void BossRoom::spaceInteractions() {
 }
 
 /*********************************************************************
-** Description:
+** Description:     a player's job performance is reviewed by the boss
+**                  and the player is rated accordingly. The player's
+**                  boss is the type that is very rigid and by the
+**                  book and does not like to see his subordinates
+**                  with their cell phones or talking in the halls.
 *********************************************************************/
 void BossRoom::performanceReview() {
     // check if player has cell phone in inventory and punish player
@@ -62,8 +66,8 @@ void BossRoom::performanceReview() {
         player->setSanityPoints(-3);
         player->setPerformancePoints(-1);
     }
-    else {
-        
+    else if (player->getPerformancePoints() < 10 && player->getPerformancePoints() > 6) {
+        cout << ">> Your boss tells you that your work product is just average and ";
     }
 }
 
