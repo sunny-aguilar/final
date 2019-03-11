@@ -133,7 +133,7 @@ void BossRoom::timeOff() {
                 player->setPerformancePoints(-2);
                 break;
             default:
-                cout << "Unable to determine boss's response\n";
+                cout << "Unable to determine boss's response\n\n";
         }
     }
 

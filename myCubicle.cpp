@@ -30,6 +30,7 @@ MyCubicle::~MyCubicle() {}
 void MyCubicle::spaceInteractions() {
     cout << "1. Put cell phone in your pocket\n";
     cout << "2. Take a 15 minute siesta\n";
+    cout << "3. Complete an overdue report\n";
     cout << ">> ";
 
     int selection = validateNumber(1,2);
@@ -39,6 +40,9 @@ void MyCubicle::spaceInteractions() {
             break;
         case 2:
             takeNap();
+            break;
+        case 3:
+            doWork();
             break;
         default:
             cout << "Unable to determine selection!\n";
@@ -56,6 +60,13 @@ void MyCubicle::takeCell() {
             cout << "Player already has the Cell Phone in their inventory!\n\n";
             return;
         }
+    }
+
+    // random chance (30%) that you get caught fidgeting with your phone
+    if ( generateRandom(10) < 4 ) {
+        cout << "Your boss has caught you looking at your phone and calls you\n";
+        cout << "into his office where he writes you up.\n\n";
+        player->setPerformancePoints(-2);
     }
 
     player->setInventory("Cell Phone");
@@ -85,4 +96,23 @@ void MyCubicle::takeNap() {
 
     player->setSanityPoints(1);
     napsTaken++;
+}
+
+/*********************************************************************
+** Description:     allows a player to complete overdue work
+*********************************************************************/
+void MyCubicle::doWork() {
+    switch (generateRandom(3)) {
+        case 1:
+
+            break;
+        case 2:
+
+            break;
+        case 3:
+            
+            break;
+        default:
+            cout << "Unable to determine work results\n\n";
+    }
 }

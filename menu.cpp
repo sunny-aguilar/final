@@ -204,19 +204,19 @@ void Menu::displayMap(Space *space) {
     // if player is by the water cooler, display that
     if (space->getLocationName() == "Water Cooler") {
         if (space->getPlayer() != nullptr) {
-            bm = space->getLocationName() + "[*]";
+            bm = space->getLocationName() + " [*]";
         }
     }
     // if player is by the meeting room, display that
     if (space->getLocationName() == "Meeting Room") {
         if (space->getPlayer() != nullptr) {
-            tr = space->getLocationName() + "[*]";
+            tr = space->getLocationName() + " [*]";
         }
     }
     // if player is by the break room, display that
     if (space->getLocationName() == "Break Room") {
         if (space->getPlayer() != nullptr) {
-            br = space->getLocationName() + "[*]";
+            br = space->getLocationName() + " [*]";
         }
     }
 

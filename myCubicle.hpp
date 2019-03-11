@@ -23,6 +23,7 @@ public:
     void spaceInteractions() override;
     void takeCell();
     void takeNap();
+    void doWork();
 };
 
 #endif // MYCUBICLE_HPP

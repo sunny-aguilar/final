@@ -34,7 +34,7 @@ void WaterCooler::spaceInteractions() {
             moreChat();
             break;
         default:
-            cout << "Unable to determine selection!\n";
+            cout << "Unable to determine selection!\n\n";
     }
 }
 

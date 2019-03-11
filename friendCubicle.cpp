@@ -38,7 +38,7 @@ void FriendCubicle::spaceInteractions() {
             projectHelp();
             break;
         default:
-            cout << "Unable to determine selection!\n";
+            cout << "Unable to determine selection!\n\n";
     }
 }
 
