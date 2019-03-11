@@ -94,5 +94,25 @@ void BossRoom::timeOff() {
         }
     }
 
-    
+    if (player->getPerformancePoints() == 10) {
+        int randomNum = generateRandom(2);
+        switch (randomNum) {
+            case 1:
+                cout << ">> Your boss acknowledges your top performance rating of 10 however\n";
+                cout << "   the days off you are asking for are a busy time at the office so\n";
+                cout << "   your request has been denied.\n";
+                cout << ">> Lose 2 sanity points\n\n";
+                player->setSanityPoints(-2);
+                break;
+            case 2:
+                
+                break;
+            default:
+                cout << "Unable to determine boss's response\n";
+        }
+
+
+        player->setSanityPoints(-3);
+        player->setPerformancePoints(-1);
+    }
 }
