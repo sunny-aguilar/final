@@ -18,7 +18,8 @@ BreakRoom::BreakRoom() : Space("Break Room", BREAKROOM) {}
 BreakRoom::~BreakRoom() {}
 
 /*********************************************************************
-** Description:     d
+** Description:     this functions determine which interactions a
+**                  player will have with the break room
 *********************************************************************/
 void BreakRoom::spaceInteractions() {
     cout << "1. Pick up some doughnuts\n";

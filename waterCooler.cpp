@@ -48,7 +48,9 @@ void WaterCooler::officeChat() {
 
     if (chats >= maxChats) {
         cout << ">> Sorry, you only have two breaks available each day\n";
+        cout << ">> Lose 2 sanity points\n";
         cout << "   ( ; _ ; )\n\n";
+        player->setSanityPoints(-2);
         return;
     }
 

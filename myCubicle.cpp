@@ -25,7 +25,7 @@ MyCubicle::~MyCubicle() {}
 
 /*********************************************************************
 ** Description:     this functions determine which interactions a
-**                  player will have with the space
+**                  player will have with my cubicle
 *********************************************************************/
 void MyCubicle::spaceInteractions() {
     cout << "1. Put cell phone in your pocket\n";
