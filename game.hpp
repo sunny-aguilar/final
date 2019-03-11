@@ -46,7 +46,6 @@ public:
     void availableMoves(Space *space);
     void selectSpaceToMovePlayer();
     void movePlayer(Space *space);
-    void loseSanity();
     void roomActivities();
     void endDay();
 

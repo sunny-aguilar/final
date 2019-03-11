@@ -25,7 +25,7 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-enum Location{MYCUBICLE, FRIENDCUBICLE, BOSSROOM, COOLER, BREAKROOM, MEETINGROOM};
+enum Location{MYCUBICLE, FRIENDCUBICLE, BOSSROOM, COOLER, BREAKROOM, MEETINGROOM, NOMOVE};
 
 class Space {
 protected:

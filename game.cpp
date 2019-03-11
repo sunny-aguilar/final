@@ -163,16 +163,14 @@ void Game::arriveToWork() {
 *********************************************************************/
 void Game::playDay() {
     while (loopControl()) {
-        // lose sanity points as day wears on
-        loseSanity();
-
         // show main menu
         showMainMenu();
     }
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     displays the main menu that gives a player the
+**                  options they can make during each time step
 *********************************************************************/
 void Game::showMainMenu() {
     menu.hud(player, playerLocation(), calculateTime(time));
@@ -306,6 +304,7 @@ void Game::availableMoves(Space *space) {
         places.push_back( space->getLeft()->getLocation() );
     }
     cout << ++count << ". Back to main menu\n";
+    places.push_back(NOMOVE);
     cout << ">> ";
     movesAvailable = count;
 
@@ -341,6 +340,9 @@ void Game::selectSpaceToMovePlayer() {
         case MEETINGROOM:
             movePlayer(meetingRoom);
             break;
+        case NOMOVE:
+            places.clear();
+            return;
         default:
             cout << "Unable to determine location to move player\n";
     }
@@ -370,18 +372,6 @@ void Game::movePlayer(Space *space) {
 
     // increase time for each step taken
     time++;
-}
-
-/*********************************************************************
-** Description:     the player loses 1 sanity point for every hour
-**                  elapsed
-*********************************************************************/
-void Game::loseSanity() {
-
-    if (time % 3 == 1) {
-        cout << ">> Another hour has passed, lose 1 sanity point\n\n";
-        player->setSanityPoints(-1);
-    }
 }
 
 /*********************************************************************
