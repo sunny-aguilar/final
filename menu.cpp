@@ -267,10 +267,12 @@ void Menu::displayRoomActivities(string loc) {
 void Menu::endOfDay(int select) {
     switch (select) {
         case 0:
-            cout << "Day has ended\n\n";
+            cout << "Your job has literally driven you crazy and you are now checking\n";
+            cout << "yourself in to the nearest mental institution for observation\n\n";
             break;
         case 1:
-            cout << "Day has ended\n\n";
+            cout << "Unfortunately since your boss's lacks patience and does not tolerate\n";
+            cout << "mistakes, he has decided to fire you.\n";
             break;
         case 2:
             cout << "Day has ended\n\n";
