@@ -22,6 +22,10 @@ Game::Game() : time{1}, movesAvailable{0}, player{new Player()} {}
 ** Description:     virtual destructor
 *********************************************************************/
 Game::~Game() {
+    if (player != nullptr) {
+        delete player;
+    }
+
     if (myCubicle != nullptr) {
         if (myCubicle->getPlayer() != nullptr) {
             delete myCubicle->getPlayer();
