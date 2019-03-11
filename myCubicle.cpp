@@ -33,7 +33,7 @@ void MyCubicle::spaceInteractions() {
     cout << "3. Complete an overdue TPS report\n";
     cout << ">> ";
 
-    int selection = validateNumber(1,2);
+    int selection = validateNumber(1,3);
     switch (selection) {
         case 1:
             takeCell();
