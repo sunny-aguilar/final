@@ -163,6 +163,10 @@ void Game::arriveToWork() {
 *********************************************************************/
 void Game::playDay() {
     while (loopControl()) {
+        // lose sanity points as day wears on
+        loseSanity();
+
+        // show main menu
         showMainMenu();
     }
 }
@@ -364,6 +368,17 @@ void Game::movePlayer(Space *space) {
 
     // increase time for each step taken
     time++;
+}
+
+/*********************************************************************
+** Description:     the player loses 1 sanity point for every hour
+**                  elapsed
+*********************************************************************/
+void Game::loseSanity() {
+    if (time % 3 == 1) {
+        cout << "Another hour has passed, lose 1 sanity point\n\n";
+        player->setSanityPoints(-1);
+    }
 }
 
 /*********************************************************************
