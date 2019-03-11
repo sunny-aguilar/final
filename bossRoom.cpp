@@ -89,7 +89,7 @@ void BossRoom::timeOff() {
     for (int index = 0; index < vect.size(); index++) {
         if (vect.at(index) == "Cell Phone") {
             cout << ">> Your boss sees you holding your cell phone. Since he has a strict\n";
-            cout << "   anti-cell phone policy, you have lost 3 performance points.\n";
+            cout << "   anti-cell phone policy, you have lost 3 performance points.\n\n";
             player->setPerformancePoints(-3);
         }
     }
@@ -127,8 +127,8 @@ void BossRoom::timeOff() {
             case 2:
                 cout << ">> Your boss gets irritated that you have the gal to even ask for time off\n";
                 cout << "   and assigns you additional work.\n";
-                cout << ">> Lose 1 sanity point\n\n";
-                cout << ">> Lose 2 sanity points\n\n";
+                cout << ">> Lose 1 sanity point\n";
+                cout << ">> Lose 2 performance points\n\n";
                 player->setSanityPoints(-1);
                 player->setPerformancePoints(-2);
                 break;
@@ -148,8 +148,8 @@ void BossRoom::timeOff() {
             case 2:
                 cout << ">> Your boss looks up at you and gives your the next topic to present at\n";
                 cout << "   the next group meeting. He asks you to leave his office.\n";
-                cout << ">> Lose 1 sanity point\n\n";
-                cout << ">> Lose 2 sanity points\n\n";
+                cout << ">> Lose 1 sanity point\n";
+                cout << ">> Lose 2 performance points\n\n";
                 player->setSanityPoints(-3);
                 player->setPerformancePoints(-3);
                 break;
