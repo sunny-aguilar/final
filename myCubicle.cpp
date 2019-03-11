@@ -30,7 +30,7 @@ MyCubicle::~MyCubicle() {}
 void MyCubicle::spaceInteractions() {
     cout << "1. Put cell phone in your pocket\n";
     cout << "2. Take a 15 minute siesta\n";
-    cout << "3. Complete an overdue report\n";
+    cout << "3. Complete an overdue TPS report\n";
     cout << ">> ";
 
     int selection = validateNumber(1,2);
@@ -104,13 +104,26 @@ void MyCubicle::takeNap() {
 void MyCubicle::doWork() {
     switch (generateRandom(3)) {
         case 1:
-
+            cout << ">> You have finished the report however it your boss nitpicked\n";
+            cout << "   it apart.\n";
+            cout << ">> Lose 1 performance point\n\n";
+            player->setPerformancePoints(-1);
             break;
         case 2:
-
+            cout << ">> You successfully complete the report and submit it to your boss\n";
+            cout << "   Lucky for you, your boss is not at his desk so you drop it off\n";
+            cout << "   and leave unscathed.\n";
+            cout << ">> Gain 1 sanity point\n\n";
+            player->setSanityPoints(1);
             break;
         case 3:
-            
+            cout << ">> Before you can finish your report, your boss calls you to his office and\n";
+            cout << "   demands why you have not finished the TPS report on time. He does not care\n";
+            cout << "   about excuses and makes note in your performance evaluation\n";
+            cout << ">> Lose 1 sanity point\n";
+            cout << ">> Lose 1 performance point\n\n";
+            player->setSanityPoints(-1);
+            player->setPerformancePoints(-1);
             break;
         default:
             cout << "Unable to determine work results\n\n";
