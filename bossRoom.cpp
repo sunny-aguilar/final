@@ -67,7 +67,16 @@ void BossRoom::performanceReview() {
         player->setPerformancePoints(-1);
     }
     else if (player->getPerformancePoints() < 10 && player->getPerformancePoints() > 6) {
-        cout << ">> Your boss tells you that your work product is just average and ";
+        cout << ">> Your boss tells you that your work product is just average and\n";
+        cout << "   tells you that average does not get you very far.\n";
+        cout << ">> You have lost 1 sanity point\n";
+        player->setSanityPoints(-1);
+    }
+    else {
+        cout << ">> Your boss tells you that even though your performance is top notch,\n";
+        cout << "   there is always room for improvement. No specific guidance is given.\n";
+        cout << ">> You have lost 1 sanity point\n";
+        player->setSanityPoints(-1);
     }
 }
 
@@ -75,5 +84,15 @@ void BossRoom::performanceReview() {
 ** Description:     d
 *********************************************************************/
 void BossRoom::timeOff() {
+// check if player has cell phone in inventory and punish player
+    vector<string> vect = player->getInventory();
+    for (int index = 0; index < vect.size(); index++) {
+        if (vect.at(index) == "Cell Phone") {
+            cout << ">> Your boss sees you holding your cell phone. Since he has a strict\n";
+            cout << "   anti-cell phone policy, you have lost 3 performance points.\n";
+            player->setPerformancePoints(-3);
+        }
+    }
 
+    
 }
