@@ -118,7 +118,8 @@ void Game::start() {
 
 
 /*********************************************************************
-** Description:     d
+** Description:     this function controls the game operations from
+**                  start to finish
 *********************************************************************/
 void Game::gameOperations() {
     // create the board
@@ -138,14 +139,17 @@ void Game::gameOperations() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     this function calls a menu prompt that is
+**                  randomly picked and it will determine how your
+**                  day will start
 *********************************************************************/
 void Game::morningRoutine() {
     menu.gameIntro(generateRandom(3), player);
 }
 
 /*********************************************************************
-** Description:
+** Description:     this function displays a menu prompt to alert a
+**                  user they have arrived to work
 *********************************************************************/
 void Game::arriveToWork() {
     menu.startWorkDay();
