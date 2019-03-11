@@ -19,7 +19,7 @@ MeetingRoom::~MeetingRoom() {}
 
 /*********************************************************************
 ** Description:     this functions determine which interactions a
-**                  player will have with the space
+**                  player will have with the meeting room
 *********************************************************************/
 void MeetingRoom::spaceInteractions() {
     cout << "1. Attend your group meeting\n";
