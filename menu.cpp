@@ -264,8 +264,20 @@ void Menu::displayRoomActivities(string loc) {
 /*********************************************************************
 ** Description:     d
 *********************************************************************/
-void Menu::endOfDay() {
-    cout << "Day has ended\n\n";
+void Menu::endOfDay(int select) {
+    switch (select) {
+        case 0:
+            cout << "Day has ended\n\n";
+            break;
+        case 1:
+            cout << "Day has ended\n\n";
+            break;
+        case 2:
+            cout << "Day has ended\n\n";
+            break;
+        default:
+            cout << "Unable to determine end of day message\n";
+    }
 }
 
 /*********************************************************************

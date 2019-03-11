@@ -377,7 +377,31 @@ void Game::roomActivities() {
 ** Description:     display end of day message
 *********************************************************************/
 void Game::endDay() {
-    menu.endOfDay();
+    bool wentInsane = false;
+    bool gotFired = false;
+    bool dayOver = false;
+
+    // determine how game ended
+    if (player->getSanityPoints() < 1) {
+        wentInsane = true;
+    }
+    if (player->getPerformancePoints() < 1) {
+        gotFired = true;
+    }
+    if (calculateTime(time) ==  "5:00 PM") {
+        dayOver = true;
+    }
+
+    // display end of game message depending on how it ended
+    if (wentInsane) {
+        menu.endOfDay(0);
+    }
+    else if (gotFired) {
+        menu.endOfDay(1);
+    }
+    else if (dayOver) {
+        menu.endOfDay(2);
+    }
 }
 
 /*********************************************************************
@@ -422,16 +446,6 @@ string Game::calculateTime(int time) {
             cout << "Unable to return time!\n";
     }
 }
-
-/*********************************************************************
-** Description:     d
-*********************************************************************/
-
-
-/*********************************************************************
-** Description:     d
-*********************************************************************/
-
 
 /*********************************************************************
 ** Description:     this function displays exit message upon exiting

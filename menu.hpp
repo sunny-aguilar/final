@@ -39,7 +39,7 @@ public:
     void displayAvailableSpaces();
     void displayRoomActivities(string loc);
 
-    void endOfDay();
+    void endOfDay(int select);
     void exitGame();
     int validateNumber(int min, int max);
 };
