@@ -376,7 +376,7 @@ void Game::movePlayer(Space *space) {
 *********************************************************************/
 void Game::loseSanity() {
     if (time % 3 == 1) {
-        cout << "Another hour has passed, lose 1 sanity point\n\n";
+        cout << ">> Another hour has passed, lose 1 sanity point\n\n";
         player->setSanityPoints(-1);
     }
 }
