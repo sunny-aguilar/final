@@ -72,7 +72,7 @@ void BossRoom::performanceReview() {
         cout << ">> You have lost 2 sanity point\n";
         player->setSanityPoints(-2);
     }
-    else {
+    else if (player->getPerformancePoints() == 10) {
         cout << ">> Your boss tells you that even though your performance is top notch,\n";
         cout << "   there is always room for improvement. No specific guidance is given.\n";
         cout << ">> You have lost 2 sanity point\n";

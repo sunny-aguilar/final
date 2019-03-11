@@ -275,7 +275,9 @@ void Menu::endOfDay(int select) {
             cout << "mistakes, he has decided to fire you.\n";
             break;
         case 2:
-            cout << "Day has ended\n\n";
+            cout << "CONGRATULATIONS!";
+            cout << "You have made it through the day with your sanity intact and still have\n";
+            cout << "have your job.\n\n";
             break;
         default:
             cout << "Unable to determine end of day message\n";
