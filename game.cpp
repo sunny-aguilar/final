@@ -16,7 +16,7 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-Game::Game() : time{1}, movesAvailable{0}, player{new Player()} {}
+Game::Game() : time{1}, movesAvailable{0}/*, player{new Player()}*/ {}
 
 /*********************************************************************
 ** Description:     virtual destructor
@@ -74,6 +74,9 @@ Game::~Game() {
 **                  the pointers to each other
 *********************************************************************/
 void Game::createBoard() {
+    // create player
+    player = new Player();
+
     // create spaces
     myCubicle = new MyCubicle( player );
     friendCubicle = new FriendCubicle();
