@@ -105,14 +105,56 @@ void BossRoom::timeOff() {
                 player->setSanityPoints(-2);
                 break;
             case 2:
-                
+                cout << ">> Your boss states that your recent performance has been acceptable and\n";
+                cout << "   grants you time off\n";
+                cout << ">> Gain 1 sanity point\n\n";
+                player->setSanityPoints(+1);
                 break;
             default:
                 cout << "Unable to determine boss's response\n";
         }
+    }
 
+    if (player->getPerformancePoints() < 9 && player->getPerformancePoints() > 5) {
+        int randomNum = generateRandom(2);
+        switch (randomNum) {
+            case 1:
+                cout << ">> Your boss cites your decrease in performance in the last year and\n";
+                cout << "   denies your time off request.\n";
+                cout << ">> Lose 2 sanity points\n\n";
+                player->setSanityPoints(-2);
+                break;
+            case 2:
+                cout << ">> Your boss gets irritated that you have the gal to even ask for time off\n";
+                cout << "   and assigns you additional work.\n";
+                cout << ">> Lose 1 sanity point\n\n";
+                cout << ">> Lose 2 sanity points\n\n";
+                player->setSanityPoints(-1);
+                player->setPerformancePoints(-2);
+                break;
+            default:
+                cout << "Unable to determine boss's response\n";
+        }
+    }
 
-        player->setSanityPoints(-3);
-        player->setPerformancePoints(-1);
+    if (player->getPerformancePoints() < 6) {
+        int randomNum = generateRandom(2);
+        switch (randomNum) {
+            case 1:
+                cout << ">> Your boss thinks your joking and tells you to get back to work.\n";
+                cout << ">> Lose 2 sanity points\n\n";
+                player->setSanityPoints(-2);
+                break;
+            case 2:
+                cout << ">> Your boss looks up at you and gives your the next topic to present at\n";
+                cout << "   the next group meeting. He asks you to leave his office.\n";
+                cout << ">> Lose 1 sanity point\n\n";
+                cout << ">> Lose 2 sanity points\n\n";
+                player->setSanityPoints(-3);
+                player->setPerformancePoints(-3);
+                break;
+            default:
+                cout << "Unable to determine boss's response\n";
+        }
     }
 }
