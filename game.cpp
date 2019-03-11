@@ -16,7 +16,16 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-Game::Game() : time{1}, movesAvailable{0}/*, player{new Player()}*/ {}
+Game::Game() :
+    time{1},
+    movesAvailable{0},
+    player{nullptr},
+    myCubicle{nullptr},
+    friendCubicle{nullptr},
+    bossRoom{nullptr},
+    waterCooler{nullptr},
+    meetingRoom{nullptr},
+    breakRoom{nullptr} {}
 
 /*********************************************************************
 ** Description:     virtual destructor
@@ -27,46 +36,28 @@ Game::~Game() {
     }
 
     if (myCubicle != nullptr) {
-        if (myCubicle->getPlayer() != nullptr) {
-            delete myCubicle->getPlayer();
-        }
+        delete myCubicle;
     }
-    delete myCubicle;
 
     if (friendCubicle != nullptr) {
-        if (friendCubicle->getPlayer() != nullptr) {
-            delete friendCubicle->getPlayer();
-        }
+        delete friendCubicle;
     }
-    delete friendCubicle;
 
     if (bossRoom != nullptr) {
-        if (bossRoom->getPlayer() != nullptr) {
-            delete bossRoom->getPlayer();
-        }
+        delete bossRoom;
     }
-    delete bossRoom;
 
     if (waterCooler != nullptr) {
-        if (waterCooler->getPlayer() != nullptr) {
-            delete waterCooler->getPlayer();
-        }
+        delete waterCooler;
     }
-    delete waterCooler;
 
     if (meetingRoom != nullptr) {
-        if (meetingRoom->getPlayer() != nullptr) {
-            delete meetingRoom->getPlayer();
-        }
+        delete meetingRoom;
     }
-    delete meetingRoom;
 
     if (breakRoom != nullptr) {
-        if (breakRoom->getPlayer() != nullptr) {
-            delete breakRoom->getPlayer();
-        }
+        delete breakRoom;
     }
-    delete breakRoom;
 }
 
 /*********************************************************************
@@ -225,7 +216,7 @@ bool Game::loopControl() {
         shiftOver = true;
     }
 
-    return ( !insane > 0 &&
+    return ( !insane &&
              !fired &&
              !shiftOver );
 }
@@ -324,7 +315,13 @@ void Game::availableMoves(Space *space) {
 *********************************************************************/
 void Game::selectSpaceToMovePlayer() {
     int selection = menu.validateNumber(0, movesAvailable);
+    while (selection == 0) {
+        cout << "Enter a num from 1 - " << movesAvailable << endl;
+        selection = menu.validateNumber(0, movesAvailable);
+    }
+
     int location = places.at(selection - 1);
+    cout << "Location: " << location << endl;
 
     switch (location) {
         case MYCUBICLE:

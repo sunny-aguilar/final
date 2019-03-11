@@ -24,25 +24,27 @@ Space::Space() :
 ** Description:     2-arg constructor
 *********************************************************************/
 Space::Space(string locName, Location loc) :
-    location{loc},
-    locationName{locName},
     up{nullptr},
     right{nullptr},
     down{nullptr},
     left{nullptr},
-    player{nullptr} {}
+    player{nullptr} {
+    locationName = locName;
+    location = loc;
+}
 
 /*********************************************************************
 ** Description:     3-arg constructor
 *********************************************************************/
 Space::Space(string locName, Location loc, Player *player) :
-    location{loc},
-    locationName{locName},
-    player{player},
     up{nullptr},
     right{nullptr},
     down{nullptr},
-    left{nullptr} {}
+    left{nullptr} {
+    locationName = locName;
+    location = loc;
+    this->player = player;
+}
 
 /*********************************************************************
 ** Description:     virtual destructor

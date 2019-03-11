@@ -10,7 +10,7 @@
 /*********************************************************************
 ** Description:     default constructor
 *********************************************************************/
-WaterCooler::WaterCooler() : chats{0}, Space("Water Cooler", COOLER) {}
+WaterCooler::WaterCooler() : Space("Water Cooler", COOLER), chats{0} {}
 
 /*********************************************************************
 ** Description:     destructor

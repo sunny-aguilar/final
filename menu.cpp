@@ -71,9 +71,9 @@ void Menu::gameIntro(int chance, Player *p) {
             carArt();
             cout << "Although you got up for work early with plenty of time to spare,\n";
             cout << "unforeseen traffic conditions have made you 15 minutes late for work\n";
-            cout << "( -1 performance points, -1 sanity points)\n\n";
+            cout << "( -1 performance points, -2 sanity points)\n\n";
             p->setPerformancePoints(-1);
-            p->setSanityPoints(-1);
+            p->setSanityPoints(-2);
             break;
         case 3:
             carArt();
@@ -104,12 +104,12 @@ void Menu::sunIntro() {
 ** Description:     d
 *********************************************************************/
 void Menu::carArt() {
-    cout << "        _______\n"
-            "       //  ||\\ \\ =\n"
-            " _____//___||_\\ \\___  =\n"
-            " )  _          _    \\\n"
-            " |_/ \\________/ \\___|  O o o .\n"
-            "___\\_/________\\_/______\n";
+    cout << "              _______\n"
+            "             //  ||\\ \\ =\n"
+            "       _____//___||_\\ \\___  =\n"
+            "       )  _          _    \\\n"
+            "       |_/ \\________/ \\___|  O o o .\n"
+            "_________\\_/________\\_/_________________\n";
 }
 
 /*********************************************************************
@@ -275,9 +275,11 @@ void Menu::endOfDay(int select) {
             cout << "mistakes, he has decided to fire you.\n";
             break;
         case 2:
-            cout << "CONGRATULATIONS!";
+            cout << "\nCONGRATULATIONS!\n";
             cout << "You have made it through the day with your sanity intact and still have\n";
-            cout << "have your job.\n\n";
+            cout << "your job! It is 5:00 PM and time to go home. You are relieved the day is\n";
+            cout << "over and you look forward to getting home and continuing your computer science\n";
+            cout << "studies. Until next time =)\n\n";
             break;
         default:
             cout << "Unable to determine end of day message\n";

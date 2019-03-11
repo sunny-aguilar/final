@@ -15,8 +15,8 @@
 ** Description:     default constructor
 *********************************************************************/
 MyCubicle::MyCubicle(Player *&player) :
-    napsTaken{0},
-    Space("My Cubicle", MYCUBICLE, player) {}
+    Space("My Cubicle", MYCUBICLE, player),
+    napsTaken{0} {}
 
 /*********************************************************************
 ** Description:     destructor
@@ -55,7 +55,7 @@ void MyCubicle::spaceInteractions() {
 void MyCubicle::takeCell() {
     vector<string> vect = player->getInventory();
 
-    for (int index = 0; index < vect.size(); index++) {
+    for (unsigned index = 0; index < vect.size(); index++) {
         if (vect.at(index) == "Cell Phone") {
             cout << "Player already has the Cell Phone in their inventory!\n\n";
             return;

@@ -48,7 +48,7 @@ void MeetingRoom::spaceInteractions() {
 void MeetingRoom::bringDoghnuts() {
     vector<string> vect = player->getInventory();
 
-    for (int index = 0; index < vect.size(); index++) {
+    for (unsigned index = 0; index < vect.size(); index++) {
         if (vect.at(index) == "Doughnut") {
             vect.at(index) = "";
             player->deleteInventoryItem(index, "");
@@ -80,7 +80,7 @@ void MeetingRoom::bringDoghnuts() {
 void MeetingRoom::useCellPhone() {
     vector<string> vect = player->getInventory();
 
-    for (int index = 0; index < vect.size(); index++) {
+    for (unsigned index = 0; index < vect.size(); index++) {
         if (vect.at(index) == "Cell Phone") {
             vect.at(index) = "";
             player->deleteInventoryItem(index, "");

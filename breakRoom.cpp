@@ -46,7 +46,7 @@ void BreakRoom::spaceInteractions() {
 void BreakRoom::getDoghnuts() {
     vector<string> vect = player->getInventory();
 
-    for (int index = 0; index < vect.size(); index++) {
+    for (unsigned index = 0; index < vect.size(); index++) {
         if (vect.at(index) == "Doughnut") {
             cout << "Player already has Doughnuts in their inventory!\n\n";
             return;
