@@ -85,7 +85,9 @@ void MyCubicle::takeNap() {
     }
 
     cout << ">> You take a quick nap at your desk and luckily your boss did\n";
-    cout << "   not notice. Sanity points have increased by +1\n\n";
+    cout << "   not notice. Sanity points have increased by +2\n\n";
+    player->setSanityPoints(2);
+    napsTaken++;
 
     // random chance (30%) that you get caught napping
     if ( generateRandom(10) < 4 ) {
@@ -93,9 +95,6 @@ void MyCubicle::takeNap() {
         cout << "office where he writes you up.\n\n";
         player->setPerformancePoints(-3);
     }
-
-    player->setSanityPoints(1);
-    napsTaken++;
 }
 
 /*********************************************************************

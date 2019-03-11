@@ -248,6 +248,7 @@ string Game::playerLocation() {
     else if (breakRoom->getPlayer() != nullptr) {
         return breakRoom->getLocationName();
     }
+    return "unknown room";
 }
 
 /*********************************************************************
@@ -276,6 +277,7 @@ Space *Game::getSpaceAddress() {
     else if (breakRoom->getPlayer() != nullptr) {
         return breakRoom;
     }
+    return 0;
 }
 
 /*********************************************************************
@@ -375,6 +377,7 @@ void Game::movePlayer(Space *space) {
 **                  elapsed
 *********************************************************************/
 void Game::loseSanity() {
+
     if (time % 3 == 1) {
         cout << ">> Another hour has passed, lose 1 sanity point\n\n";
         player->setSanityPoints(-1);
@@ -464,6 +467,7 @@ string Game::calculateTime(int time) {
         default:
             cout << "Unable to return time!\n";
     }
+    return "00:00 AM";
 }
 
 /*********************************************************************
