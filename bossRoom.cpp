@@ -69,14 +69,14 @@ void BossRoom::performanceReview() {
     else if (player->getPerformancePoints() < 10 && player->getPerformancePoints() > 6) {
         cout << ">> Your boss tells you that your work product is just average and\n";
         cout << "   tells you that average does not get you very far.\n";
-        cout << ">> You have lost 1 sanity point\n";
-        player->setSanityPoints(-1);
+        cout << ">> You have lost 2 sanity point\n";
+        player->setSanityPoints(-2);
     }
     else {
         cout << ">> Your boss tells you that even though your performance is top notch,\n";
         cout << "   there is always room for improvement. No specific guidance is given.\n";
-        cout << ">> You have lost 1 sanity point\n";
-        player->setSanityPoints(-1);
+        cout << ">> You have lost 2 sanity point\n";
+        player->setSanityPoints(-2);
     }
 }
 
