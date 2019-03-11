@@ -64,9 +64,9 @@ void MeetingRoom::bringDoghnuts() {
     }
     cout << ">> Unfortunately you came to the meeting empty handed and now you\n";
     cout << "   have to endure a long and unproductive meeting.\n";
-    cout << ">> Lose -3 sanity points\n";
+    cout << ">> Lose -2 sanity points\n";
     cout << ">> Lose -2 productivity points\n\n";
-    player->setSanityPoints(-3);
+    player->setSanityPoints(-2);
     player->setPerformancePoints(-2);
 }
 

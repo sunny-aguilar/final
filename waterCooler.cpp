@@ -71,8 +71,8 @@ void WaterCooler::moreChat() {
     cout << ">> You continue to chat with co-workers however your boss has been\n";
     cout << "   keeping track of time and writes you up for exceeding your break time!\n";
     cout << ">> You have lost 3 performance points\n";
-    cout << ">> You have lost 3 sanity points\n";
+    cout << ">> You have lost 2 sanity points\n";
     cout << "   ( ; _ ; )\n\n";
     player->setPerformancePoints(-3);
-    player->setSanityPoints(-3);
+    player->setSanityPoints(-2);
 }
