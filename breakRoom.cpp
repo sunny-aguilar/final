@@ -66,6 +66,6 @@ void BreakRoom::eatLeftovers() {
     cout << "   yesterday. Unfortunately, you left the pizza out overnight and now\n";
     cout << "   you have the runs. Your co-workers do not appreciate how you left the\n";
     cout << "   restroom\n";
-    cout << ">> You have lost 2 sanity points\n\n";
-    player->setSanityPoints(-2);
+    cout << ">> You have lost 3 sanity points\n\n";
+    player->setSanityPoints(-3);
 }
