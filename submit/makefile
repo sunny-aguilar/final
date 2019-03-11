@@ -1,6 +1,6 @@
 # File: 	makefile
 # Author: 	Sandro Aguilar
-# Date: 	March 8 2019
+# Date: 	March 10 2019
 # Description:	Makefile for Final Project
 
 # Variables to control Makefile operation
@@ -23,7 +23,7 @@ OBJECTS += meetingRoom.o
 OBJECTS += myCubicle.o
 OBJECTS += waterCooler.o
 
-HPPs += game.hpp
+HPPs = game.hpp
 HPPs += menu.hpp
 HPPs += space.hpp
 HPPs += player.hpp
