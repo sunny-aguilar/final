@@ -1,13 +1,10 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 4, 2019
-** Description:     The Game class
-**                  d
-**                  d
-**                  d
-**                  d
-**                  d
-**                  d
+** Description:     MyCubicle class is derived from the space class
+**                  and it represents the space that is the players
+**                  own work area. This is the space where a player
+**                  starts the game.
 *********************************************************************/
 #include "myCubicle.hpp"
 

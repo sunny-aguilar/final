@@ -1,8 +1,8 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 4, 2019
-** Description:     The Game class
-**                  d
+** Description:     The Game class controls all of the game operations
+**                  required to control the game.
 **                  d
 **                  d
 **                  d
@@ -94,7 +94,8 @@ void Game::createBoard() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     calls the functions based on the main menu. A user
+**                  can play the game or quit.
 *********************************************************************/
 void Game::start() {
     menu.startScreen();
@@ -109,11 +110,6 @@ void Game::start() {
             cout << "Cannot determine selection made\n";
     }
 }
-
-/*********************************************************************
-** Description:     d
-*********************************************************************/
-
 
 /*********************************************************************
 ** Description:     this function controls the game operations from

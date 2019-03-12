@@ -1,7 +1,7 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
 ** Date:            March 4, 2019
-** Description:     FriendCubicle class is derived from the space clasa
+** Description:     FriendCubicle class is derived from the space class
 **                  and it represents the space that is the player's
 **                  friend at work.
 *********************************************************************/
@@ -80,8 +80,3 @@ void FriendCubicle::projectHelp() {
     player->setPerformancePoints(1);
     projectHelps++;
 }
-
-/*********************************************************************
-** Description:     d
-*********************************************************************/
-

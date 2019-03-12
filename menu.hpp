@@ -31,14 +31,11 @@ public:
     void sunIntro();
     void carArt();
     void startWorkDay();
-    void officeArt();
     void myDeskArt();
     void mainMenu(string loc);
     void hud(Player *p, string loc, string time);
     void displayMap(Space *space);
-    void displayAvailableSpaces();
     void displayRoomActivities(string loc);
-
     void endOfDay(int select);
     void exitGame();
     int validateNumber(int min, int max);

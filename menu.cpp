@@ -7,9 +7,8 @@
 *********************************************************************/
 #include "menu.hpp"
 
-
 /*********************************************************************
-** Description:     d
+** Description:     intro art for the game title
 *********************************************************************/
 void Menu::startScreenArt() {
     cout << " _________  __                ___       ___    ___  _                 \n"
@@ -48,7 +47,11 @@ void Menu::startScreen() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     displays the beginning of day activities. The
+**                  function receives a player object and a randomly
+**                  generated int value that is used to select a
+**                  random event that will affect how your day starts
+**                  off, just like in real life.
 *********************************************************************/
 void Menu::gameIntro(int chance, Player *p) {
     sunIntro();
@@ -101,7 +104,7 @@ void Menu::sunIntro() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     displays ascii art of a vehicle
 *********************************************************************/
 void Menu::carArt() {
     cout << "              _______\n"
@@ -113,17 +116,8 @@ void Menu::carArt() {
 }
 
 /*********************************************************************
-** Description:     d
-*********************************************************************/
-void Menu::officeArt() {
-    cout << "(╯°□°）╯︵ ┻━┻\n";
-    cout << "┬─┬ノ( º _ ºノ)\n";
-
-
-}
-
-/*********************************************************************
-** Description:     d
+** Description:     displays the desk art and lets a player know they
+**                  have arrived to work
 *********************************************************************/
 void Menu::startWorkDay() {
     myDeskArt();
@@ -131,7 +125,7 @@ void Menu::startWorkDay() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     displays ascii art of a desk
 *********************************************************************/
 void Menu::myDeskArt() {
     cout << "       ____\n"
@@ -148,7 +142,7 @@ void Menu::myDeskArt() {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     displays the main menu to the user
 *********************************************************************/
 void Menu::mainMenu(string loc) {
     cout << "Choose something to do **************************\n";
@@ -220,9 +214,6 @@ void Menu::displayMap(Space *space) {
         }
     }
 
-
-
-
     cout << "\n  ___   __  __ _        __  __           \n"
             " / _ \\ / _|/ _(_)__ ___|  \\/  |__ _ _ __ \n"
             "| (_) |  _|  _| / _/ -_) |\\/| / _` | '_ \\\n"
@@ -245,14 +236,8 @@ void Menu::displayMap(Space *space) {
 }
 
 /*********************************************************************
-** Description:     d
-*********************************************************************/
-void Menu::displayAvailableSpaces() {
-
-}
-
-/*********************************************************************
-** Description:     d
+** Description:     displays available activities at the location that
+**                  is received in the function parameter
 *********************************************************************/
 void Menu::displayRoomActivities(string loc) {
     cout << left;
@@ -262,7 +247,8 @@ void Menu::displayRoomActivities(string loc) {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     displays the end game scenarios depending on the
+**                  outcome of the game
 *********************************************************************/
 void Menu::endOfDay(int select) {
     switch (select) {
@@ -287,7 +273,7 @@ void Menu::endOfDay(int select) {
 }
 
 /*********************************************************************
-** Description:     d
+** Description:     displays exit message
 *********************************************************************/
 void Menu::exitGame() {
     cout << "Exiting game\n";

@@ -68,8 +68,6 @@ public:
     // utilities
     int generateRandom(int max);
     int validateNumber(int min, int max);
-
-    //friend class Game;
 };
 
 #endif // SPACE_HPP
