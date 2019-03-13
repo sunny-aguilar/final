@@ -89,7 +89,8 @@ void BossRoom::timeOff() {
     for (unsigned index = 0; index < vect.size(); index++) {
         if (vect.at(index) == "Cell Phone") {
             cout << ">> Your boss sees you holding your cell phone. Since he has a strict\n";
-            cout << "   anti-cell phone policy, you have lost 2 performance points.\n\n";
+            cout << "   anti-cell phone policy, you have lost 2 performance points.\n";
+            cout << ">> You have lost 2 performance points\n\n";
             player->setPerformancePoints(-2);
         }
     }
