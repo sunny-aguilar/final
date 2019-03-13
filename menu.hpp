@@ -36,7 +36,7 @@ public:
     void hud(Player *p, string loc, string time);
     void displayMap(Space *space);
     void displayRoomActivities(string loc);
-    void endOfDay(int select);
+    void endOfDay(int select, Player *p);
     void exitGame();
     int validateNumber(int min, int max);
 };

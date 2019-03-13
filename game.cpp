@@ -406,13 +406,13 @@ void Game::endDay() {
 
     // display end of game message depending on how it ended
     if (wentInsane) {
-        menu.endOfDay(0);
+        menu.endOfDay(0, player);
     }
     else if (gotFired) {
-        menu.endOfDay(1);
+        menu.endOfDay(1, player);
     }
     else if (dayOver) {
-        menu.endOfDay(2);
+        menu.endOfDay(2, player);
     }
 }
 

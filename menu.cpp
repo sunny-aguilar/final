@@ -67,8 +67,8 @@ void Menu::gameIntro(int chance, Player *p) {
         case 1:
             carArt();
             cout << "You decide to make yourself a cup of coffee however you spill\n";
-            cout << "it all over your shirt as you get into your car ( -1 sanity points)\n\n";
-            p->setSanityPoints(-1);
+            cout << "it all over your shirt as you get into your car ( -2 sanity points)\n\n";
+            p->setSanityPoints(-2);
             break;
         case 2:
             carArt();
@@ -250,7 +250,12 @@ void Menu::displayRoomActivities(string loc) {
 ** Description:     displays the end game scenarios depending on the
 **                  outcome of the game
 *********************************************************************/
-void Menu::endOfDay(int select) {
+void Menu::endOfDay(int select, Player *p) {
+    cout << left;
+    cout << "\n+-<<Heads Up Display>>----------------------------------------------------+\n";
+    cout << "[  Sanity Points: " << setw(2) << p->getSanityPoints() << "                     |";
+    cout << "   Performance Points: " << setw(2) << p->getPerformancePoints() <<"       ]\n";
+
     switch (select) {
         case 0:
             cout << "Your job has literally driven you crazy and you are now checking\n";
