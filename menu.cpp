@@ -260,11 +260,13 @@ void Menu::endOfDay(int select, Player *p) {
     switch (select) {
         case 0:
             cout << "Your job has literally driven you crazy and you are now checking\n";
-            cout << "yourself in to the nearest mental institution for observation\n\n";
+            cout << "yourself in to the nearest mental institution for observation.\n";
+            cout << "GAME OVER\n";
             break;
         case 1:
             cout << "Unfortunately, since your boss lacks patience and does not tolerate\n";
-            cout << "mistakes, he has decided to fire you.\n";
+            cout << "mistakes, he has decided to fire you. Womp womp.\n";
+            cout << "GAME OVER\n";
             break;
         case 2:
             cout << "\nCONGRATULATIONS!\n";
@@ -272,6 +274,7 @@ void Menu::endOfDay(int select, Player *p) {
             cout << "your job! It is 5:00 PM and time to go home. You are relieved the day is\n";
             cout << "over and you look forward to getting home and continuing your computer science\n";
             cout << "studies. Until next time =)\n\n";
+            cout << "GAME OVER\n";
             break;
         default:
             cout << "Unable to determine end of day message\n";
