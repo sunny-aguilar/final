@@ -1,6 +1,6 @@
 # File: 	makefile
 # Author: 	Sandro Aguilar
-# Date: 	March 10 2019
+# Date: 	March 12 2019
 # Description:	Makefile for Final Project
 
 # Variables to control Makefile operation
