@@ -90,8 +90,9 @@ void MyCubicle::takeNap() {
 
     // random chance (30%) that you get caught napping
     if ( generateRandom(10) < 4 ) {
-        cout << "Your boss has caught you taking a nap! He calls you into his\n";
-        cout << "office where he writes you up.\n\n";
+        cout << ">> Your boss has caught you taking a nap! He calls you into his\n";
+        cout << "   office where he writes you up.\n";
+        cout << ">> Lose 3 performance points\n\n";
         player->setPerformancePoints(-3);
     }
 }
