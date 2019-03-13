@@ -255,6 +255,7 @@ void Menu::endOfDay(int select, Player *p) {
     cout << "\n+-<<Heads Up Display>>----------------------------------------------------+\n";
     cout << "[  Sanity Points: " << setw(2) << p->getSanityPoints() << "                     |";
     cout << "   Performance Points: " << setw(2) << p->getPerformancePoints() <<"       ]\n";
+    cout << "+-------------------------------------------------------------------------+\n\n";
 
     switch (select) {
         case 0:
