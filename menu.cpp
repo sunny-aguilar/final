@@ -263,7 +263,7 @@ void Menu::endOfDay(int select, Player *p) {
             cout << "yourself in to the nearest mental institution for observation\n\n";
             break;
         case 1:
-            cout << "Unfortunately since your boss's lacks patience and does not tolerate\n";
+            cout << "Unfortunately, since your boss lacks patience and does not tolerate\n";
             cout << "mistakes, he has decided to fire you.\n";
             break;
         case 2:
