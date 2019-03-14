@@ -3,11 +3,9 @@
 ** Date:            March 4, 2019
 ** Description:     The Game class controls all of the game operations
 **                  required to control the game. There are various
-**                  d
-**                  d
-**                  d
-**                  d
-**                  d
+**                  classes within the game class (has-a relationship)
+**                  such as the Player class, the Space class and the
+**                  Menu class.
 *********************************************************************/
 #ifndef GAME_HPP
 #define GAME_HPP
