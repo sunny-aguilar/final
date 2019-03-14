@@ -2,7 +2,7 @@
 ** Author:          Sandro Aguilar
 ** Date:            March 4, 2019
 ** Description:     The Game class controls all of the game operations
-**                  required to control the game.
+**                  required to control the game. There are various
 **                  d
 **                  d
 **                  d
