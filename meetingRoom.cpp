@@ -63,7 +63,8 @@ void MeetingRoom::bringDoghnuts() {
         }
     }
     cout << ">> Unfortunately you came to the meeting empty handed and now you\n";
-    cout << "   have to endure a long and unproductive meeting.\n";
+    cout << "   have to endure a long and unproductive meeting. Why didn't you at\n";
+    cout << "   least bring doughnuts?\n";
     cout << ">> Lose -2 sanity points\n";
     cout << ">> Lose -2 productivity points\n\n";
     player->setSanityPoints(-2);
@@ -82,15 +83,21 @@ void MeetingRoom::useCellPhone() {
 
     for (unsigned index = 0; index < vect.size(); index++) {
         if (vect.at(index) == "Cell Phone") {
-            vect.at(index) = "";
-            player->deleteInventoryItem(index, "");
-            cout << endl;
-
             // display message
             cout << ">> Good thing you brought your cell phone with you because\n";
             cout << "   now you can pass time checking out the latest Instagram posts.\n";
             cout << ">> Gain 1 sanity point +1\n\n";
             player->setSanityPoints(1);
+
+            // random chance (50%) that you get caught on your phone
+            if ( generateRandom(10) < 6 ) {
+                cout << ">> Your boss has caught you on your cell! He calls you into his\n";
+                cout << "   office where he writes you up.\n";
+                cout << ">> Lose 1 sanity point -1\n";
+                cout << ">> Lose 3 performance points -3\n\n";
+                player->setSanityPoints(-1);
+                player->setPerformancePoints(-3);
+            }
             return;
         }
     }
